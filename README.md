@@ -1,3 +1,6 @@
+
+<html>
+<head>
 <style>
   h1 {
     text-align: center;
@@ -13,9 +16,8 @@
                 box-shadow:         0 5px 20px 0 rgba(0, 194, 66, 0.8);
   }
 </style>
-
-<h1>Telerik Academy<h1>
-
+</head>
+<body>
 <img class="logo" src="https://raw.githubusercontent.com/PavelDobranov/TelerikAcademy/master/TelerikAcademy.png" alt="Telerik Academy Logo">
 
 <h3><a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One">C# - Part One</a></h3>
@@ -28,3 +30,5 @@
   <li><a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One/05-ConditionalStatements">Conditional statements</a></li>
   <li><a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One/06-Loops">Loops</a></li>
 </ol>
+</body>
+</html>
