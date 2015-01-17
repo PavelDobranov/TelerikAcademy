@@ -1,11 +1,30 @@
-# TelerikAcademy
+<style>
+  h1 {
+    text-align: center;
+  }
 
-![alt text](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGa2bzFcNUSaB138BtYyt2SYNoLfKrfGrvdqj4I0xHlNAovq6- "Telerik Academy")
+  a {
+    color: #00C242
+  }
 
-### [C# - Part One](https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One)
-1. [Introduction to programming](https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One/01-IntroductionToProgramming)
-2. [Primitive data types and variables]()
-3. [Operators and expressions]()
-4. [Console input / output]()
-5. [Conditional statements]()
-6. [Loops]()
+  .logo {
+    box-shadow: -webkit-box-shadow: 0 5px 20px 0 rgba(0, 194, 66, 0.8);
+                -moz-box-shadow:    0 5px 20px 0 rgba(0, 194, 66, 0.8);
+                box-shadow:         0 5px 20px 0 rgba(0, 194, 66, 0.8);
+  }
+</style>
+
+<h1>Telerik Academy<h1>
+
+<img class="logo" src="https://raw.githubusercontent.com/PavelDobranov/TelerikAcademy/master/TelerikAcademy.png" alt="Telerik Academy Logo">
+
+<h3><a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One">C# - Part One</a></h3>
+
+<ol>
+  <li><a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One/01-IntroductionToProgramming">Introduction to programming</a></li>
+  <li><a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One/02-PrimitiveDataTypesAndVariables">Primitive data types and variables</a></li>
+  <li><a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One/03-OperatorsAndExpressions">Operators and expressions</a></li>
+  <li><a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One/04-ConsoleInputOutput">Console input / output</a></li>
+  <li><a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One/05-ConditionalStatements">Conditional statements</a></li>
+  <li><a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One/06-Loops">Loops</a></li>
+</ol>
