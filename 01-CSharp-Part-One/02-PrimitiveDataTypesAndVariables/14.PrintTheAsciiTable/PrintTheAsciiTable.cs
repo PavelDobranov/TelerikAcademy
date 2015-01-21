@@ -7,34 +7,43 @@
 // Note: You may need to use for-loops (learn in Internet how).
 
 using System;
-using System.Text;
 
 class PrintTheAsciiTable
 {
     static void Main()
     {
-        byte asciiMinValue = 0;
-        byte asciiMaxValue = 255;
+        int asciiMinValue = 0;
+        int asciiMaxValue = 255;
 
-        for (byte charCode = asciiMinValue; charCode <= asciiMaxValue; charCode++)
+        for (int charCode = asciiMinValue; charCode <= asciiMaxValue; charCode++)
         {
-            PrintFormatedAsciiRow(charCode);   
+            Console.WriteLine(PrintFormatedAsciiRow(charCode));
         }
 
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("\n* 0 to 31 --> Unprintable Control Codes\nUsed to Control Peripherals Such as Printers.\n127 --> Represents The Command DEL\n");
+        Console.WriteLine("* 0 to 31 --> Unprintable control codes");
+        Console.WriteLine("used to control peripherals such as printers.");
+        Console.WriteLine("127 --> Represents the command DEL");
         Console.ResetColor();
     }
 
-    static void PrintFormatedAsciiRow(byte charCode) 
+    static string PrintFormatedAsciiRow(int charCode) 
     {
-        byte padding = 6;
-        string charDecimalRepresentation = charCode.ToString().PadRight(padding, ' ');
-        string charOctalRepresentation = Convert.ToString(charCode, 8).PadRight(padding, ' '); // Octal representation
-        string charHexadecimalRepresentation = Convert.ToString(charCode, 16).PadRight(padding, ' '); // Hexadecimal representation
-        string charBinaryRepresentation = Convert.ToString(charCode, 2).PadRight(padding, ' '); // Binary representation
-        char character = (char)charCode;
+        int padding = 8;
+        int controlCodesMax = 37;
+        int delCommandCode = 127;
 
-        Console.WriteLine("[DEC] {0} [OCT] {1} [HEX] {2} [BIN] {3} [CHAR] {4}", charDecimalRepresentation, charOctalRepresentation, charHexadecimalRepresentation, charBinaryRepresentation, character);
+        string charDecimalRepresentation = charCode.ToString();
+        string charOctalRepresentation = Convert.ToString(charCode, 8);
+        string charHexadecimalRepresentation = Convert.ToString(charCode, 16);
+        string charBinaryRepresentation = Convert.ToString(charCode, 2);
+        string character = charCode <= controlCodesMax || charCode == delCommandCode ? "N/A *" : ((char)charCode).ToString();
+
+        return string.Format("[DEC] {0} [OCT] {1} [HEX] {2} [BIN] {3} [CHAR] {4}", 
+            charDecimalRepresentation.PadRight(padding, ' '),
+            charOctalRepresentation.PadRight(padding, ' '),
+            charHexadecimalRepresentation.PadRight(padding, ' '),
+            charBinaryRepresentation.PadRight(padding, ' '), 
+            character);
     }
 }
