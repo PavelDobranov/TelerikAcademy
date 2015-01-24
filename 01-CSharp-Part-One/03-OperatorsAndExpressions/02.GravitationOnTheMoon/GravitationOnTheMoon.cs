@@ -8,13 +8,13 @@ class GravitationOnTheMoon
 {
     static void Main()
     {
-        double moonGravitationalField = 0.17;
-
-        Console.Write("Please enter weight on the Earth: ");
+        Console.Write("Enter weight of a man on the Earth: ");
         double weightOnTheEarth = double.Parse(Console.ReadLine());
+
+        double moonGravitationalField = 0.17;
 
         double weightOnTheMoon = weightOnTheEarth * moonGravitationalField;
 
-        Console.WriteLine("Weight on the Moon: {0}", weightOnTheMoon);
+        Console.WriteLine("Weight of a man on the Moon: {0}", weightOnTheMoon);
     }
 }

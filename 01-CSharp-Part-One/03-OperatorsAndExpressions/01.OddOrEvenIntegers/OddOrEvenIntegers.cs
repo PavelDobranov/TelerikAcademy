@@ -7,10 +7,11 @@ class OddOrEvenIntegers
 {
     static void Main()
     {
-        Console.Write("Please enter an integer value: ");
+        Console.Write("Enter an integer value: ");
         int number = int.Parse(Console.ReadLine());
 
-        bool result = number % 2 == 0 ? false : true;
-        Console.WriteLine("Odd? : {0}", result);
+        bool isOddNumber = number % 2 != 0;
+        
+        Console.WriteLine("Odd? : {0}", isOddNumber);
     }
 }

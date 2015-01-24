@@ -12,52 +12,17 @@ class FourDigitNumber
 {
     static void Main()
     {
-        int number = 2011;
+        Console.Write("Enter fout-digit number: ");
+        int number = int.Parse(Console.ReadLine());
 
-        int sumOfDigits = CalculateSumOfTheDigits(number);
-        Console.WriteLine("Sum of digits: {0}", sumOfDigits);
+        int d = number % 10;
+        int c = (number / 10) % 10;
+        int b = (number / 100) % 10;
+        int a = (number / 1000) % 10;
 
-        int reversedNumber = ReverseDigits(number);
-        Console.WriteLine("Reversed: {0}", reversedNumber);
-
-        int lastDigitInFront = PutLastDigitInFront(number);
-        Console.WriteLine("Last digit in front: {0}", lastDigitInFront);
-
-
-    }
-
-    static int CalculateSumOfTheDigits(int number)
-    {
-        int result = 0;
-
-        while (number > 0)
-        {
-            result += number % 10;
-            number /= 10;
-        }
-
-        return result;
-    }
-
-    static int ReverseDigits(int number)
-    {
-        int result = 0;
-
-        while (number > 0)
-        {
-            result = result * 10 + number % 10;
-            number /= 10;
-        }
-
-        return result;
-    }
-
-    static int PutLastDigitInFront(int number)
-    {
-        int result = number % 10 * 1000;
-
-        result += number / 10;
-
-        return result;
+        Console.WriteLine("Sum of digits: {0}", a + b + c + d);
+        Console.WriteLine("Reversed: {3}{2}{1}{0}", a, b, c, d);
+        Console.WriteLine("Last digit in front: {3}{0}{1}{2}", a, b, c, d);
+        Console.WriteLine("Second and third digits exchanged: {0}{2}{1}{3}", a, b, c, d);
     }
 }

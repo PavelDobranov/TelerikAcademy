@@ -8,10 +8,12 @@ class ThirdDigitIsSeven
     static void Main()
     {
         Console.Write("Enter an integer value: ");
-        int inputNumber = int.Parse(Console.ReadLine());
+        int number = int.Parse(Console.ReadLine());
 
-        bool isSeven = (inputNumber / 100) % 10 == 7;
+        int digitValue = 7;
 
-        Console.WriteLine("Third digit 7? : " + isSeven);
+        bool isSeven = (number / 100) % 10 == digitValue;
+
+        Console.WriteLine("Third digit {0}? : {1}", digitValue, isSeven);
     }
 }
