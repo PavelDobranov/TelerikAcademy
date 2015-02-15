@@ -29,6 +29,9 @@
 
 <ol>
   <li>
-    <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/02-CSharp-Part-Two/01-Arrays">Loops</a>
+    <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/02-CSharp-Part-Two/01-Arrays">Arrays</a>
+  </li>
+  <li>
+    <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/02-CSharp-Part-Two/02-MultidimensionalArrays">Multidimensional Arrays</a>
   </li>
 </ol>
