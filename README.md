@@ -1,7 +1,6 @@
-
 <table>
     <tr>
-        <td>
+        <td colspan="2">
             <a href="https://telerikacademy.com">
                 <img class="logo" src="https://raw.githubusercontent.com/PavelDobranov/TelerikAcademy/master/TelerikAcademy.png" alt="Telerik Academy Logo">
             </a>
