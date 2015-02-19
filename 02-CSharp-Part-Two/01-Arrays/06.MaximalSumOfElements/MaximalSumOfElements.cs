@@ -37,7 +37,7 @@ class MaximalSumOfElements
 
     static void PrintMaximalSumOfElements(int[] array, int elementsCount)
     {
-        Array.Sort(array);
+        Array.Sort(array, (a, b) => b - a);
 
         int maxSum = 0;
 
@@ -49,6 +49,6 @@ class MaximalSumOfElements
             Console.Write("{0} ", array[element]);
         }
 
-        Console.WriteLine("\nMaximal sum: {0}", maxSum);
+        Console.WriteLine("Maximal sum: {0}", maxSum);
     }
 }
