@@ -1,16 +1,14 @@
 Teleric Academy
 ===============
 
-[TOC]
-
 ### [C# - Part One](http://)
-1. [Introduction to programming](TelerikAcademy/blob/master/01-CSharp-Part-One/01-IntroductionToProgramming/README.md)
-2. [Primitive data types and variables](TelerikAcademy/blob/master/01-CSharp-Part-One/02-PrimitiveDataTypesAndVariables/README.md)
-3. [Operators and expressions](TelerikAcademy/blob/master/01-CSharp-Part-One/03-OperatorsAndExpressions/README.md)
-4. [Console input / output](TelerikAcademy/blob/master/01-CSharp-Part-One/04-ConsoleInputOutput/README.md)
-5. [Conditional statements](TelerikAcademy/blob/master/01-CSharp-Part-One/05-ConditionalStatements/README.md)
-6. [Loops](TelerikAcademy/blob/master/01-CSharp-Part-One/06-Loops/README.md)
-7. [Exam preparation](TelerikAcademy/blob/master/01-CSharp-Part-One/07-ExamPreparation/README.md)
+1. [Introduction to programming](01-CSharp-Part-One/01-IntroductionToProgramming/README.md)
+2. [Primitive data types and variables](01-CSharp-Part-One/02-PrimitiveDataTypesAndVariables/README.md)
+3. [Operators and expressions](01-CSharp-Part-One/03-OperatorsAndExpressions/README.md)
+4. [Console input / output](01-CSharp-Part-One/04-ConsoleInputOutput/README.md)
+5. [Conditional statements](01-CSharp-Part-One/05-ConditionalStatements/README.md)
+6. [Loops](01-CSharp-Part-One/06-Loops/README.md)
+7. [Exam preparation](01-CSharp-Part-One/07-ExamPreparation/README.md)
 
 - - -
 
