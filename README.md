@@ -1,67 +1,39 @@
-<table>
-  <tr>
-    <td colspan="2">
-      <a href="http://academy.telerik.com/?utm_source=site&utm_medium=banner&utm_content=728x90&utm_campaign=community">
-        <img src="http://academy.telerik.com/images/default-album/telerik-academy-banner-728x90.jpg?sfvrsn=2" alt="Telerik Academy"/>
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>
-        <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One">C# - Part One</a>
-      </h3>
-      <ol>
-        <li>
-          <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One/01-IntroductionToProgramming">Introduction to programming</a>
-        </li>
-        <li>
-          <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One/02-PrimitiveDataTypesAndVariables">Primitive data types and variables</a>
-        </li>
-        <li>
-          <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One/03-OperatorsAndExpressions">Operators and expressions</a>
-        </li>
-        <li>
-          <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One/04-ConsoleInputOutput">Console input / output</a>
-        </li>
-        <li>
-          <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One/05-ConditionalStatements">Conditional statements</a>
-        </li>
-        <li>
-          <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/01-CSharp-Part-One/06-Loops">Loops</a>
-        </li>
-      </ol>
-    </td>
-    <td>
-      <h3>
-        <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/02-CSharp-Part-Two">C# - Part Two</a>
-      </h3>
-      <ol>
-        <li>
-          <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/02-CSharp-Part-Two/01-Arrays">Arrays</a>
-        </li>
-        <li>
-          <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/02-CSharp-Part-Two/02-MultidimensionalArrays">Multidimensional arrays</a>
-        </li>
-        <li>
-          <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/02-CSharp-Part-Two/03-Methods">Methods</a>
-        </li>
-        <li>
-          <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/02-CSharp-Part-Two/04-NumeralSystems">Numeral systems</a>
-        </li>
-        <li>
-          <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/02-CSharp-Part-Two/05-UsingClassesAndObjects">Using classes and objects</a>
-        </li>
-        <li>
-          <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/02-CSharp-Part-Two/06-StringsAndTextProcessing">Strings and text processing</a>
-        </li>
-        <li>
-          <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/02-CSharp-Part-Two/07-ExceptionHandling">Exception handling</a>
-        </li>
-        <li>
-          <a href="https://github.com/PavelDobranov/TelerikAcademy/tree/master/02-CSharp-Part-Two/08-TextFiles">Text files</a>
-        </li>
-      </ol>
-    </td>
-  </tr>
-</table>
+Teleric Academy
+===============
+
+[TOC]
+
+### [C# - Part One](http://)
+1. [Introduction to programming](TelerikAcademy/blob/master/01-CSharp-Part-One/01-IntroductionToProgramming/README.md)
+2. [Primitive data types and variables](TelerikAcademy/blob/master/01-CSharp-Part-One/02-PrimitiveDataTypesAndVariables/README.md)
+3. [Operators and expressions](TelerikAcademy/blob/master/01-CSharp-Part-One/03-OperatorsAndExpressions/README.md)
+4. [Console input / output](TelerikAcademy/blob/master/01-CSharp-Part-One/04-ConsoleInputOutput/README.md)
+5. [Conditional statements](TelerikAcademy/blob/master/01-CSharp-Part-One/05-ConditionalStatements/README.md)
+6. [Loops](TelerikAcademy/blob/master/01-CSharp-Part-One/06-Loops/README.md)
+7. [Exam preparation](TelerikAcademy/blob/master/01-CSharp-Part-One/07-ExamPreparation/README.md)
+
+- - -
+
+### [C# - Part Two](http://)
+1. [Array](http://)
+2. [Multidimensional arrays](http://)
+3. [Methods](http://)
+4. [Numeral systems](http://)
+5. [Using classes and objects](http://)
+6. [Strings and text processing](http://)
+7. [Exception handling](http://)
+8. [Text files](http://)
+
+- - -
+
+### [C# - Object-Oriented Programming](http://)
+1. [Defining classes - part one](http://)
+2. [Defining classes - part two](http://)
+3. [Extension methods, lambda expressions and LINQ](http://)
+4. [OOP fundamental principles - part one](http://)
+5. [OOP fundamental principles - part two](http://)
+6. [Common type system](http://)
+7. [OOP workshop](http://)
+8. [Teamwork project](http://)
+
+* * *
