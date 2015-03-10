@@ -26,8 +26,8 @@
 - - -
 
 #### [C# - Object-Oriented Programming](03-CSharp-Object-Oriented-Programming)
-1. [Defining classes - part one](03-CSharp-Object-Oriented-Programming/01-DefiningClassesParOne)
-2. [Defining classes - part two](03-CSharp-Object-Oriented-Programming/02-DefiningClassesParTwo)
+1. [Defining classes - part one](03-CSharp-Object-Oriented-Programming/01-DefiningClassesPartOne)
+2. [Defining classes - part two](03-CSharp-Object-Oriented-Programming/02-DefiningClassesPartTwo)
 3. [Extension methods, lambda expressions and LINQ](03-CSharp-Object-Oriented-Programming/03-ExtensionMethodsLambdaExpressionsAndLinq)
 4. [OOP fundamental principles - part one](03-CSharp-Object-Oriented-Programming/04-OopFundamentalPrinciplesPartOne)
 5. [OOP fundamental principles - part two](03-CSharp-Object-Oriented-Programming/05-OopFundamentalPrinciplesPartTwo)
