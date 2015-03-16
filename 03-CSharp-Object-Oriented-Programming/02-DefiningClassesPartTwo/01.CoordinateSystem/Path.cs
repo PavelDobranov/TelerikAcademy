@@ -1,11 +1,16 @@
 ﻿namespace CoordinateSystem
 {
     using System;
+    using System.Collections;
     using System.Collections.Generic;
 
-    public class Path
+    [Serializable]
+    public class Path : IEnumerable<Point3D>
     {
-        private List<Point3D> points;
+        private const string IndexOutOfRangeErrorMessage = "Index was out of range. Must be non-negative and less than the size of the collection";
+        private const string ToStringPointsSeparator = ", ";
+
+        private List<Point3D> items;
 
         public Path() : this(null) { }
 
@@ -18,17 +23,17 @@
         {
             get
             {
-                return new List<Point3D>(this.points);
+                return new List<Point3D>(this.items);
             }
             private set
             {
                 if (value == null)
                 {
-                    this.points = new List<Point3D>();
+                    this.items = new List<Point3D>();
                 }
                 else
                 {
-                    this.points = new List<Point3D>(value);
+                    this.items = new List<Point3D>(value);
                 }
             }
         }
@@ -37,42 +42,68 @@
         {
             get
             {
-                return this.Points.Count;
+                return this.items.Count;
             }
-        }
-
-
-        public void AddPoint(Point3D point)
-        {
-            this.points.Add(point);
-        }
-
-        public void RemovePointAt(int index)
-        {
-            this.points.RemoveAt(index);
-        }
-
-        public void RemovePoint(Point3D point)
-        {
-            this.points.Remove(point);
         }
 
         public Point3D this[int index]
         {
             get
             {
-                return points[index];
+                this.ValidateIndex(index);
+
+                return this.items[index];
             }
 
             set
             {
-                points[index] = value;
+                this.ValidateIndex(index);
+
+                this.items[index] = value;
             }
+        }
+
+        public void AddPoint(Point3D point)
+        {
+            this.items.Add(point);
+        }
+
+        public void RemovePoint(Point3D point)
+        {
+            this.items.Remove(point);
+        }
+
+        public void RemovePointAt(int index)
+        {
+            this.ValidateIndex(index);
+
+            this.items.RemoveAt(index);
+        }
+
+        public IEnumerator<Point3D> GetEnumerator()
+        {
+            foreach (var item in this.items)
+            {
+                yield return item;
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
         }
 
         public override string ToString()
         {
-            return string.Join(Environment.NewLine, this.Points);
+            return string.Join(Path.ToStringPointsSeparator, this.items);
+        }
+
+        private void ValidateIndex(int index)
+        {
+            if (index < 0 || index >= this.Count)
+            {
+                throw new ArgumentOutOfRangeException("index", Path.IndexOutOfRangeErrorMessage);
+            }
         }
     }
 }

@@ -45,7 +45,7 @@
     <Compile Include="PathSorage.cs" />
     <Compile Include="Point3D.cs" />
     <Compile Include="PointsCalculator.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="TestCoordinateSystem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

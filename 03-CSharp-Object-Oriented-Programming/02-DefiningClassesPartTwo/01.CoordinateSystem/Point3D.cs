@@ -1,10 +1,16 @@
 ﻿namespace CoordinateSystem
 {
+    using System;
+
+    [Serializable]
     public struct Point3D
     {
-        private const string ToStringFormat = "({0}, {1}, {2})";
+        private const string ToStringFormat = "[ {0}, {1}, {2} ]";
+        private const int OCoordX = 0;
+        private const int OCoordY = 0;
+        private const int OCoordZ = 0;
 
-        private static readonly Point3D pointO = new Point3D(0, 0, 0);
+        private static readonly Point3D pointO = new Point3D(Point3D.OCoordX, Point3D.OCoordY, Point3D.OCoordZ);
 
         public Point3D(double coordX, double coordY, double coordZ)
             : this()
