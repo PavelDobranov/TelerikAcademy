@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.StringBuilderExtensions", "01.StringBuilderSubstring\01.StringBuilderExtensions.csproj", "{D7FC8C40-1E6E-467E-A4D6-64BFC29CB018}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.IEnumerableExtensions", "02.IEnumerableExtensions\02.IEnumerableExtensions.csproj", "{594E6781-3B2D-4261-8BFA-C863338E11C7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataRepository", "StudentRepository\DataRepository.csproj", "{1C32C4BD-02AD-483A-AA9C-B3D6D89ABAC5}"
@@ -43,16 +41,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeExtensions", "TypeExten
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.Timer", "07.Timer\07.Timer.csproj", "{20B17290-225A-4BF4-917D-BE603A9A60CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.StringBuilderExtensions", "01.StringBuilderExtensions\01.StringBuilderExtensions.csproj", "{D7FC8C40-1E6E-467E-A4D6-64BFC29CB018}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D7FC8C40-1E6E-467E-A4D6-64BFC29CB018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7FC8C40-1E6E-467E-A4D6-64BFC29CB018}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D7FC8C40-1E6E-467E-A4D6-64BFC29CB018}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D7FC8C40-1E6E-467E-A4D6-64BFC29CB018}.Release|Any CPU.Build.0 = Release|Any CPU
 		{594E6781-3B2D-4261-8BFA-C863338E11C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{594E6781-3B2D-4261-8BFA-C863338E11C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{594E6781-3B2D-4261-8BFA-C863338E11C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -129,6 +125,10 @@ Global
 		{20B17290-225A-4BF4-917D-BE603A9A60CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20B17290-225A-4BF4-917D-BE603A9A60CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20B17290-225A-4BF4-917D-BE603A9A60CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7FC8C40-1E6E-467E-A4D6-64BFC29CB018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7FC8C40-1E6E-467E-A4D6-64BFC29CB018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7FC8C40-1E6E-467E-A4D6-64BFC29CB018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7FC8C40-1E6E-467E-A4D6-64BFC29CB018}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
