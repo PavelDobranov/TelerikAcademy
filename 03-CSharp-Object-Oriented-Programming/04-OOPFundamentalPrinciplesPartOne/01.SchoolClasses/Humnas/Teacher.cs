@@ -12,10 +12,10 @@
 
         private ICollection<IDiscipline> disciplines;
 
-        public Teacher(string firstName, string lastName)
+        public Teacher(string firstName, string lastName, ICollection<IDiscipline> disciplines = null)
             : base(firstName, lastName)
         {
-            this.disciplines = new List<IDiscipline>();
+            this.Disciplines = disciplines;
         }
 
         public ICollection<IDiscipline> Disciplines
@@ -23,6 +23,19 @@
             get
             {
                 return new List<IDiscipline>(this.disciplines);
+            }
+            private set
+            {
+                if (value == null)
+                {
+                    this.disciplines = new List<IDiscipline>();
+                }
+                else
+                {
+                    this.disciplines = new List<IDiscipline>(value.Count);
+
+                    this.AddDisciplines(value);
+                }
             }
         }
 
@@ -38,6 +51,16 @@
             Teacher.ValidateDiscipline(discipline);
 
             this.disciplines.Remove(discipline);
+        }
+
+        public void AddDisciplines(ICollection<IDiscipline> disciplines)
+        {
+            foreach (var discipline in disciplines)
+            {
+                Teacher.ValidateDiscipline(discipline);
+
+                this.disciplines.Add(discipline);
+            }
         }
 
         public override string ToString()

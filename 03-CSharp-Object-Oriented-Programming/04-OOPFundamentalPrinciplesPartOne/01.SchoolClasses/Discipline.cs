@@ -8,7 +8,7 @@
     {
         private const string NegativeValueErrorMessage = "Non-negative number required";
         private const string ValueNullOrEmptyErrorMessage = "Cannot be null or empty";
-        private const string ToStringFormat = "Name: {0}, Lectures: {1}, Exercises: {2}";
+        private const string ToStringFormat = "{0}, Lectures: {1}, Exercises: {2}";
 
         private string name;
         private int lecturesCount;

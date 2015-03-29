@@ -6,10 +6,12 @@
     {
         string Id { get; set; }
         
-        ICollection<ITeacher> Teachers { get; }
+        ICollection<IHuman> Humans { get; }
 
-        void AddTeacher(ITeacher teacher);
+        void AddHuman(IHuman human);
 
-        void RemoveTeacher(ITeacher teacher);
+        void RemoveHuman(IHuman human);
+
+        void AddHumans(ICollection<IHuman> humans);
     }
 }

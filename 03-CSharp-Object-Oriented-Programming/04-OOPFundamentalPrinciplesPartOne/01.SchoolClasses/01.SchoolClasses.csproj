@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\ISchool.cs" />
     <Compile Include="Class.cs" />
     <Compile Include="Discipline.cs" />
     <Compile Include="Humnas\Human.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="Interfaces\ITeacher.cs" />
     <Compile Include="Humnas\Student.cs" />
     <Compile Include="Humnas\Teacher.cs" />
+    <Compile Include="School.cs" />
     <Compile Include="TestSchoolClasses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

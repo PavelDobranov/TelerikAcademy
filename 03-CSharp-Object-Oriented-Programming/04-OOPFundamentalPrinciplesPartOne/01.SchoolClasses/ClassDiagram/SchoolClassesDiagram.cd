@@ -1,38 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="SchoolClasses.Class" BaseTypeListCollapsed="true">
-    <Position X="10.25" Y="0.5" Width="1.5" />
+    <Position X="16.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACBAAEAAAQAAAlAAAAAAAAAAAAAAACAAAAAgAAAgI=</HashCode>
+      <HashCode>BAACJAAEAAAAAAAEBAAAAAAIAAAAAAQAAAAAAASAAgA=</HashCode>
       <FileName>Class.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Orientation="Left" Position="0.1" />
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="SchoolClasses.Discipline" BaseTypeListCollapsed="true">
-    <Position X="13" Y="0.5" Width="1.5" />
+    <Position X="18.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAABAAUAAAAAAAEBAAAQAQAAEAEAAAAABAAAAAAAQA=</HashCode>
       <FileName>Discipline.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Orientation="Left" Position="0.1" />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SchoolClasses.School" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAEAACANBABAAAQAACAEAAABAAAAAAAAAAA=</HashCode>
+      <FileName>School.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="SchoolClasses.TestSchoolClasses">
-    <Position X="13" Y="4.75" Width="1.5" />
+    <Position X="13.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAABEAAEAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>TestSchoolClasses.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SchoolClasses.Humans.Human">
-    <Position X="7.25" Y="0.5" Width="1.5" />
+    <Position X="11.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAABEAEAABAAAAEBAAAAAAAAAAAAgAAAAAACAAAAAg=</HashCode>
       <FileName>Humnas\Human.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Orientation="Left" Position="0.1" />
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="SchoolClasses.Humans.Student">
-    <Position X="5.75" Y="4.5" Width="1.5" />
+    <Position X="10" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAQAAAAEAAAEBAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Humnas\Student.cs</FileName>
@@ -40,53 +48,61 @@
     <Lollipop Orientation="Left" Position="0.1" />
   </Class>
   <Class Name="SchoolClasses.Humans.Teacher">
-    <Position X="8.75" Y="4.5" Width="1.5" />
+    <Position X="12.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEQAAAAECAQgAAAAAAAAAEAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEQAACAECAQgAAAAAAAAAEAAAAAAA=</HashCode>
       <FileName>Humnas\Teacher.cs</FileName>
     </TypeIdentifier>
     <Lollipop Orientation="Left" Position="0.1" />
   </Class>
   <Interface Name="SchoolClasses.Interfaces.IClass">
-    <Position X="3" Y="4.5" Width="1.5" />
+    <Position X="4.75" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAQAAAgAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAASAAAA=</HashCode>
       <FileName>Interfaces\IClass.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SchoolClasses.Interfaces.ICommentable">
-    <Position X="1" Y="4.25" Width="1.5" />
+    <Position X="7" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\ICommentable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SchoolClasses.Interfaces.IDiscipline">
-    <Position X="1" Y="5.5" Width="1.5" />
+    <Position X="7" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IDiscipline.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SchoolClasses.Interfaces.IHuman">
-    <Position X="2" Y="0.5" Width="1.5" />
+    <Position X="6" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Interfaces\IHuman.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Interface Name="SchoolClasses.Interfaces.ISchool">
+    <Position X="4.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAACAAAABAAAQAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISchool.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Interface Name="SchoolClasses.Interfaces.IStudent">
-    <Position X="1" Y="2.5" Width="1.5" />
+    <Position X="4.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IStudent.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SchoolClasses.Interfaces.ITeacher">
-    <Position X="3" Y="2.5" Width="1.5" />
+    <Position X="7" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAQAAAAACAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAQAACAACAAAAAAAAAAAAEAAAAAAA=</HashCode>
       <FileName>Interfaces\ITeacher.cs</FileName>
+      <NewMemberFileName>Interfaces\IHuman.cs</NewMemberFileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

@@ -9,5 +9,7 @@
         void AddDiscipline(IDiscipline discipline);
 
         void RemoveDiscipline(IDiscipline discipline);
+
+        void AddDisciplines(ICollection<IDiscipline> disciplines);
     }
 }

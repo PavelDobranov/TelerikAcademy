@@ -7,7 +7,7 @@
     public abstract class Human : IHuman, ICommentable
     {
         private const string ValueNullOrEmptyErrorMessage = "Cannot be null or empty";
-        private const string ToStringFormat = "{0}: {1} {2}";
+        private const string ToStringFormat = "{0} {1}";
 
         private string firstName;
         private string lastName;
@@ -50,7 +50,7 @@
 
         public override string ToString()
         {
-            return string.Format(Human.ToStringFormat, this.GetType().Name, this.FirstName, this.LastName);
+            return string.Format(Human.ToStringFormat, this.FirstName, this.LastName);
         }
 
         private static void ValidateName(string value, string paramName)
