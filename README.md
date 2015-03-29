@@ -1,6 +1,6 @@
 ![Teleric Academy](https://cdn.ideedit.com/ChannelPictures/telerik_academy_l.jpg)
 
-####[C# - Part One](01-CSharp-Part-One)
+####![C# - Part One](01-CSharp-Part-One/csharp-part-one.png)[C# - Part One](01-CSharp-Part-One)
 1. [Introduction to programming](01-CSharp-Part-One/01-IntroductionToProgramming)
 2. [Primitive data types and variables](01-CSharp-Part-One/02-PrimitiveDataTypesAndVariables)
 3. [Operators and expressions](01-CSharp-Part-One/03-OperatorsAndExpressions)
@@ -11,7 +11,7 @@
 
 - - -
 
-#### [C# - Part Two](02-CSharp-Part-Two)
+####![C# - Part Two](02-CSharp-Part-Two/csharp-part-two.png)[C# - Part Two](02-CSharp-Part-Two)
 1. [Arrays](02-CSharp-Part-Two/01-Arrays)
 2. [Multidimensional arrays](02-CSharp-Part-Two/02-MultidimensionalArrays)
 3. [Methods](02-CSharp-Part-Two/03-Methods)
@@ -25,7 +25,7 @@
 
 - - -
 
-#### [C# - Object-Oriented Programming](03-CSharp-Object-Oriented-Programming)
+####![C# - OOP](03-CSharp-Object-Oriented-Programming/csharp-oop.png)[C# - Object-Oriented Programming](03-CSharp-Object-Oriented-Programming)
 1. [Defining classes - part one](03-CSharp-Object-Oriented-Programming/01-DefiningClassesPartOne)
 2. [Defining classes - part two](03-CSharp-Object-Oriented-Programming/02-DefiningClassesPartTwo)
 3. [Extension methods, lambda expressions and LINQ](03-CSharp-Object-Oriented-Programming/03-ExtensionMethodsLambdaExpressionsAndLinq)
