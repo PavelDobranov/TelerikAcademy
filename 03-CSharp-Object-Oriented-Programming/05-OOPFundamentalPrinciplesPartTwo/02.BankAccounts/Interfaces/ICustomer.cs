@@ -8,6 +8,6 @@
 
         CustomerType Type { get; }
 
-        int LoanAccountPeriod { get; }
+        ICustomer Clone();
     }
 }

@@ -6,11 +6,25 @@
 
 namespace Shapes
 {
+    using System;
+
+    using System.Collections.Generic;
+
     public static class TestShapes
     {
         public static void Main()
         {
+            List<Shape> shapes = new List<Shape>()
+            {
+                new Triangle(3.5, 8),
+                new Rectangle(4, 12.5),
+                new Square(3)
+            };
 
+            foreach (var shape in shapes)
+            {
+                Console.WriteLine("{0} : Surface = {1}", shape.GetType().Name, shape.CalculateSurface());
+            }
         }
     }
 }

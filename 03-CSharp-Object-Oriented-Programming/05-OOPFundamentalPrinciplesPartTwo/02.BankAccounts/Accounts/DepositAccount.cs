@@ -7,8 +7,10 @@
 
     public class DepositAccount : Account, IAccount, IDepositable, IWithdrawable
     {
-        public DepositAccount(ICustomer customer)
-            : base(customer)
+        private const int InterestReateMinimumBalance = 1000;
+
+        public DepositAccount(ICustomer customer, decimal interestRate)
+            : base(customer, interestRate)
         {
         }
 
@@ -29,7 +31,7 @@
 
         public override decimal InterestAmountForPeriod(int mounts)
         {
-            if (this.Balance >= 0 && this.Balance < 1000)
+            if (this.Balance < DepositAccount.InterestReateMinimumBalance)
             {
                 return 0;
             }

@@ -17,10 +17,87 @@
 
 namespace Bank
 {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+
+    using Bank.Accounts;
+    using Bank.Customers;
+    using Bank.Interfaces;
+
     public static class TestBankAccounts
     {
         public static void Main()
         {
+            var peterAtanasov = new IndividualCustomer("Peter Atanasov");
+            var mihailStoyanov = new IndividualCustomer("Mihail Stoyanov");
+            var kirilKolev = new IndividualCustomer("Kiril Kolev");
+
+            var mtel = new CompanyCustomer("Mtel");
+            var microsoft = new CompanyCustomer("Microsoft");
+            var telerik = new CompanyCustomer("Telerik");
+
+            var individualDepositAccount = new DepositAccount(peterAtanasov, 0.05m);
+            individualDepositAccount.Deposite(300m);
+
+            var companyDepositAccount = new DepositAccount(mtel, 0.4m);
+            companyDepositAccount.Deposite(60000m);
+
+            var individualLoanAccount = new LoanAccount(mihailStoyanov, 0.03m);
+            individualLoanAccount.Deposite(10m);
+
+            var companyLoanAccount = new LoanAccount(microsoft, 0.1m);
+            companyLoanAccount.Deposite(14000m);
+
+            var individualMortgageAccount = new MortgageAccount(kirilKolev, 0.15m);
+            individualMortgageAccount.Deposite(5000m);
+
+            var companyMortgageAccount = new MortgageAccount(telerik, 0.6m);
+            companyMortgageAccount.Deposite(1000000m);
+
+            var accounts = new List<IAccount>()
+            {
+                individualDepositAccount,
+                individualLoanAccount,
+                individualMortgageAccount,
+                companyDepositAccount,
+                companyLoanAccount,
+                companyMortgageAccount
+            };
+
+            PrintAccountsInfo(accounts);
+
+            int periodInMounths = 4;
+
+            PrintAccountsInterestAmmountForPeriod(accounts, periodInMounths);
+
+            periodInMounths = 15;
+
+            PrintAccountsInterestAmmountForPeriod(accounts, periodInMounths);
+        }
+
+        private static void PrintAccountsInfo(ICollection<IAccount> accounts)
+        {
+            Console.WriteLine("-------------");
+            Console.WriteLine("All accounts:");
+            Console.WriteLine("-------------");
+
+            foreach (var account in accounts)
+            {
+                Console.WriteLine(account);
+            }
+        }
+
+        private static void PrintAccountsInterestAmmountForPeriod(ICollection<IAccount> accounts, int periodInMounths)
+        {
+            Console.WriteLine("-------------------------------------");
+            Console.WriteLine("Interest ammount for next {0} mounts:", periodInMounths);
+            Console.WriteLine("-------------------------------------");
+
+            foreach (var account in accounts)
+            {
+                Console.WriteLine("{0,-20} Interest amount: {1}", account.Customer.Name, account.InterestAmountForPeriod(periodInMounths));
+            }
         }
     }
 }

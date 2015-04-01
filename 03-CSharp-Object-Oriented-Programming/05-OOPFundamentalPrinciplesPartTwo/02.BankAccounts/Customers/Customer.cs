@@ -9,11 +9,10 @@
     {
         private string name;
 
-        public Customer(string name, CustomerType type, int loanAccountPeriod)
+        public Customer(string name, CustomerType type)
         {
             this.Name = name;
             this.Type = type;
-            this.LoanAccountPeriod = loanAccountPeriod;
         }
 
         public string Name
@@ -35,6 +34,9 @@
 
         public CustomerType Type { get; private set; }
 
-        public int LoanAccountPeriod { get; private set; }
+        public ICustomer Clone()
+        {
+            return (Customer)this.MemberwiseClone();
+        }
     }
 }

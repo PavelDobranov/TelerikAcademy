@@ -29,7 +29,7 @@
             }
         }
 
-        public double Height 
+        public double Height
         {
             get
             {
@@ -49,7 +49,7 @@
         {
             if (value <= 0)
             {
-                throw new ArgumentOutOfRangeException(paramName, string.Format(Shape.LessOrEqualToZeroErrorMessageFormat, paramName));
+                throw new ArgumentException(string.Format(Shape.LessOrEqualToZeroErrorMessageFormat, paramName), paramName);
             }
         }
     }

@@ -1,31 +1,31 @@
 ﻿namespace Bank
 {
     using System;
+    using System.Text;
 
     using Bank.Common;
     using Bank.Interfaces;
 
     public abstract class Account : IAccount, IDepositable
     {
+        private const string ToStringFormat = "[{0,-20}] Customer: {1,-15} Balance: {2,-10:F2} Interest rate: {3,-5:P1}";
         private const int InitialBalance = 0;
-        private const int InitialInterestRate = 0;
 
         private ICustomer customer;
         private decimal interestRate;
 
-        public Account(ICustomer customer)
+        public Account(ICustomer customer, decimal interestRate)
         {
             this.Customer = customer;
             this.Balance = Account.InitialBalance;
-            this.InterestRate = Account.InitialInterestRate;
+            this.InterestRate = interestRate;
         }
 
         public ICustomer Customer
         {
             get
             {
-                // TODO:!!!
-                return this.customer;
+                return this.customer.Clone();
             }
             private set
             {
@@ -67,6 +67,13 @@
             this.Balance += money;
         }
 
+        public override string ToString()
+        {
+            string accountNamePascalCase = this.GetType().Name;
+
+            return string.Format(Account.ToStringFormat, this.ParsePascalCaseText(accountNamePascalCase), this.Customer.Name, this.Balance, this.InterestRate);
+        }
+
         public virtual decimal InterestAmountForPeriod(int mounts)
         {
             if (mounts <= 0)
@@ -74,7 +81,26 @@
                 throw new ArgumentException(string.Format(ErrorMessage.ValueLessOrEqualToZeroFormat, "Mounts"));
             }
 
-            return this.Balance * this.InterestRate * mounts;
+            return mounts * this.Balance * this.InterestRate;
+        }
+
+        private string ParsePascalCaseText(string text)
+        {
+            StringBuilder result = new StringBuilder();
+
+            char separator = ' ';
+
+            for (int symbol = 0; symbol < text.Length; symbol++)
+            {
+                result.Append(text[symbol]);
+
+                if (symbol < text.Length - 1 && char.IsUpper(text[symbol + 1]))
+                {
+                    result.Append(separator);
+                }
+            }
+
+            return result.ToString();
         }
     }
 }
