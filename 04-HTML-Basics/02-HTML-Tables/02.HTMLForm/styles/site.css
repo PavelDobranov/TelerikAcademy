@@ -1,7 +1,11 @@
 .form-container {
-  width: 280px;
+  width: 350px;
   margin: 50px auto;
   padding: 10px;
+}
+
+.form-container input {
+  margin: 1px;
 }
 
 .form-container .required {

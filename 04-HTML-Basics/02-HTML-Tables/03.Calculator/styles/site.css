@@ -1,20 +1,15 @@
-body, section, table, tbody, tr, td,input{
+body, section, table, tbody, tr, td, textarea{
   margin: 0;
   padding: 0;
 }
 
-.calculator-container {
-  font-family: Consolas, sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-}
-
 .calculator-container table {
-  background-color: #F3F9FA;
+  margin: 50px auto;
 }
 
-.calculator-container input {
-  background-color: #F3F9FA;
+.calculator-container textarea {
+  border: none;
+  resize: none;
   text-align: right;
 }
 
@@ -23,7 +18,16 @@ body, section, table, tbody, tr, td,input{
   height: 50px;
   text-align: center;
   color: #8DF6F4;
+}
+
+.calculator-container textarea,
+.calculator-container td {
+  font-family: Consolas, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
   text-shadow: 1px 1px #909192;
+  background-color: #F3F9FA;
+  color: #8DF6F4;
 }
 
 .calculator-container table,
