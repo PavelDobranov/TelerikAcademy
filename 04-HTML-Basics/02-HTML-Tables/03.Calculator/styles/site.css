@@ -1,0 +1,33 @@
+body, section, table, tbody, tr, td,input{
+  margin: 0;
+  padding: 0;
+}
+
+.calculator-container {
+  font-family: Consolas, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.calculator-container table {
+  background-color: #F3F9FA;
+}
+
+.calculator-container input {
+  background-color: #F3F9FA;
+  text-align: right;
+}
+
+.calculator-container td {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #8DF6F4;
+  text-shadow: 1px 1px #909192;
+}
+
+.calculator-container table,
+.calculator-container td {
+  border: 2px solid #9FD1DC;
+  border-collapse: collapse;
+}

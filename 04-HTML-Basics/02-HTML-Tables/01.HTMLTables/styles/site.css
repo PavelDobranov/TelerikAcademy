@@ -1,0 +1,40 @@
+h2, p, table, tbody, td, tr, img {
+  margin: 0;
+  paddin: 0;
+}
+
+table {
+  margin: 50px auto;
+}
+
+h2 {
+  font-style: italic;
+}
+
+img {
+  width: 160px;
+}
+
+table.fruits {
+  width: 390px;
+}
+
+table.bordered td {
+  width: 30px;
+}
+
+.bordered, .bordered td {
+  border: 1px solid #000;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.bottom {
+  vertical-align: bottom;
+}
