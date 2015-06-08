@@ -31,7 +31,7 @@
 
   function firstLargerThanNeighbours(array) {
     for (var index = 0; index < array.length; index += 1) {
-      if (isBiggerThanNeighbours(array, index)) {
+      if (isLargerThanNeighbours(array, index)) {
         return index;
       }
     }
@@ -39,7 +39,7 @@
     return -1;
   }
 
-  function isBiggerThanNeighbours(array, position) {
+  function isLargerThanNeighbours(array, position) {
     if (position === 0) {
       return array[position] > array[position + 1];
     } else if (position === array.length - 1) {
