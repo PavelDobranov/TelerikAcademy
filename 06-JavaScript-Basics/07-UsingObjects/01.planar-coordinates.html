@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Planar coordinates</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="head-container">
+        <h1>Using Objects</h1>
+        <h3>Problem 1 - Planar coordinates</h3>
+        <ul>
+          <li>
+            Write functions for working with shapes in standard Planar coordinate system.
+            <ul>
+              <li>Points are represented by coordinates P(X, Y)</li>
+              <li>Lines are represented by two points, marking their beginning and ending L(P1(X1,Y1), P2(X2,Y2))</li>
+            </ul>
+          </li>
+          <li>Calculate the distance between two points.</li>
+          <li>Check if three segment lines can form a triangle.</li>
+        </ul>
+      </div>
+      <form>
+        <fieldset id="points-distance">
+          <legend>Distance between two points</legend>
+          <div class="input-container">
+            <label for="fpoint-x">Firts point:</label>
+            <label for="fpoint-x" class="short">X:</label>
+            <input type="text" id="fpoint-x" name="First point : X">
+            <label for="fpoint-y" class="short">Y:</label>
+            <input type="text" id="fpoint-y" name="First point : Y">
+          </div>
+          <div class="input-container">
+            <label for="spoint-x">Second point:</label>
+            <label for="spoint-x" class="short">X:</label>
+            <input type="text" id="spoint-x" name="Second point : X">
+            <label for="spoint-y" class="short">Y:</label>
+            <input type="text" id="spoint-y" name="Second point : Y">
+          </div>
+          <div class="btn-container">
+            <input type="button" class="btn btn-solve" value="Solve">
+          </div>
+        </fieldset>
+        <fieldset id="form-triangle">
+          <legend>Triangle of three lines</legend>
+          <div class="input-container">
+            <label for="fl-fpoint-x">Firts line:</label>
+            <label for="fl-fpoint-x" class="short">P1(</label>
+            <input type="text" id="fl-fpoint-x" class="short" name="First line P1 : X">
+            <label class="short">,</label>
+            <input type="text" id="fl-fpoint-y" class="short" name="First line P1 : Y">
+            <label class="short">)</label>
+            <label for="fl-spoint-x" class="short">P2(</label>
+            <input type="text" id="fl-spoint-x" class="short" name="First line P2 : X">
+            <label class="short">,</label>
+            <input type="text" id="fl-spoint-y" class="short" name="First line P2 : Y">
+            <label class="short">)</label>
+          </div>
+          <div class="input-container">
+            <label for="sl-fpoint-x">Second line:</label>
+            <label for="sl-fpoint-x" class="short">P1(</label>
+            <input type="text" id="sl-fpoint-x" class="short" name="Second line P1 : X">
+            <label class="short">,</label>
+            <input type="text" id="sl-fpoint-y" class="short" name="Second line P1 : Y">
+            <label class="short">)</label>
+            <label for="sl-spoint-x" class="short">P2(</label>
+            <input type="text" id="sl-spoint-x" class="short" name="Second line P2 : X">
+            <label class="short">,</label>
+            <input type="text" id="sl-spoint-y" class="short" name="Second line P2 : Y">
+            <label class="short">)</label>
+          </div>
+          <div class="input-container">
+            <label for="tl-fpoint-x">Third line:</label>
+            <label for="tl-fpoint-x" class="short">P1(</label>
+            <input type="text" id="tl-fpoint-x" class="short" name="Third line P1 : X">
+            <label class="short">,</label>
+            <input type="text" id="tl-fpoint-y" class="short" name="Third line P1 : Y">
+            <label class="short">)</label>
+            <label for="tl-spoint-x" class="short">P2(</label>
+            <input type="text" id="tl-spoint-x" class="short" name="Third line P2 : X">
+            <label class="short">,</label>
+            <input type="text" id="tl-spoint-y" class="short" name="Third line P2 : Y">
+            <label class="short">)</label>
+          </div>
+          <div class="btn-container">
+            <input type="button" class="btn btn-solve" value="Solve">
+          </div>
+        </fieldset>
+        <div class="js-console"></div>
+        <div class="btn-container">
+          <input type="button" class="btn btn-clear" value="Clear">
+        </div>
+      </form>
+    </div>
+    <script src="js/lib/js-console.js"></script>
+    <script src="js/01.planar-coordinates.js"></script>
+  </body>
+</html>
