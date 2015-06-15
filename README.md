@@ -1,6 +1,7 @@
 ![Teleric Academy](https://cdn.ideedit.com/ChannelPictures/telerik_academy_l.jpg)
 
-####![C# - Part One](01-CSharp-Part-One/cs.png)[C# - Part One](01-CSharp-Part-One)
+![C# Part One](01-CSharp-Part-One/cs-part-one.png)
+####[C# Part One](01-CSharp-Part-One)
 1. [Introduction to programming](01-CSharp-Part-One/01-IntroductionToProgramming)
 2. [Primitive data types and variables](01-CSharp-Part-One/02-PrimitiveDataTypesAndVariables)
 3. [Operators and expressions](01-CSharp-Part-One/03-OperatorsAndExpressions)
@@ -11,7 +12,8 @@
 
 - - -
 
-####![C# - Part Two](02-CSharp-Part-Two/cs.png)[C# - Part Two](02-CSharp-Part-Two)
+![C# Part Two](02-CSharp-Part-Two/cs-part-two.png)
+####[C# Part Two](02-CSharp-Part-Two)
 1. [Arrays](02-CSharp-Part-Two/01-Arrays)
 2. [Multidimensional arrays](02-CSharp-Part-Two/02-MultidimensionalArrays)
 3. [Methods](02-CSharp-Part-Two/03-Methods)
@@ -25,7 +27,8 @@
 
 - - -
 
-####![C# - OOP](03-CSharp-Object-Oriented-Programming/cs.png)[C# - Object-Oriented Programming](03-CSharp-Object-Oriented-Programming)
+![C# OOP](03-CSharp-Object-Oriented-Programming/cs-oop.png)
+####[C# Object-Oriented Programming](03-CSharp-Object-Oriented-Programming)
 1. [Defining classes - part one](03-CSharp-Object-Oriented-Programming/01-DefiningClassesPartOne)
 2. [Defining classes - part two](03-CSharp-Object-Oriented-Programming/02-DefiningClassesPartTwo)
 3. [Extension methods, lambda expressions and LINQ](03-CSharp-Object-Oriented-Programming/03-ExtensionMethodsLambdaExpressionsAndLinq)
@@ -38,12 +41,15 @@
 
 - - -
 
-####![HTML - Basics](04-HTML-Basics/html.png)[HTML - Basics](04-HTML-Basics)
+![HTML Basics](04-HTML-Basics/html-basics.png)
+####[HTML Basics](04-HTML-Basics)
 
 - - -
 
-####![CSS - Styling](05-CSS-Styling/css.png)[CSS - Styling](05-CSS-Styling)
+![CSS Styling](05-CSS-Styling/css-styling.png)
+####[CSS Styling](05-CSS-Styling)
 
 - - -
 
-####![JavaScript - Basics](06-JavaScript-Basics/js.png)[JavaScript - Basics](06-JavaScript-Basics)
+![JavaScript Fundamentals](06-JavaScript-Basics/js-fundamentals.png)
+####[JavaScript Fundamentals](06-JavaScript-Basics)
