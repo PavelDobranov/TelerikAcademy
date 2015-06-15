@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Occurrences of word</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="head-container">
+        <h1>Functions</h1>
+        <h3>Problem 3 - Occurrences of word</h3>
+        <ul>
+          <li>Write a function that finds all the occurrences of word in a text.</li>
+          <li>The search can be case sensitive or case insensitive.</li>
+          <li>Use function overloading.</li>
+        </ul>
+      </div>
+      <form>
+        <div class="input-container">
+          <label for="text">Text:</label>
+          <textarea id="text" rows="4" cols="74">We all live in a yellow submarine, yellow submarine, yellow submarine, we all live in a yellow submarine, yellow submarine, yellow submarine.</textarea>
+        </div>
+        <div class="input-container">
+          <label for="word">Word:</label>
+          <input type="text" id="word">
+        </div>
+        <div class="input-container">
+          <label for="ignore-case">Ignore case:</label>
+          <input type="checkbox" id="ignore-case">
+        </div>
+        <div class="js-console"></div>
+        <div class="btn-container">
+          <input type="button" class="btn btn-solve" value="Solve">
+          <input type="button" class="btn btn-clear" value="Clear">
+        </div>
+      </form>
+    </div>
+    <script src="js/lib/js-console.js"></script>
+    <script src="js/03.occurrences-of-word.js"></script>
+  </body>
+</html>
