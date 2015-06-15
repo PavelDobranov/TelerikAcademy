@@ -1,7 +1,6 @@
 ![Teleric Academy](https://cdn.ideedit.com/ChannelPictures/telerik_academy_l.jpg)
 
-![C# Part One](01-CSharp-Part-One/cs-part-one.png)
-####[C# Part One](01-CSharp-Part-One)
+[![C# Part One](01-CSharp-Part-One/cs-part-one.png)](01-CSharp-Part-One "C# Part One")
 1. [Introduction to programming](01-CSharp-Part-One/01-IntroductionToProgramming)
 2. [Primitive data types and variables](01-CSharp-Part-One/02-PrimitiveDataTypesAndVariables)
 3. [Operators and expressions](01-CSharp-Part-One/03-OperatorsAndExpressions)
@@ -9,8 +8,6 @@
 5. [Conditional statements](01-CSharp-Part-One/05-ConditionalStatements)
 6. [Loops](01-CSharp-Part-One/06-Loops)
 7. [Exam preparation](01-CSharp-Part-One/07-ExamPreparation)
-
-- - -
 
 ![C# Part Two](02-CSharp-Part-Two/cs-part-two.png)
 ####[C# Part Two](02-CSharp-Part-Two)
@@ -25,8 +22,6 @@
 9. [Exam preparation](02-CSharp-Part-Two/09-ExamPreparation)
 10. [Teamwork project](https://github.com/PavelDobranov/TA-Teamwork-CSharp-Part-Two)
 
-- - -
-
 ![C# OOP](03-CSharp-Object-Oriented-Programming/cs-oop.png)
 ####[C# Object-Oriented Programming](03-CSharp-Object-Oriented-Programming)
 1. [Defining classes - part one](03-CSharp-Object-Oriented-Programming/01-DefiningClassesPartOne)
@@ -39,17 +34,11 @@
 8. [Exam preparation](03-CSharp-Object-Oriented-Programming/08-ExamPreparation)
 9. [Teamwork project](https://github.com/PavelDobranov/TA-Teamwork-CSharp-OOP)
 
-- - -
-
 ![HTML Basics](04-HTML-Basics/html-basics.png)
 ####[HTML Basics](04-HTML-Basics)
 
-- - -
-
 ![CSS Styling](05-CSS-Styling/css-styling.png)
 ####[CSS Styling](05-CSS-Styling)
-
-- - -
 
 ![JavaScript Fundamentals](06-JavaScript-Basics/js-fundamentals.png)
 ####[JavaScript Fundamentals](06-JavaScript-Basics)
