@@ -1,5 +1,6 @@
-![Teleric Academy](https://cdn.ideedit.com/ChannelPictures/telerik_academy_l.jpg)
+[![Teleric Academy](https://cdn.ideedit.com/ChannelPictures/telerik_academy_l.jpg)](http://telerikacademy.com "Telerik Academy")
 
+---
 
 [![C# Part One](01-CSharp-Part-One/cs-part-one.png)](01-CSharp-Part-One "C# Part One")
 
@@ -11,6 +12,7 @@
 6. [Loops](01-CSharp-Part-One/06-Loops)
 7. [Exam preparation](01-CSharp-Part-One/07-ExamPreparation)
 
+---
 
 [![C# Part Two](02-CSharp-Part-Two/cs-part-two.png)](02-CSharp-Part-Two "C# Part Two")
 
@@ -25,6 +27,7 @@
 9. [Exam preparation](02-CSharp-Part-Two/09-ExamPreparation)
 10. [Teamwork project](https://github.com/PavelDobranov/TA-Teamwork-CSharp-Part-Two)
 
+---
 
 [![C# OOP](03-CSharp-Object-Oriented-Programming/cs-oop.png)](03-CSharp-Object-Oriented-Programming "C# Object-Oriented Programming")
 
@@ -38,11 +41,30 @@
 8. [Exam preparation](03-CSharp-Object-Oriented-Programming/08-ExamPreparation)
 9. [Teamwork project](https://github.com/PavelDobranov/TA-Teamwork-CSharp-OOP)
 
+---
 
 [![HTML Basics](04-HTML-Basics/html-basics.png)](04-HTML-Basics "HTML Basics")
 
+---
 
 [![CSS Styling](05-CSS-Styling/css-styling.png)](05-CSS-Styling "CSS Styling")
 
+---
 
 [![JavaScript Fundamentals](06-JavaScript-Fundamentals/js-fundamentals.png)](06-JavaScript-Fundamentals "JavaScript Fundamentals")
+
+---
+
+[![JavaScript OOP](07-JavaScript-Object-Oriented-Programming/js-oop.png)](07-JavaScript-Object-Oriented-Programming "JavaScript Object-Oriented Programming")
+
+---
+
+[![JavaScript DOM and UI](08-JavaScript-DOM-And-UI/js-dom-and-ui.png)](08-JavaScript-DOM-And-UI "JavaScript DOM and UI")
+
+---
+
+[![JavaScript Applications](09-JavaScript-Applications/js-applications.png)](09-Applications "JavaScript Applications")
+
+---
+
+[![High-Quality Code](10-High-Quality-Code/high-quality-code.png)](10-High-Quality-Code "High-Quality Code")
