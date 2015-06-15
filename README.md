@@ -1,6 +1,8 @@
 ![Teleric Academy](https://cdn.ideedit.com/ChannelPictures/telerik_academy_l.jpg)
 
+
 [![C# Part One](01-CSharp-Part-One/cs-part-one.png)](01-CSharp-Part-One "C# Part One")
+
 1. [Introduction to programming](01-CSharp-Part-One/01-IntroductionToProgramming)
 2. [Primitive data types and variables](01-CSharp-Part-One/02-PrimitiveDataTypesAndVariables)
 3. [Operators and expressions](01-CSharp-Part-One/03-OperatorsAndExpressions)
@@ -9,8 +11,9 @@
 6. [Loops](01-CSharp-Part-One/06-Loops)
 7. [Exam preparation](01-CSharp-Part-One/07-ExamPreparation)
 
-![C# Part Two](02-CSharp-Part-Two/cs-part-two.png)
-####[C# Part Two](02-CSharp-Part-Two)
+
+[![C# Part Two](02-CSharp-Part-Two/cs-part-two.png)](02-CSharp-Part-Two "C# Part Two")
+
 1. [Arrays](02-CSharp-Part-Two/01-Arrays)
 2. [Multidimensional arrays](02-CSharp-Part-Two/02-MultidimensionalArrays)
 3. [Methods](02-CSharp-Part-Two/03-Methods)
@@ -22,8 +25,9 @@
 9. [Exam preparation](02-CSharp-Part-Two/09-ExamPreparation)
 10. [Teamwork project](https://github.com/PavelDobranov/TA-Teamwork-CSharp-Part-Two)
 
-![C# OOP](03-CSharp-Object-Oriented-Programming/cs-oop.png)
-####[C# Object-Oriented Programming](03-CSharp-Object-Oriented-Programming)
+
+[![C# OOP](03-CSharp-Object-Oriented-Programming/cs-oop.png)](03-CSharp-Object-Oriented-Programming "C# Object-Oriented Programming")
+
 1. [Defining classes - part one](03-CSharp-Object-Oriented-Programming/01-DefiningClassesPartOne)
 2. [Defining classes - part two](03-CSharp-Object-Oriented-Programming/02-DefiningClassesPartTwo)
 3. [Extension methods, lambda expressions and LINQ](03-CSharp-Object-Oriented-Programming/03-ExtensionMethodsLambdaExpressionsAndLinq)
@@ -34,11 +38,11 @@
 8. [Exam preparation](03-CSharp-Object-Oriented-Programming/08-ExamPreparation)
 9. [Teamwork project](https://github.com/PavelDobranov/TA-Teamwork-CSharp-OOP)
 
-![HTML Basics](04-HTML-Basics/html-basics.png)
-####[HTML Basics](04-HTML-Basics)
 
-![CSS Styling](05-CSS-Styling/css-styling.png)
-####[CSS Styling](05-CSS-Styling)
+[![HTML Basics](04-HTML-Basics/html-basics.png)](04-HTML-Basics "HTML Basics")
 
-![JavaScript Fundamentals](06-JavaScript-Basics/js-fundamentals.png)
-####[JavaScript Fundamentals](06-JavaScript-Basics)
+
+[![CSS Styling](05-CSS-Styling/css-styling.png)](05-CSS-Styling "CSS Styling")
+
+
+[![JavaScript Fundamentals](06-JavaScript-Fundamentals/js-fundamentals.png)](06-JavaScript-Fundamentals "JavaScript Fundamentals")
