@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Point Within Circle Out Of Rectangle</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div id="wrapper">
+    <h1>Operators And Expressions</h1>
+    <p><span class="bold">Problem 09</span> - Write an expression that checks for given point (x, y) if it is within the circle K((1,1), 3) and out of
+      the rectangle R(top=1, left=-1, width=6, height=2).</p>
+    <form>
+      <div id="input-container">
+        <label for="x-coord" class="short">Point[x] :</label>
+        <input type="text" id="x-coord" class="input" />
+        <br/>
+        <label for="y-coord" class="short">Point[y] :</label>
+        <input type="text" id="y-coord" class="input" />
+      </div>
+      <div id="js-console" class="js-console"></div>
+      <div id="btn-container">
+        <input type="button" class="btn" value="Solve" onclick="solve();" />
+        <input type="reset" class="btn" value="Reset" onclick="resetConsole();" />
+      </div>
+    </form>
+  </div>
+  <script src="scripts/jsConsole/js-console.js"></script>
+  <script src="scripts/09.point-in-circle-and-outside-rectangle.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trapezoid Area</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div id="wrapper">
+    <h1>Operators And Expressions</h1>
+    <p><span class="bold">Problem 08</span> - Write an expression that calculates trapezoid's area by given sides a and b and height h.</p>
+    <form>
+      <div id="input-container">
+        <img src="images/trapezoid.png">
+        <label for="side-a" class="short">Side a:</label>
+        <input type="text" id="side-a" class="input" />
+        <label>[mm]</label>
+        <br/>
+        <label for="side-b" class="short">Side b:</label>
+        <input type="text" id="side-b" class="input" />
+        <label>[mm]</label>
+        <br/>
+        <label for="height" class="short">Height h:</label>
+        <input type="text" id="height" class="input" />
+        <label>[mm]</label>
+      </div>
+      <div id="js-console" class="js-console"></div>
+      <div id="btn-container">
+        <input type="button" class="btn" value="Solve" onclick="solve();" />
+        <input type="reset" class="btn" value="Reset" onclick="resetConsole();" />
+      </div>
+    </form>
+  </div>
+  <script src="scripts/jsConsole/js-console.js"></script>
+  <script src="scripts/08.trapezoid-area.js"></script>
+</body>
+</html>
