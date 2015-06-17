@@ -1,0 +1,5 @@
+word05 - 0
+word04 - 2
+word01 - 5
+word02 - 8
+word03 - 12

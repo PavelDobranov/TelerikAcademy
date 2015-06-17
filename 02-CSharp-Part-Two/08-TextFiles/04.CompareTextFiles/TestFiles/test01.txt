@@ -1,0 +1,10 @@
+These examples show various 
+@@ways to write text to a file. 
+@@The first two examples use 
+static methods on the System.IO.File
+@@class to write either a complete 
+array of strings or a complete 
+@@string to a text file.
+Example 3 shows how to add text 
+@@to a file when you have to process
+@@each line individually before
