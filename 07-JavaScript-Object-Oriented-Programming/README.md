@@ -1,3 +1,3 @@
-![JavaScript OOP](js-oop.png)]
+[![JavaScript OOP](js-oop.png)]()
 
 1. [Functions and function expressions](01-FunctionsAndFunctionExpressions)
