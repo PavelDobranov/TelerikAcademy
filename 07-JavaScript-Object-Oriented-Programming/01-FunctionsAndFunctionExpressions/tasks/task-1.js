@@ -6,6 +6,8 @@
 //   4) it throws Error if any of the elements is not convertible to 'Number'
 
 function sum(numbers) {
+  'use strict';
+
   if (numbers.length === 0) {
     return null;
   }
