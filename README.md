@@ -33,13 +33,12 @@
 
 1. [Defining classes - part one](03-CSharp-Object-Oriented-Programming/01-DefiningClassesPartOne)
 2. [Defining classes - part two](03-CSharp-Object-Oriented-Programming/02-DefiningClassesPartTwo)
-3. [Extension methods, lambda expressions and LINQ](03-CSharp-Object-Oriented-Programming/03-ExtensionMethodsLambdaExpressionsAndLinq)
-4. [OOP fundamental principles - part one](03-CSharp-Object-Oriented-Programming/04-OopFundamentalPrinciplesPartOne)
-5. [OOP fundamental principles - part two](03-CSharp-Object-Oriented-Programming/05-OopFundamentalPrinciplesPartTwo)
+3. [Extension methods, delegates, lambda expressions, LINQ](03-CSharp-Object-Oriented-Programming/03-ExtensionMethodsDelegatesLambdaLinq)
+4. [OOP fundamental principles - part one](03-CSharp-Object-Oriented-Programming/04-OOPFundamentalPrinciplesPartOne)
+5. [OOP fundamental principles - part two](03-CSharp-Object-Oriented-Programming/05-OOPFundamentalPrinciplesPartTwo)
 6. [Common type system](03-CSharp-Object-Oriented-Programming/06-CommonTypeSystem)
-7. [OOP workshop](03-CSharp-Object-Oriented-Programming/07-OopWorkshop)
-8. [Exam preparation](03-CSharp-Object-Oriented-Programming/08-ExamPreparation)
-9. [Teamwork project](https://github.com/PavelDobranov/TA-Teamwork-CSharp-OOP)
+7. [Exam preparation](03-CSharp-Object-Oriented-Programming/07-ExamPreparation)
+8. [Teamwork project](https://github.com/PavelDobranov/TA-Teamwork-CSharp-OOP)
 
 ---
 
