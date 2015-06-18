@@ -10,7 +10,6 @@
 4. [Console input / output](01-CSharp-Part-One/04-ConsoleInputOutput)
 5. [Conditional statements](01-CSharp-Part-One/05-ConditionalStatements)
 6. [Loops](01-CSharp-Part-One/06-Loops)
-7. [Exam preparation](01-CSharp-Part-One/07-ExamPreparation)
 
 ---
 
@@ -24,8 +23,7 @@
 6. [Strings and text processing](02-CSharp-Part-Two/06-StringsAndTextProcessing)
 7. [Exception handling](02-CSharp-Part-Two/07-ExceptionHandling)
 8. [Text files](02-CSharp-Part-Two/08-TextFiles)
-9. [Exam preparation](02-CSharp-Part-Two/09-ExamPreparation)
-10. [Teamwork project](https://github.com/PavelDobranov/TA-Teamwork-CSharp-Part-Two)
+9. [Teamwork project](https://github.com/PavelDobranov/TA-Teamwork-CSharp-Part-Two)
 
 ---
 
@@ -37,8 +35,7 @@
 4. [OOP fundamental principles - part one](03-CSharp-Object-Oriented-Programming/04-OOPFundamentalPrinciplesPartOne)
 5. [OOP fundamental principles - part two](03-CSharp-Object-Oriented-Programming/05-OOPFundamentalPrinciplesPartTwo)
 6. [Common type system](03-CSharp-Object-Oriented-Programming/06-CommonTypeSystem)
-7. [Exam preparation](03-CSharp-Object-Oriented-Programming/07-ExamPreparation)
-8. [Teamwork project](https://github.com/PavelDobranov/TA-Teamwork-CSharp-OOP)
+7. [Teamwork project](https://github.com/PavelDobranov/TA-Teamwork-CSharp-OOP)
 
 ---
 
