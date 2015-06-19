@@ -68,7 +68,7 @@
 7. [Using objects](06-JavaScript-Fundamentals/07-UsingObjects)
 8. [Array methods](06-JavaScript-Fundamentals/08-ArrayMethods)
 9. [Strings](06-JavaScript-Fundamentals/09-Strings)
-10. [Regular Expressions](06-JavaScript-Fundamentals/10-RegularExpressions)
+10. [Regular expressions](06-JavaScript-Fundamentals/10-RegularExpressions)
 
 ---
 
