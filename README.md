@@ -41,26 +41,45 @@
 
 [![HTML Basics](04-HTML-Basics/html-basics.png)](04-HTML-Basics "HTML Basics")
 
+1. [HTML fundamentals](04-HTML-Basics/01-HTML-Fundamentals)
+2. [HTML tables](04-HTML-Basics/02-HTML-Tables)
+3. [HTML forms and frames](04-HTML-Basics/03-HTML-Forms-And-Frames)
+4. [Semantic HTML](04-HTML-Basics/04-Semanic-HTML)
+
 ---
 
 [![CSS Styling](05-CSS-Styling/css-styling.png)](05-CSS-Styling "CSS Styling")
+
+1. [CSS overview](05-CSS-Styling/01-CSS-Overview)
+2. [CSS presentation](05-CSS-Styling/02-CSS-Presentation)
+3. [CSS layout](05-CSS-Styling/03-CSS-Layout)
+4. [CSS preprocessors](05-CSS-Styling/04-CSS-Preprocessors)
 
 ---
 
 [![JavaScript Fundamentals](06-JavaScript-Fundamentals/js-fundamentals.png)](06-JavaScript-Fundamentals "JavaScript Fundamentals")
 
+1. [Data types and variables](06-JavaScript-Fundamentals/01-DataTypesAndVariables)
+2. [Operators and expressions](06-JavaScript-Fundamentals/02-OperatorsAndExpressions)
+3. [Conditional statements](06-JavaScript-Fundamentals/03-ConditionalStatements)
+4. [Loops](06-JavaScript-Fundamentals/04-Loops)
+5. [Arrays](06-JavaScript-Fundamentals/05-Arrays)
+6. [Functions](06-JavaScript-Fundamentals/06-Functions)
+7. [Using objects](06-JavaScript-Fundamentals/07-UsingObjects)
+8. [Array methods](06-JavaScript-Fundamentals/08-ArrayMethods)
+9. [Strings](06-JavaScript-Fundamentals/09-Strings)
+10. [Regular Expressions](06-JavaScript-Fundamentals/10-RegularExpressions)
+
 ---
 
 [![JavaScript OOP](07-JavaScript-Object-Oriented-Programming/js-oop.png)](07-JavaScript-Object-Oriented-Programming "JavaScript Object-Oriented Programming")
 
----
-
-[![JavaScript DOM and UI](08-JavaScript-DOM-And-UI/js-dom-and-ui.png)](08-JavaScript-DOM-And-UI "JavaScript DOM and UI")
-
----
-
-[![JavaScript Applications](09-JavaScript-Applications/js-applications.png)](09-Applications "JavaScript Applications")
+1. [Functions and function expressions](07-JavaScript-Object-Oriented-Programming/01-FunctionsAndFunctionExpressions)
+2. [Scopes and closures](07-JavaScript-Object-Oriented-Programming/02-ScopesAndClosures)
+3. [Classical Inheritance](07-JavaScript-Object-Oriented-Programming/03-ClassicalInheritance)
 
 ---
 
 [![High-Quality Code](10-High-Quality-Code/high-quality-code.png)](10-High-Quality-Code "High-Quality Code")
+
+1.[Code formatting](10-High-Quality-Code/01-CodeFormatting)
