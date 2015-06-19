@@ -1,0 +1,13 @@
+{
+  "name": "scopes-and-closures-hw",
+  "version": "1.0.0",
+  "description": "JavaScript OOP homework",
+  "scripts": {
+    "test": "mocha -R spec tests"
+  },
+  "author": "Pavel Dobranov",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.0.0"
+  }
+}
