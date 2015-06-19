@@ -1,28 +1,28 @@
 // Task Description
-// *	Create a module for working with books
-// 	*	The module must provide the following functionalities:
-// 		*	Add a new book to category
-// 			*	Each book has unique title, author and ISBN
-// 			*	It must return the newly created book with assigned ID
-// 			*	If the category is missing, it must be automatically created
-// 		*	List all books
-// 			*	Books are sorted by ID
-// 			*	This can be done by author, by category or all
-// 		*	List all categories
-// 			*	Categories are sorted by ID
-// 	*	Each book/catagory has a unique identifier (ID) that is a number greater than 1
-// 		*	When adding a book/category, the ID is generated automatically
-// 	*	Add validation everywhere, where possible
-// 		*	Book title and category name must be between 2 and 100 characters, including letters, digits and special characters ('!', ',', '.', etc)
-// 		*	Author is any non-empty string
-// 		*	Unique params are Book title and Book ISBN
-// 		*	Book ISBN is an unique code that contains either 10 or 13 digits
-// 		*	If something is not valid - throw Error
+// Create a module for working with books:
+//   1) The module must provide the following functionalities:
+// 	   * Add a new book to category
+//       - Each book has unique title, author and ISBN
+//       - It must return the newly created book with assigned ID
+//       - If the category is missing, it must be automatically created
+//     * List all books
+//       - Books are sorted by ID
+//       - This can be done by author, by category or all
+//     * List all categories
+//       - Categories are sorted by ID
+//   2) Each book/catagory has a unique identifier (ID) that is a number greater than 1
+//     * When adding a book/category, the ID is generated automatically
+//   3) Add validation everywhere, where possible
+//     * Book title and category name must be between 2 and 100 characters, including letters, digits and special characters ('!', ',', '.', etc)
+//     * Author is any non-empty string
+//     * Unique params are Book title and Book ISBN
+//     * Book ISBN is an unique code that contains either 10 or 13 digits
+//     * If something is not valid - throw Error
 
 function solve() {
   'use strict';
 
-  var library = (function () {
+  var library = (function() {
     var books = [],
       CONSTS = {
         TITLE_MIN_LENGTH: 2,
@@ -76,7 +76,7 @@ function solve() {
     }
 
     function listCategories() {
-      return books.reduce(function (categories, book) {
+      return books.reduce(function(categories, book) {
         if (categories.indexOf(book.category) < 0) {
           categories.push(book.category);
         }
@@ -89,7 +89,7 @@ function solve() {
       var key = Object.keys(filterObj)[0],
         value = filterObj[key];
 
-      return books.filter(function (book) {
+      return books.filter(function(book) {
         return book[key] === value;
       });
     }
@@ -105,19 +105,19 @@ function solve() {
     }
 
     function bookTitleExists(title) {
-      return books.some(function (book) {
+      return books.some(function(book) {
         return book.title === title;
       });
     }
 
     function bookIsbnExists(isbn) {
-      return books.some(function (book) {
+      return books.some(function(book) {
         return book.isbn === isbn;
       });
     }
 
     function hasValidIsbnLength(isbnLength, validLengths) {
-      return validLengths.some(function (length) {
+      return validLengths.some(function(length) {
         return length === isbnLength;
       });
     }
@@ -144,7 +144,7 @@ function solve() {
         list: listCategories
       }
     };
-  } ());
+  }());
 
   return library;
 }

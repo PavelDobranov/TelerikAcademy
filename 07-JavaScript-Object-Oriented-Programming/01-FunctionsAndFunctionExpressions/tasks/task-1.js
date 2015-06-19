@@ -16,7 +16,7 @@ function sum(numbers) {
     throw new Error('Numbers cannot be undefined!');
   }
 
-  return numbers.reduce(function (a, b) {
+  return numbers.reduce(function(a, b) {
     a = +a;
     b = +b;
 
