@@ -5,12 +5,12 @@
 
 using System;
 
-class VariableInHexadecimalFormat
+public class VariableInHexadecimalFormat
 {
     static void Main()
     {
         int value = 0xFE;
- 
+
         Console.WriteLine(value);
     }
 }

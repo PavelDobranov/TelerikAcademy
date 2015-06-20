@@ -4,7 +4,7 @@
 
 using System;
 
-class SquareRoot
+public class SquareRoot
 {
     static void Main()
     {

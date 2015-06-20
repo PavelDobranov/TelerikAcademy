@@ -4,7 +4,7 @@
 
 using System;
 
-class QuadraticEquation
+public class QuadraticEquation
 {
     static void Main()
     {
@@ -31,7 +31,7 @@ class QuadraticEquation
         else if (discriminant == 0)
         {
             root1 = -bCoefficient / (2 * aCoefficient);
-            
+
             Console.WriteLine("One real root: {0}", root1);
         }
         else if (discriminant < 0)

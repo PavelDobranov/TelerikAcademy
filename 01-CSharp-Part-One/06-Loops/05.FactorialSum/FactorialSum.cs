@@ -6,7 +6,7 @@
 using System;
 using System.Numerics;
 
-class FactorialSum
+public class FactorialSum
 {
     static void Main()
     {

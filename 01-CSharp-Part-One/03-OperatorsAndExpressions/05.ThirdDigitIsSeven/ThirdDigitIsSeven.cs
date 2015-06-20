@@ -3,7 +3,7 @@
 
 using System;
 
-class ThirdDigitIsSeven
+public class ThirdDigitIsSeven
 {
     static void Main()
     {

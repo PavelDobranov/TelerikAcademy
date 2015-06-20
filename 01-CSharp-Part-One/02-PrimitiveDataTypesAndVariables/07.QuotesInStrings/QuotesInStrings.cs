@@ -5,15 +5,15 @@
 
 using System;
 
-class QuotesInStrings
+public class QuotesInStrings
 {
     static void Main()
     {
         string stringWithQuotes = "The \"use\" of quotations causes difficulties";
-        
+
         // Another option to escape the quotes
         //string stringWithQuotes = @"The ""use"" of quotations causes difficulties";
-        
+
         Console.WriteLine(stringWithQuotes);
     }
 }

@@ -9,7 +9,7 @@
 
 using System;
 
-class DeckOfFiftiTwoCards
+public class DeckOfFiftiTwoCards
 {
     static void Main()
     {

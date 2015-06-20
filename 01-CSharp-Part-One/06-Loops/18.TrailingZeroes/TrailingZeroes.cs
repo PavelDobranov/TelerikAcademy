@@ -4,7 +4,7 @@
 
 using System;
 
-class TrailingZeroes
+public class TrailingZeroes
 {
     static void Main()
     {
@@ -16,7 +16,7 @@ class TrailingZeroes
         Console.WriteLine("{0}! has {1} trailing zeroes", number, trailingZeroes);
     }
 
-    static int GetTrailingZeroes(int number)
+    private static int GetTrailingZeroes(int number)
     {
         int result = 0;
         int devider = 5;

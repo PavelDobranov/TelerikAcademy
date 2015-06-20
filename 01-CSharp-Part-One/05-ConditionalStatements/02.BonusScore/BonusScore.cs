@@ -7,7 +7,7 @@
 
 using System;
 
-class BonusScore
+public class BonusScore
 {
     static void Main()
     {
@@ -19,7 +19,7 @@ class BonusScore
         Console.WriteLine("Result: {0}", result);
     }
 
-    static string AddBonusScore(int score)
+    private static string AddBonusScore(int score)
     {
         if (score >= 0 && score <= 3)
         {

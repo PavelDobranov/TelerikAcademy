@@ -4,7 +4,7 @@
 
 using System;
 
-class NumbersInInterval
+public class NumbersInInterval
 {
     static void Main()
     {

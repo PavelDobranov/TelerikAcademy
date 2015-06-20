@@ -15,9 +15,9 @@
 using System;
 using System.Text;
 
-class IsoscelesTriangle
+public class IsoscelesTriangle
 {
-    static void Main(string[] args)
+    static void Main()
     {
         char copyrightSybol = '\u00A9';
         char spaceSybol = ' ';

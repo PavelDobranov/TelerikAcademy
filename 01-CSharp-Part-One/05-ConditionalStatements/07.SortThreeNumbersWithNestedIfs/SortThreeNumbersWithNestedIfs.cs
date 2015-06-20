@@ -4,7 +4,7 @@
 
 using System;
 
-class SortThreeNumbersWithNestedIfs
+public class SortThreeNumbersWithNestedIfs
 {
     static void Main()
     {
@@ -22,7 +22,7 @@ class SortThreeNumbersWithNestedIfs
         Console.WriteLine("Sorted numbers: {0}", sortedNumbers);
     }
 
-    static string SortNumbersWithNestedIfs(double firstNumber, double secondNumber, double thirdNumber)
+    private static string SortNumbersWithNestedIfs(double firstNumber, double secondNumber, double thirdNumber)
     {
         string formatedString = "{0}, {1}, {2}";
 
@@ -30,7 +30,7 @@ class SortThreeNumbersWithNestedIfs
         {
             if (secondNumber > thirdNumber)
             {
-                return string.Format(formatedString, firstNumber, secondNumber, thirdNumber); 
+                return string.Format(formatedString, firstNumber, secondNumber, thirdNumber);
             }
             else
             {

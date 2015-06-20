@@ -5,7 +5,7 @@
 
 using System;
 
-class FibonacciNumbers
+public class FibonacciNumbers
 {
     static void Main()
     {
@@ -14,7 +14,7 @@ class FibonacciNumbers
 
         int aMember = 0;
         int bMember = 1;
-     
+
         Console.Write("{0} {1} ", aMember, bMember);
 
         for (int i = 2; i < sequenceEndMember; i++)

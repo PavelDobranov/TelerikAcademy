@@ -3,7 +3,7 @@
 
 using System;
 
-class TheBiggestOfFiveNumbers
+public class TheBiggestOfFiveNumbers
 {
     static void Main()
     {
@@ -21,7 +21,7 @@ class TheBiggestOfFiveNumbers
         Console.WriteLine("Biggest number: {0}", biggestNumber);
     }
 
-    static double GetBiggestNumber(double[] numbers)
+    private static double GetBiggestNumber(double[] numbers)
     {
         double biggestNumber = double.MinValue;
 

@@ -4,7 +4,7 @@
 
 using System;
 
-class SumOfFiveNumbers
+public class SumOfFiveNumbers
 {
     static void Main()
     {

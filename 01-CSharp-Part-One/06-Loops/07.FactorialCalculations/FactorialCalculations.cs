@@ -8,7 +8,7 @@
 using System;
 using System.Numerics;
 
-class FactorialCalculations
+public class FactorialCalculations
 {
     static void Main()
     {

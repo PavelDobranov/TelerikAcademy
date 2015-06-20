@@ -3,7 +3,7 @@
 
 using System;
 
-class SumOfThreeNumbers
+public class SumOfThreeNumbers
 {
     static void Main()
     {

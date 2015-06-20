@@ -6,7 +6,7 @@
 
 using System;
 
-class ComparingFloats
+public class ComparingFloats
 {
     static void Main()
     {
@@ -20,7 +20,7 @@ class ComparingFloats
         Console.WriteLine(SafelyCompare(firstNumber, secondNumber));
     }
 
-    static bool SafelyCompare(double firstNumber, double secondNumber)
+    private static bool SafelyCompare(double firstNumber, double secondNumber)
     {
         double precision = 0.000001;
 

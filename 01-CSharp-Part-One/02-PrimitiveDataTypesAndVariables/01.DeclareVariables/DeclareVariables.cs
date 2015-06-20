@@ -6,7 +6,7 @@
 
 using System;
 
-class DeclareVariables
+public class DeclareVariables
 {
     static void Main()
     {

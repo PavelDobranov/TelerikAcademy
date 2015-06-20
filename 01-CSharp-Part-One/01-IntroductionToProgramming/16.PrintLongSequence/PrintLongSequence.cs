@@ -4,7 +4,7 @@
 
 using System;
 
-class PrintSequence
+public class PrintSequence
 {
     static void Main()
     {

@@ -5,15 +5,15 @@
 
 using System;
 
-class ExtractBitAtPosition3
+public class ExtractBitAtPosition3
 {
     static void Main()
     {
         Console.Write("Enter a positive integer value: ");
         uint number = uint.Parse(Console.ReadLine());
-        
+
         int bitPosition = 3;
-        
+
         string numberBinaryRepresentation = GetNumberBinaryRepresentation(number);
 
         int bit = GetBitAtGivenPosition(number, bitPosition);
@@ -22,14 +22,14 @@ class ExtractBitAtPosition3
         Console.WriteLine("Bit at position #{0}: {1}", bitPosition, bit);
     }
 
-    static string GetNumberBinaryRepresentation(uint number)
+    private static string GetNumberBinaryRepresentation(uint number)
     {
         string numberBinaryRepresentation = Convert.ToString(number, 2).PadLeft(16, '0');
 
         return numberBinaryRepresentation;
     }
 
-    static int GetBitAtGivenPosition(uint number, int bitPosition)
+    private static int GetBitAtGivenPosition(uint number, int bitPosition)
     {
         return ((int)number & 1 << bitPosition) >> bitPosition;
     }

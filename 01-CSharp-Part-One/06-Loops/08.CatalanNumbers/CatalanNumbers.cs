@@ -4,7 +4,7 @@
 using System;
 using System.Numerics;
 
-class CatalanNumbers
+public class CatalanNumbers
 {
     static void Main()
     {
@@ -27,7 +27,7 @@ class CatalanNumbers
             }
 
             BigInteger result = numerator / divider;
-            
+
             Console.WriteLine("Catalan(15) = {1}", numberN, result);
         }
         else

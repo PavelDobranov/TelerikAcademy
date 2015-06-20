@@ -6,7 +6,7 @@
 
 using System;
 
-class UnicodeCharacter
+public class UnicodeCharacter
 {
     static void Main()
     {

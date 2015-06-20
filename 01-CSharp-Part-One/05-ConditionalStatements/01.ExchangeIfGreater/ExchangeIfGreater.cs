@@ -5,7 +5,7 @@
 
 using System;
 
-class ExchangeIfGreater
+public class ExchangeIfGreater
 {
     static void Main()
     {
@@ -23,7 +23,7 @@ class ExchangeIfGreater
         Console.WriteLine("{0} {1}", firstNumber, secondNumber);
     }
 
-    static void ExchangeVariables(ref double firstNumber, ref double secondNumber)
+    private static void ExchangeVariables(ref double firstNumber, ref double secondNumber)
     {
         firstNumber += secondNumber;
         secondNumber = firstNumber - secondNumber;

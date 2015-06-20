@@ -5,7 +5,7 @@
 
 using System;
 
-class FloatOrDouble
+public class FloatOrDouble
 {
     static void Main()
     {
@@ -17,6 +17,6 @@ class FloatOrDouble
         Console.WriteLine("First value assigned as double: {0}", firstValue);
         Console.WriteLine("Second value assigned as float: {0}", secondValue);
         Console.WriteLine("Third value assigned as double: {0}", thirdValue);
-        Console.WriteLine("Fourth value assigned as float: {0}", fourthValue);                
+        Console.WriteLine("Fourth value assigned as float: {0}", fourthValue);
     }
 }

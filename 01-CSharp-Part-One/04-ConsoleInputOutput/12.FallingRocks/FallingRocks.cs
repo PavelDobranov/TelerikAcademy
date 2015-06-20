@@ -12,7 +12,7 @@ namespace FallingRocksGame
     using System.Collections.Generic;
     using System.Threading;
 
-    class FallingRocks
+    public class FallingRocks
     {
         static void Main()
         {
@@ -36,7 +36,7 @@ namespace FallingRocksGame
             Renderer renderer = new Renderer();
 
             renderer.InitGameField(gameFieldWidth, gameFieldHeight);
-            
+
             while (true)
             {
                 renderer.PrintCurrentScores(playerScores);
@@ -70,7 +70,7 @@ namespace FallingRocksGame
                     rocks[i].MoveDown();
 
                     if (rocks[i].PositionX == player.PositionX && rocks[i].PositionY == player.PositionY)
-                    {   
+                    {
                         playerHittedByRock = true;
                         break;
                     }

@@ -4,7 +4,7 @@
 
 using System;
 
-class PointInsideCircleAndOutsideOfRectangle
+public class PointInsideCircleAndOutsideOfRectangle
 {
     static void Main()
     {
@@ -19,7 +19,7 @@ class PointInsideCircleAndOutsideOfRectangle
         Console.WriteLine("Inside a circle & outside of a rectangle? : {0}", result);
     }
 
-    static bool IsPointWithinCircle(double pointX, double pointY)
+    private static bool IsPointWithinCircle(double pointX, double pointY)
     {
         int circleX = 1;
         int circleY = 1;
@@ -33,7 +33,7 @@ class PointInsideCircleAndOutsideOfRectangle
         return isWithinCircle;
     }
 
-    static bool IsPointOutOfRectangle(double pointX, double pointY)
+    private static bool IsPointOutOfRectangle(double pointX, double pointY)
     {
         int rectangleTop = 1;
         int rectangleLeft = -1;

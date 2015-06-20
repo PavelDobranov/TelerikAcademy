@@ -8,7 +8,7 @@
 
 using System;
 
-class FourDigitNumber
+public class FourDigitNumber
 {
     static void Main()
     {

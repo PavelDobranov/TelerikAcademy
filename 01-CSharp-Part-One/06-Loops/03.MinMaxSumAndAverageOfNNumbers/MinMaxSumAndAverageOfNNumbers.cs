@@ -5,7 +5,7 @@
 
 using System;
 
-class MinMaxSumAndAverageOfNNumbers
+public class MinMaxSumAndAverageOfNNumbers
 {
     static void Main()
     {

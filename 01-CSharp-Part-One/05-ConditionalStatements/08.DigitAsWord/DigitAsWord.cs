@@ -6,7 +6,7 @@
 
 using System;
 
-class DigitAsWord
+public class DigitAsWord
 {
     static void Main()
     {
@@ -25,9 +25,9 @@ class DigitAsWord
         }
     }
 
-    static string GetDigitAsWord(int digit)
+    private static string GetDigitAsWord(int digit)
     {
-        string digitAsWord = "";
+        string digitAsWord = string.Empty;
 
         switch (digit)
         {

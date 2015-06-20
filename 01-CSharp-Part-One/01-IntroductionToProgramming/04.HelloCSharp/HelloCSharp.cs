@@ -4,7 +4,7 @@
 
 using System;
 
-class HelloCSharp
+public class HelloCSharp
 {
     static void Main()
     {

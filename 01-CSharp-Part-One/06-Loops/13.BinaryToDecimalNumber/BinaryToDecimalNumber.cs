@@ -5,7 +5,7 @@
 
 using System;
 
-class BinaryToDecimalNumber
+public class BinaryToDecimalNumber
 {
     static void Main()
     {
@@ -15,7 +15,7 @@ class BinaryToDecimalNumber
         Console.WriteLine("Decimal representation: {0}", BinaryToDecimal(binaryNumber));
     }
 
-    static int BinaryToDecimal(string number)
+    private static int BinaryToDecimal(string number)
     {
         int exponent = 1;
         int binBase = 2;

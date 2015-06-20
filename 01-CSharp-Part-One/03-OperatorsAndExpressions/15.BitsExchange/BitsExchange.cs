@@ -3,7 +3,7 @@
 
 using System;
 
-class BitsExchange
+public class BitsExchange
 {
     static void Main()
     {
@@ -21,7 +21,7 @@ class BitsExchange
         {
             int firtsBitPosition = i;
             int secondBitPossition = i + shift;
-            
+
             int firstBitValue = GetBitAtGivenPosition(number, firtsBitPosition);
             int secondBitValue = GetBitAtGivenPosition(number, secondBitPossition);
 
@@ -36,20 +36,20 @@ class BitsExchange
         Console.WriteLine("Result {0}", number);
     }
 
-    static string GetNumberBinaryRepresentation(uint number)
+    private static string GetNumberBinaryRepresentation(uint number)
     {
         string numberBinaryRepresentation = Convert.ToString(number, 2).PadLeft(32, '0');
 
         return numberBinaryRepresentation;
     }
 
-    static int GetBitAtGivenPosition(uint number, int bitPosition)
+    private static int GetBitAtGivenPosition(uint number, int bitPosition)
     {
         return (int)(number & 1 << bitPosition) >> bitPosition;
     }
 
-    static uint ModifyBitAtGivenPosition(uint number, int bitPosition, int bitNewValue)
-    {        
+    private static uint ModifyBitAtGivenPosition(uint number, int bitPosition, int bitNewValue)
+    {
         number = bitNewValue == 0 ? (uint)(number & ~(1 << bitPosition)) : (uint)(number | (1 << bitPosition));
 
         return number;

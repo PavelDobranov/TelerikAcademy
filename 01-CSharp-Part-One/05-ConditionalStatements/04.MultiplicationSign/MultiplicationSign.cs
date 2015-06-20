@@ -4,7 +4,7 @@
 
 using System;
 
-class MultiplicationSign
+public class MultiplicationSign
 {
     static void Main()
     {

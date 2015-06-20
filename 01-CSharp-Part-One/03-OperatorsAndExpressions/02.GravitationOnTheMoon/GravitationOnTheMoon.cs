@@ -4,7 +4,7 @@
 
 using System;
 
-class GravitationOnTheMoon
+public class GravitationOnTheMoon
 {
     static void Main()
     {

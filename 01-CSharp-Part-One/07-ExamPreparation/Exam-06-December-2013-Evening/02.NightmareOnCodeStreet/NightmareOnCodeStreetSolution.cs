@@ -2,9 +2,9 @@
 {
     using System;
 
-    class NightmareOnCodeStreetSolution
+    public class NightmareOnCodeStreetSolution
     {
-        private static void Main()
+        static void Main()
         {
             string inputText = Console.ReadLine();
 

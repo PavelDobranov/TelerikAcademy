@@ -7,19 +7,21 @@
 using System;
 using System.Text;
 
-class PrintCompanyInformation
+public class PrintCompanyInformation
 {
     static void Main()
     {
         Console.Write("Enter company name: ");
         string companyName = Console.ReadLine();
+
         if (string.IsNullOrWhiteSpace(companyName))
         {
             companyName = "(no company)";
         }
-   
+
         Console.Write("Enter company address: ");
         string companyAddress = Console.ReadLine();
+
         if (string.IsNullOrWhiteSpace(companyAddress))
         {
             companyAddress = "(no address)";
@@ -27,6 +29,7 @@ class PrintCompanyInformation
 
         Console.Write("Enter company phone number: ");
         string companyPhone = Console.ReadLine();
+
         if (string.IsNullOrWhiteSpace(companyPhone))
         {
             companyPhone = "(no phone)";
@@ -34,6 +37,7 @@ class PrintCompanyInformation
 
         Console.Write("Enter company fax number: ");
         string companyFax = Console.ReadLine();
+
         if (string.IsNullOrWhiteSpace(companyFax))
         {
             companyFax = "(no fax)";
@@ -41,6 +45,7 @@ class PrintCompanyInformation
 
         Console.Write("Enter company web site: ");
         string companyWeb = Console.ReadLine();
+
         if (string.IsNullOrWhiteSpace(companyWeb))
         {
             companyWeb = "(no web site)";
@@ -48,6 +53,7 @@ class PrintCompanyInformation
 
         Console.Write("Enter manager first name: ");
         string managerFirstName = Console.ReadLine();
+
         if (string.IsNullOrWhiteSpace(managerFirstName))
         {
             managerFirstName = "(no name)";
@@ -55,6 +61,7 @@ class PrintCompanyInformation
 
         Console.Write("Enter manager last name: ");
         string managerLastName = Console.ReadLine();
+
         if (string.IsNullOrWhiteSpace(managerLastName))
         {
             managerLastName = "(no name)";
@@ -62,13 +69,15 @@ class PrintCompanyInformation
 
         Console.Write("Enter manager age: ");
         string managerAge = Console.ReadLine();
+
         if (string.IsNullOrWhiteSpace(managerAge))
         {
             managerAge = "(no age)";
         }
-    
+
         Console.Write("Enter manager phone: ");
         string managerPhone = Console.ReadLine();
+
         if (string.IsNullOrWhiteSpace(managerPhone))
         {
             managerPhone = "(no phone)";

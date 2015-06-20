@@ -4,7 +4,7 @@
 
 using System;
 
-class NumberComparer
+public class NumberComparer
 {
     static void Main()
     {

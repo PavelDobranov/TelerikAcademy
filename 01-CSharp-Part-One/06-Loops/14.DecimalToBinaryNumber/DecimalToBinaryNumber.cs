@@ -6,7 +6,7 @@
 using System;
 using System.Collections.Generic;
 
-class DecimalToBinaryNumber
+public class DecimalToBinaryNumber
 {
     static void Main()
     {
@@ -16,7 +16,7 @@ class DecimalToBinaryNumber
         Console.WriteLine("Binary representation: {0}", DecimalToBinary(number));
     }
 
-    static string DecimalToBinary(int number)
+    private static string DecimalToBinary(int number)
     {
         if (number == 0)
         {

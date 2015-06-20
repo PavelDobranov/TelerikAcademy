@@ -16,7 +16,7 @@ class SpiralMatrix
         PrintSpiralMatrix(matrix);
     }
 
-    static void FillSpiralMatrix(int[,] matrix, int matrixSize)
+    private static void FillSpiralMatrix(int[,] matrix, int matrixSize)
     {
         int startValue = 1;
         int positionRow = 0;
@@ -57,7 +57,7 @@ class SpiralMatrix
         }
     }
 
-    static void PrintSpiralMatrix(int[,] matrix)
+    private static void PrintSpiralMatrix(int[,] matrix)
     {
         int padding = 3;
 

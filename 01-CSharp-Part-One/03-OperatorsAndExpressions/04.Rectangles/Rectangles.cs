@@ -3,7 +3,7 @@
 
 using System;
 
-class Rectangles
+public class Rectangles
 {
     static void Main()
     {
@@ -20,12 +20,12 @@ class Rectangles
         Console.WriteLine("Area: {0}", rectangleArea);
     }
 
-    static double CalculateRectanglePerimeter(double rectangleWidth, double rectangleHeight)
+    private static double CalculateRectanglePerimeter(double rectangleWidth, double rectangleHeight)
     {
         return 2 * rectangleWidth + 2 * rectangleHeight;
     }
 
-    static double CalculateRectangleArea(double rectangleWidth, double rectangleHeight)
+    private static double CalculateRectangleArea(double rectangleWidth, double rectangleHeight)
     {
         return rectangleWidth * rectangleHeight;
     }

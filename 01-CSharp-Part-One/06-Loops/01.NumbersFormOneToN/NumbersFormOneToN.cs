@@ -4,7 +4,7 @@
 
 using System;
 
-class NumbersFormOneToN
+public class NumbersFormOneToN
 {
     static void Main()
     {

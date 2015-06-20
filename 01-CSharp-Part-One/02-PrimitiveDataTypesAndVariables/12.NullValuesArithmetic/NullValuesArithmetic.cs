@@ -5,7 +5,7 @@
 
 using System;
 
-class NullValuesArithmetic
+public class NullValuesArithmetic
 {
     static void Main()
     {

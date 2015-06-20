@@ -5,7 +5,7 @@
 
 using System;
 
-class ExchangeVariableValues
+public class ExchangeVariableValues
 {
     static void Main()
     {

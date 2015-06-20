@@ -4,7 +4,7 @@
 
 using System;
 
-class CheckBitAtGivenPosition
+public class CheckBitAtGivenPosition
 {
     static void Main()
     {
@@ -23,14 +23,14 @@ class CheckBitAtGivenPosition
         Console.WriteLine("Bit at position #{0} == 1: {1}", bitPosition, result);
     }
 
-    static string GetNumberBinaryRepresentation(int number)
+    private static string GetNumberBinaryRepresentation(int number)
     {
         string numberBinaryRepresentation = Convert.ToString(number, 2).PadLeft(16, '0');
 
         return numberBinaryRepresentation;
     }
 
-    static int GetBitAtGivenPosition(int number, int bitPosition)
+    private static int GetBitAtGivenPosition(int number, int bitPosition)
     {
         return (number & 1 << bitPosition) >> bitPosition;
     }

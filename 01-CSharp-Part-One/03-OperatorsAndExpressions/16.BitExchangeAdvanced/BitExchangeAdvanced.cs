@@ -5,7 +5,7 @@
 
 using System;
 
-class BitExchangeAdvanced
+public class BitExchangeAdvanced
 {
     static void Main()
     {
@@ -51,25 +51,25 @@ class BitExchangeAdvanced
             }
 
             string resultNumberBinaryRepresentation = GetNumberBinaryRepresentation(number);
-            
+
             Console.WriteLine("Result binary representation: {0}", resultNumberBinaryRepresentation);
             Console.WriteLine("Result {0}", number);
         }
     }
 
-    static string GetNumberBinaryRepresentation(long number)
+    private static string GetNumberBinaryRepresentation(long number)
     {
         string numberBinaryRepresentation = Convert.ToString(number, 2).PadLeft(32, '0');
 
         return numberBinaryRepresentation;
     }
 
-    static int GetBitAtGivenPosition(long number, int bitPosition)
+    private static int GetBitAtGivenPosition(long number, int bitPosition)
     {
         return (int)(number & 1 << bitPosition) >> bitPosition;
     }
 
-    static long ModifyBitAtGivenPosition(long number, int bitPosition, int bitNewValue)
+    private static long ModifyBitAtGivenPosition(long number, int bitPosition, int bitNewValue)
     {
         number = bitNewValue == 0 ? (long)(number & ~(1 << bitPosition)) : (long)(number | (1 << bitPosition));
 

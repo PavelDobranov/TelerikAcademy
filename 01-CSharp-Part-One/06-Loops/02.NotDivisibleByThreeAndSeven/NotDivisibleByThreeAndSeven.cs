@@ -4,7 +4,7 @@
 
 using System;
 
-class NotDivisibleByThreeAndSeven
+public class NotDivisibleByThreeAndSeven
 {
     static void Main()
     {

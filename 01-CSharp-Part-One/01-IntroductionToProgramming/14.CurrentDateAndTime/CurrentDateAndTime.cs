@@ -3,7 +3,7 @@
 
 using System;
 
-class CurrentDateAndTime
+public class CurrentDateAndTime
 {
     static void Main()
     {

@@ -2,9 +2,9 @@
 {
     using System;
 
-    class TwoFourEightSolution
+    public class TwoFourEightSolution
     {
-        private static void Main()
+        static void Main()
         {
             long numberA = long.Parse(Console.ReadLine());
             long numberB = long.Parse(Console.ReadLine());

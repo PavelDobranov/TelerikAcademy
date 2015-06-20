@@ -4,7 +4,7 @@
 
 using System;
 
-class CirclePerimeterAndArea
+public class CirclePerimeterAndArea
 {
     static void Main()
     {

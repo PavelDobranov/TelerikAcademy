@@ -5,7 +5,7 @@
 using System;
 using System.Numerics;
 
-class FactorialDivision
+public class FactorialDivision
 {
     static void Main()
     {

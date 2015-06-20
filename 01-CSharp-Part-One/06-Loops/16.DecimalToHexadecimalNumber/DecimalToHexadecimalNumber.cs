@@ -6,7 +6,7 @@
 using System;
 using System.Collections.Generic;
 
-class DecimalToHexadecimalNumber
+public class DecimalToHexadecimalNumber
 {
     static void Main()
     {
@@ -16,7 +16,7 @@ class DecimalToHexadecimalNumber
         Console.WriteLine("Hexadecimal representation: {0}", DecimalToHexadecimal(number));
     }
 
-    static string DecimalToHexadecimal(long number)
+    private static string DecimalToHexadecimal(long number)
     {
         if (number == 0)
         {

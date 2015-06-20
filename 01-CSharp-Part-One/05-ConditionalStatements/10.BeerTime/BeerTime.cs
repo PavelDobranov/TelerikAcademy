@@ -6,7 +6,7 @@
 
 using System;
 
-class BeerTime
+public class BeerTime
 {
     static void Main()
     {
@@ -18,7 +18,7 @@ class BeerTime
         Console.WriteLine("Result: {0}", result);
     }
 
-    static string IsBeerTime(DateTime time)
+    private static string IsBeerTime(DateTime time)
     {
         DateTime beerTimeAfter = DateTime.Parse("1:00 PM");
         DateTime beerTimeBefore = DateTime.Parse("3:00 AM");

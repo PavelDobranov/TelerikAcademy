@@ -5,7 +5,7 @@
 
 using System;
 
-class ModifyBitAtGivenPosition
+public class ModifyBitAtGivenPosition
 {
     static void Main()
     {
@@ -31,14 +31,14 @@ class ModifyBitAtGivenPosition
         Console.WriteLine("Result {0}", result);
     }
 
-    static string GetNumberBinaryRepresentation(int number)
+    private static string GetNumberBinaryRepresentation(int number)
     {
         string numberBinaryRepresentation = Convert.ToString(number, 2).PadLeft(16, '0');
 
         return numberBinaryRepresentation;
     }
 
-    static int ModifyBit(int number, int bitPosition, int bitNewValue)
+    private static int ModifyBit(int number, int bitPosition, int bitNewValue)
     {
         number = bitNewValue == 0 ? number & ~(1 << bitPosition) : number | (1 << bitPosition);
 

@@ -2,7 +2,7 @@
 {
     using System;
 
-    class GameOfPageSolution
+    public class GameOfPageSolution
     {
         private const int TraySize = 16;
         private const double CookieCost = 1.79;
@@ -10,7 +10,7 @@
         private static bool[,] cookieTray = new bool[TraySize, TraySize];
         private static double bill = 0;
 
-        private static void Main()
+        static void Main()
         {
             FillCookieTray();
 

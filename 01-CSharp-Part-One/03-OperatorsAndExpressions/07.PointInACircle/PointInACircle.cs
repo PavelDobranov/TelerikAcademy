@@ -3,7 +3,7 @@
 
 using System;
 
-class PointInACircle
+public class PointInACircle
 {
     static void Main()
     {
@@ -15,10 +15,10 @@ class PointInACircle
 
         bool isWithinCircle = IsPointWithinCircle(pointX, pointY);
 
-        Console.WriteLine("Is inside a circle? : {0}", isWithinCircle);  
+        Console.WriteLine("Is inside a circle? : {0}", isWithinCircle);
     }
 
-    static bool IsPointWithinCircle(double pointX, double pointY)
+    private static bool IsPointWithinCircle(double pointX, double pointY)
     {
         int circleX = 0;
         int circleY = 0;

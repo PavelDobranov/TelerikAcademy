@@ -4,7 +4,7 @@
 
 using System;
 
-class PrintMyName
+public class PrintMyName
 {
     static void Main()
     {

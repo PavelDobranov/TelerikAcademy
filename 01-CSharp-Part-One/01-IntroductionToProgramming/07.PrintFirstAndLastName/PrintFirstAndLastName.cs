@@ -3,7 +3,7 @@
 
 using System;
 
-class PrintFirstAndLastName
+public class PrintFirstAndLastName
 {
     static void Main()
     {
@@ -11,6 +11,6 @@ class PrintFirstAndLastName
         string lastName = "Ivanov";
 
         Console.Write("First name: {0}", firstName);
-        Console.Write("Last name name: {0}", lastName);        
+        Console.Write("Last name name: {0}", lastName);
     }
 }

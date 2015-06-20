@@ -3,7 +3,7 @@
 
 using System;
 
-class AgeAfterTenYears
+public class AgeAfterTenYears
 {
     static void Main()
     {

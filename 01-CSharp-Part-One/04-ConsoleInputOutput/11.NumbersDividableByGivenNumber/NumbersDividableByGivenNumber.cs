@@ -4,7 +4,7 @@
 
 using System;
 
-class NumbersDividableByGivenNumber
+public class NumbersDividableByGivenNumber
 {
     static void Main()
     {

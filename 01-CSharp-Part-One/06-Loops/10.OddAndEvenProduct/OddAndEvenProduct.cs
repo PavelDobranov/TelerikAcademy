@@ -6,7 +6,7 @@
 
 using System;
 
-class OddAndEvenProduct
+public class OddAndEvenProduct
 {
     static void Main()
     {
@@ -21,7 +21,7 @@ class OddAndEvenProduct
         for (int numberPosition = 1; numberPosition <= numbers.Length; numberPosition++)
         {
             currentNumber = int.Parse(numbers[numberPosition - 1]);
-            
+
             if (numberPosition % 2 == 0)
             {
                 evenProduct *= currentNumber;
@@ -31,7 +31,7 @@ class OddAndEvenProduct
                 oddProduct *= currentNumber;
             }
         }
-        
+
         Console.WriteLine("Result: {0}", evenProduct == oddProduct ? "yes" : "no");
         Console.WriteLine("Odd product = {0}", oddProduct);
         Console.WriteLine("Even product = {0}", evenProduct);

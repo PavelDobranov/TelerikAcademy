@@ -3,7 +3,7 @@
 
 using System;
 
-class Trapezoids
+public class Trapezoids
 {
     static void Main()
     {
@@ -21,7 +21,7 @@ class Trapezoids
         Console.WriteLine("Area: {0}", trapezoidArea);
     }
 
-    static double CalculateTrapezoidArea(double bottomSide, double topSide, double height)
+    private static double CalculateTrapezoidArea(double bottomSide, double topSide, double height)
     {
         return (height * (bottomSide + topSide)) / 2;
     }

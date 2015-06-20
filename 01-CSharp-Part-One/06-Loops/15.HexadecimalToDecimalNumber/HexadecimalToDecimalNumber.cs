@@ -5,7 +5,7 @@
 
 using System;
 
-class HexadecimalToDecimalNumber
+public class HexadecimalToDecimalNumber
 {
     static void Main()
     {
@@ -16,7 +16,7 @@ class HexadecimalToDecimalNumber
         Console.WriteLine("Decimal representation: {0}", HexadecimalToDecimal(hexNumber));
     }
 
-    static long HexadecimalToDecimal(string number)
+    private static long HexadecimalToDecimal(string number)
     {
         long exponent = 1;
         int hexBase = 16;

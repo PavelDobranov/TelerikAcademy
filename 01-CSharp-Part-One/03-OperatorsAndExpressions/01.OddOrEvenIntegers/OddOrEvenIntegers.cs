@@ -3,7 +3,7 @@
 
 using System;
 
-class OddOrEvenIntegers
+public class OddOrEvenIntegers
 {
     static void Main()
     {
@@ -11,7 +11,7 @@ class OddOrEvenIntegers
         int number = int.Parse(Console.ReadLine());
 
         bool isOddNumber = number % 2 != 0;
-        
+
         Console.WriteLine("Odd? : {0}", isOddNumber);
     }
 }

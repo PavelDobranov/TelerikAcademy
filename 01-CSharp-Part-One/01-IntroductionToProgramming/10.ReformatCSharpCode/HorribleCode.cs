@@ -3,16 +3,16 @@
 
 using System;
 
-class HorribleCode
+public class HorribleCode
 {
     static void Main()
     {
         int minNumber = 0;
         int maxNumber = 10;
 
-        Console.WriteLine("Hi, I am horribly formatted program"); 
+        Console.WriteLine("Hi, I am horribly formatted program");
         Console.WriteLine("Numbers and squares: ");
- 
+
         for (int number = minNumber; number <= maxNumber; number++)
         {
             Console.WriteLine("{0} --> {1}", number, number * number);

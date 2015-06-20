@@ -5,7 +5,7 @@
 
 using System;
 
-class PrimeNumberCheck
+public class PrimeNumberCheck
 {
     static void Main()
     {
@@ -22,7 +22,7 @@ class PrimeNumberCheck
         }
     }
 
-    static bool IsPrimeNumber(int number)
+    private static bool IsPrimeNumber(int number)
     {
         if (number == 2)
         {

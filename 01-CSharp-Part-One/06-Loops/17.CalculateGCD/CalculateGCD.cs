@@ -4,7 +4,7 @@
 
 using System;
 
-class CalculateGCD
+public class CalculateGCD
 {
     static void Main()
     {
@@ -17,7 +17,7 @@ class CalculateGCD
         Console.WriteLine("GCD(a,b): {0}", GetGreatestCommonDivisor(firstNumber, secondNumber));
     }
 
-    static int GetGreatestCommonDivisor(int firstNumber, int secondNumber)
+    private static int GetGreatestCommonDivisor(int firstNumber, int secondNumber)
     {
         int remainder;
 

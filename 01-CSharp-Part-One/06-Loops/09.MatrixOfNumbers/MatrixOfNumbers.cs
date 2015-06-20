@@ -4,7 +4,7 @@
 
 using System;
 
-class MatrixOfNumbers
+public class MatrixOfNumbers
 {
     static void Main()
     {
@@ -21,7 +21,7 @@ class MatrixOfNumbers
         }
     }
 
-    static void PrintMatrixOfNumbers(int numberN)
+    private static void PrintMatrixOfNumbers(int numberN)
     {
         int padding = 3;
 

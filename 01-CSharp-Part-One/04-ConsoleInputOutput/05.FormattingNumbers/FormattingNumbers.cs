@@ -12,7 +12,7 @@
 
 using System;
 
-class FormattingNumbers
+public class FormattingNumbers
 {
     static void Main()
     {
@@ -40,4 +40,3 @@ class FormattingNumbers
             thirdNumber.ToString("0.000").PadRight(columnWidth, ' '));
     }
 }
-

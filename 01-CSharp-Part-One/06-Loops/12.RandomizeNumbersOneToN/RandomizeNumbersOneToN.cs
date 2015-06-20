@@ -3,7 +3,7 @@
 
 using System;
 
-class RandomizeNumbersOneToN
+public class RandomizeNumbersOneToN
 {
     static void Main()
     {

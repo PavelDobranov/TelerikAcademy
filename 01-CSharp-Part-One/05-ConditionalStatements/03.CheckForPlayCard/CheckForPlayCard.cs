@@ -5,7 +5,7 @@
 
 using System;
 
-class CheckForPlayCard
+public class CheckForPlayCard
 {
     static void Main()
     {
@@ -17,7 +17,7 @@ class CheckForPlayCard
         Console.WriteLine("Valid card sign?: {0}", isValidCardSign ? "yes" : "no");
     }
 
-    static bool CheckForValidCard(string card)
+    private static bool CheckForValidCard(string card)
     {
         switch (card)
         {

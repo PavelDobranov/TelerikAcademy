@@ -6,7 +6,7 @@
 
 using System;
 
-class BankAccountData
+public class BankAccountData
 {
     static void Main()
     {

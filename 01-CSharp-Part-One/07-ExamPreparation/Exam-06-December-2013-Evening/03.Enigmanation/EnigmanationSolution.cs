@@ -2,7 +2,7 @@
 {
     using System;
 
-    class EnigmanationSolution
+    public class EnigmanationSolution
     {
         private const char ExpressionEndSymbol = '=';
         private const char SubExpressionStartSymbol = '(';
@@ -14,7 +14,7 @@
 
         private static int expressionSymbolPosition = 0;
 
-        private static void Main()
+        static void Main()
         {
             string expression = Console.ReadLine();
 

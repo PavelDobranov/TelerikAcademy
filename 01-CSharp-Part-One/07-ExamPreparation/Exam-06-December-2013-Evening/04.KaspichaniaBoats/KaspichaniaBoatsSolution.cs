@@ -2,9 +2,9 @@
 {
     using System;
 
-    class KaspichaniaBoatsSolution
+    public class KaspichaniaBoatsSolution
     {
-        private static void Main()
+        static void Main()
         {
             int numberN = int.Parse(Console.ReadLine());
 
@@ -45,11 +45,9 @@
                 Console.WriteLine(new string('.', outerDots));
             }
 
-
             Console.Write(new string('.', outerDots + 1));
             Console.Write(new string('*', numberN));
             Console.WriteLine(new string('.', outerDots + 1));
-
         }
     }
 }

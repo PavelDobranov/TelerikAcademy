@@ -6,7 +6,7 @@
 
 using System;
 
-class PlayWithIntDoubleAndString
+public class PlayWithIntDoubleAndString
 {
     static void Main()
     {

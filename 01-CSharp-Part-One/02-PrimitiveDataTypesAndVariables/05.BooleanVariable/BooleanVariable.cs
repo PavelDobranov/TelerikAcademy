@@ -4,7 +4,7 @@
 
 using System;
 
-class BooleanVariable
+public class BooleanVariable
 {
     static void Main()
     {

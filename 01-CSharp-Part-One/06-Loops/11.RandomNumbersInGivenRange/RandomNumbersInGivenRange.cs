@@ -4,7 +4,7 @@
 
 using System;
 
-class RandomNumbersInGivenRange
+public class RandomNumbersInGivenRange
 {
     static void Main()
     {
@@ -13,12 +13,12 @@ class RandomNumbersInGivenRange
 
         Console.Write("Enter minimal value: ");
         int min = int.Parse(Console.ReadLine());
-        
+
         Console.Write("Enter maximal value: ");
         int max = int.Parse(Console.ReadLine());
 
         Random randomNumberGenerator = new Random();
-        
+
         for (int number = 0; number < numberN; number++)
         {
             Console.Write("{0} ", randomNumberGenerator.Next(min, max + 1));

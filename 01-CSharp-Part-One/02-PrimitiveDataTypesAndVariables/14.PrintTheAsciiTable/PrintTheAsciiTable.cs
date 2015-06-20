@@ -8,7 +8,7 @@
 
 using System;
 
-class PrintTheAsciiTable
+public class PrintTheAsciiTable
 {
     static void Main()
     {
@@ -27,7 +27,7 @@ class PrintTheAsciiTable
         Console.ResetColor();
     }
 
-    static string PrintFormatedAsciiRow(int charCode) 
+    private static string PrintFormatedAsciiRow(int charCode)
     {
         int padding = 8;
         int controlCodesMax = 37;
@@ -39,11 +39,11 @@ class PrintTheAsciiTable
         string charBinaryRepresentation = Convert.ToString(charCode, 2);
         string character = charCode <= controlCodesMax || charCode == delCommandCode ? "N/A *" : ((char)charCode).ToString();
 
-        return string.Format("[DEC] {0} [OCT] {1} [HEX] {2} [BIN] {3} [CHAR] {4}", 
+        return string.Format("[DEC] {0} [OCT] {1} [HEX] {2} [BIN] {3} [CHAR] {4}",
             charDecimalRepresentation.PadRight(padding, ' '),
             charOctalRepresentation.PadRight(padding, ' '),
             charHexadecimalRepresentation.PadRight(padding, ' '),
-            charBinaryRepresentation.PadRight(padding, ' '), 
+            charBinaryRepresentation.PadRight(padding, ' '),
             character);
     }
 }

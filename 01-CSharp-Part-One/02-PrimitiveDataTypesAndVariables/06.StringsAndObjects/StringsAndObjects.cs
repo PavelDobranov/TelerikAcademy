@@ -7,7 +7,7 @@
 
 using System;
 
-class StringsAndObjects
+public class StringsAndObjects
 {
     static void Main()
     {

@@ -11,7 +11,7 @@
 // primitive data types. Use descriptive names. Print the data at the console.
 using System;
 
-class EmployeeData
+public class EmployeeData
 {
     static void Main()
     {
