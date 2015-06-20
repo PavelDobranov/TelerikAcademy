@@ -8,5 +8,4 @@
 6. [Strings and text processing](06-StringsAndTextProcessing)
 7. [Exception handling](07-ExceptionHandling)
 8. [Text files](08-TextFiles)
-9. [Exam preparation](09-ExamPreparation)
-10. [Teamwork project](https://github.com/PavelDobranov/TA-Teamwork-CSharp-Part-Two)
+9. [Teamwork project](https://github.com/PavelDobranov/TA-Teamwork-CSharp-Part-Two)

@@ -6,4 +6,3 @@
 4. [Console input / output](04-ConsoleInputOutput)
 5. [Conditional statements](05-ConditionalStatements)
 6. [Loops](06-Loops)
-7. [Exam preparation](07-ExamPreparation)
