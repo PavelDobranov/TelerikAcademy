@@ -44,7 +44,7 @@
 1. [HTML fundamentals](04-HTML-Basics/01-HTML-Fundamentals)
 2. [HTML tables](04-HTML-Basics/02-HTML-Tables)
 3. [HTML forms and frames](04-HTML-Basics/03-HTML-Forms-And-Frames)
-4. [Semantic HTML](04-HTML-Basics/04-Semanic-HTML)
+4. [Semantic HTML](04-HTML-Basics/04-Semantic-HTML)
 
 ---
 
