@@ -9,7 +9,7 @@
     * a valid type is any non-empty string that contains only Latin letters and digits
   4. Property `innerHTML` of type string
     * gets the __domElement__, parsed as valid HTML
-	  * <type attr1="value1" attr2="value2" ...> .. content / children's.innerHTML .. </type>
+    * `"<type attr1="value1" attr2="value2" ...> ... content / children's.innerHTML .. </type>"`
   5. Property `content` of type string
     * sets the content of the element
     * works only if there are no children
@@ -33,17 +33,17 @@ _Example:_
     .init('meta')
     .addAttribute('charset', 'utf-8');
 
-  var head = Object.create(domElement)<br/>
+  var head = Object.create(domElement)
     .init('head')
     .appendChild(meta)
 
-  var div = Object.create(domElement)<br/>
+  var div = Object.create(domElement)
     .init('div')
     .addAttribute('style', 'font-size: 42px');
 
   div.content = 'Hello, world!';
 
-  var body = Object.create(domElement)<br/>
+  var body = Object.create(domElement)
     .init('body')
     .appendChild(div)
     .addAttribute('id', 'cuki')
@@ -58,6 +58,6 @@ _Example:_
 ```
   _Outputs:_
 
-```
-<html><head><meta charset="utf-8"></meta></head><body bgcolor="#012345" id="cuki"><div style="font-size: 42px">Hello, world!</div></body></html>
+```javascript
+'<html><head><meta charset="utf-8"></meta></head><body bgcolor="#012345" id="cuki"><div style="font-size: 42px">Hello, world!</div></body></html>'
 ```
