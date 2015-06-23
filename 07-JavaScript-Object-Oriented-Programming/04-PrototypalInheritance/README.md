@@ -8,8 +8,10 @@
   3. Property type that is the type of the __domElement__
     * a valid type is any non-empty string that contains only Latin letters and digits
   4. Property `innerHTML` of type string
-    * gets the __domElement__, parsed as valid HTML
-    * `"<type attr1="value1" attr2="value2" ...> ... content / children's.innerHTML .. </type>"`
+    * gets the __domElement__, parsed as valid HTML:
+     ```
+     '<type attr1="value1" attr2="value2" ...> ... content / children's.innerHTML .. </type>'
+     ```
   5. Property `content` of type string
     * sets the content of the element
     * works only if there are no children
