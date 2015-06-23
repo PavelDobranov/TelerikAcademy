@@ -8,16 +8,16 @@
   3. Property type that is the type of the __domElement__
     * a valid type is any non-empty string that contains only Latin letters and digits
   4. Property `innerHTML` of type string
-    * gets the __domElement__, parsed as valid HTML: 
-    ```
-      <type attr1="value1" attr2="value2" ... > ... content / children's.innerHTML</type>`
+    * gets the __domElement__, parsed as valid HTML:
+    ```html
+      <type attr1="value1" attr2="value2" ... > ... content / children's.innerHTML</type>
     ```
   5. Property `content` of type string
     * sets the content of the element
     * works only if there are no children
   6. Property `attributes`
     * each attribute has name and value
-    * a valid attribute has a non-empty string for a name that contains only Latin letters and digits or dashes (-)
+    * a valid attribute has a non-empty string for a name that contains only Latin letters and digits or dashes `-`
   7. Property `children`
     * each child is a __domElement__ or a string
   8. Property `parent`
@@ -25,7 +25,7 @@
   9. Method `appendChild(domElement / string)`
     * appends to the end of children list
   10. Method `addAttribute(name, value)`
-    * throw Error if type is not valid
+    * `throw Error` if type is not valid
   11. Method `removeAttribute(attribute)`
 
 _Example:_
