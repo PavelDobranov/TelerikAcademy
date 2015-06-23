@@ -12,6 +12,7 @@
     ```
       <type attr1="value1" attr2="value2" ... > ... content / children's.innerHTML</type>
     ```
+    * attributes must be sorted in ascending alphabetical order by their name, not in the order they were added
   5. Property `content` of type string
     * sets the content of the element
     * works only if there are no children
