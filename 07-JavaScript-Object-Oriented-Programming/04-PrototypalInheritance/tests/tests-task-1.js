@@ -9,28 +9,38 @@ describe('Tests for "Task 1"', function() {
     it('expect domElement to be an object', function() {
       expect(domElement).to.be.a('object');
     });
+
     it('expect domElement.init to be a function', function() {
       expect(domElement.init).to.be.a('function');
     });
+
     it('expect domElement.appendChild to be a function', function() {
       expect(domElement.appendChild).to.be.a('function');
     });
+
     it('expect domElement.addAttribute to be a function', function() {
       expect(domElement.appendChild).to.be.a('function');
     });
 
     it('expect domElement.init to return this', function() {
       var root = Object.create(domElement);
+
       expect(root.init('whatever')).to.equal(root);
     });
+
     it('expect domElement.appendChild to return this', function() {
       var root = Object.create(domElement);
+
       root.init('whatever');
+
       expect(root.appendChild('text')).to.equal(root);
     });
+
     it('expect domElement.addAttribute to return this', function() {
       var root = Object.create(domElement);
+
       root.init('whatever');
+
       expect(root.addAttribute('class', 'working?')).to.equal(root);
     });
   });
@@ -40,25 +50,33 @@ describe('Tests for "Task 1"', function() {
       function test() {
         Object.create(domElement).init('');
       }
+
       expect(test).to.throw();
     });
+
     it('expect domElement with type not a string to throw', function() {
       function test() {
         Object.create(domElement).init(42);
       }
+
       expect(test).to.throw();
     });
+
     it('expect domElement with type containing bad characters to throw', function() {
       function test() {
         Object.create(domElement).init('hello!');
       }
+
       expect(test).to.throw();
     });
+
     it('expect domElement with valid type not to throw', function() {
       function test() {
         Object.create(domElement).init('grO0zen1TagnaMe');
       }
+
       expect(test).to.not.throw();
+
     });
 
     it('expect adding attribute with empty name to throw', function() {
@@ -67,22 +85,27 @@ describe('Tests for "Task 1"', function() {
           .init('whatever')
           .addAttribute('', 'spam');
       }
+
       expect(test).to.throw();
     });
+
     it('expect adding attribute with name containing bad characters to throw', function() {
       function test() {
         var root = Object.create(domElement)
           .init('whatever')
           .addAttribute('Hello 007', 'spam');
       }
+
       expect(test).to.throw();
     });
+
     it('expect adding attribute with valid name not to throw', function() {
       function test() {
         var root = Object.create(domElement)
           .init('whatever')
           .addAttribute('data-spam', 'mnogo spam');
       }
+
       expect(test).to.not.throw();
     });
   });
@@ -92,6 +115,7 @@ describe('Tests for "Task 1"', function() {
       var type = 'html',
         root = Object.create(domElement)
         .init(type);
+
       expect(root.innerHTML).to.eql('<' + type + '></' + type + '>');
     });
 
@@ -102,20 +126,25 @@ describe('Tests for "Task 1"', function() {
 
       expect(root.innerHTML).to.eql('<div data-id="cuki"></div>');
     });
+
     it('expect attribute value to be in double quotes when it is a number', function() {
       var root = Object.create(domElement)
         .init('whateverTag')
         .addAttribute('something', 42);
+
       expect(root.innerHTML).to.eql('<whateverTag something="42"></whateverTag>');
     });
+
     it('expect domElement with attributes to generate HTML with the attributes in correct order', function() {
       var root = Object.create(domElement)
         .init('NqmaTakufTag')
         .addAttribute('xyz', 'some value')
         .addAttribute('zzz', '')
         .addAttribute('abc', 'other value');
+
       expect(root.innerHTML).to.eql('<NqmaTakufTag abc="other value" xyz="some value" zzz=""></NqmaTakufTag>');
     });
+
     it('expect repeating attribute name to hold only the last value', function() {
       var root = Object.create(domElement)
         .init('theGuiltyTag')
@@ -125,7 +154,6 @@ describe('Tests for "Task 1"', function() {
 
       expect(root.innerHTML).to.eql('<theGuiltyTag adata="me" bdata="see"></theGuiltyTag>');
     });
-
   });
 
   describe('Adding children', function() {
@@ -134,6 +162,7 @@ describe('Tests for "Task 1"', function() {
         root = Object.create(domElement)
         .init('p')
         .appendChild(text);
+
       expect(root.innerHTML).to.eql('<p>' + text + '</p>');
     });
 
@@ -143,8 +172,10 @@ describe('Tests for "Task 1"', function() {
         parent = Object.create(domElement)
         .init('parent')
         .appendChild(child);
+
       expect(parent.innerHTML).to.eql('<parent><child></child></parent>');
     });
+
     it('expect correct HTML with nested domElements (one parent, two children)', function() {
       var child1 = Object.create(domElement).init('childy'),
         child2 = Object.create(domElement).init('childx'),
@@ -152,8 +183,10 @@ describe('Tests for "Task 1"', function() {
         .init('parent')
         .appendChild(child1)
         .appendChild(child2);
+
       expect(parent.innerHTML).to.eql('<parent><childy></childy><childx></childx></parent>');
     });
+
     it('expect correct HTML with nested domElements (grandparent, parent and child)', function() {
       var child = Object.create(domElement).init('child'),
         middle = Object.create(domElement)
@@ -162,31 +195,40 @@ describe('Tests for "Task 1"', function() {
       parent = Object.create(domElement)
         .init('parent')
         .appendChild(middle);
+
       expect(parent.innerHTML).to.eql('<parent><middleBlq><child></child></middleBlq></parent>');
     });
 
     it('expect correct HTML when adding content', function() {
       var text = 'Some text here, doesn\'t really matter that much what it is.',
         root = Object.create(domElement).init('p');
+
       root.content = text;
+
       expect(root.innerHTML).to.eql('<p>' + text + '</p>');
     });
+
     it('expect string children to override parent\'s content', function() {
       var text = 'see me',
         parent = Object.create(domElement)
         .init('parent')
         .appendChild(text);
+
       parent.content = 'some random content';
+
       expect(parent.innerHTML).to.eql('<parent>see me</parent>');
     });
+
     it('expect domElement children to override parent\'s content', function() {
       var child = Object.create(domElement)
         .init('child'),
         parent = Object.create(domElement)
         .init('parent')
         .appendChild(child);
+
       parent.content = 'some random content';
       child.content = 'see me';
+
       expect(parent.innerHTML).to.eql('<parent><child>see me</child></parent>');
     });
 
@@ -200,6 +242,7 @@ describe('Tests for "Task 1"', function() {
       root.appendChild(text);
       root.appendChild(child2);
       root.appendChild(text);
+
       expect(root.innerHTML).to.eql('<p>' + text + '<b></b>' + text + '<s></s>' + text + '</p>');
     });
 
@@ -211,6 +254,7 @@ describe('Tests for "Task 1"', function() {
         .init('parent')
         .addAttribute('id', 'pid')
         .appendChild(child);
+
       expect(parent.innerHTML).to.eql('<parent id="pid"><child id="cid"></child></parent>');
     });
   });
@@ -219,28 +263,24 @@ describe('Tests for "Task 1"', function() {
     it('expect the example test given in the description to work', function() {
       var meta = Object.create(domElement)
         .init('meta')
-        .addAttribute('charset', 'utf-8');
-
-      var head = Object.create(domElement)
+        .addAttribute('charset', 'utf-8'),
+        head = Object.create(domElement)
         .init('head')
-        .appendChild(meta);
-
-      var div = Object.create(domElement)
+        .appendChild(meta),
+        div = Object.create(domElement)
         .init('div')
-        .addAttribute('style', 'font-size: 42px');
-
-      div.content = 'Hello, world!';
-
-      var body = Object.create(domElement)
+        .addAttribute('style', 'font-size: 42px'),
+        body = Object.create(domElement)
         .init('body')
         .appendChild(div)
         .addAttribute('id', 'cuki')
-        .addAttribute('bgcolor', '#012345');
-
-      var root = Object.create(domElement)
+        .addAttribute('bgcolor', '#012345'),
+        root = Object.create(domElement)
         .init('html')
         .appendChild(head)
         .appendChild(body);
+
+      div.content = 'Hello, world!';
 
       expect(root.innerHTML).to.eql('<html><head><meta charset="utf-8"></meta></head><body bgcolor="#012345" id="cuki"><div style="font-size: 42px">Hello, world!</div></body></html>');
     });
