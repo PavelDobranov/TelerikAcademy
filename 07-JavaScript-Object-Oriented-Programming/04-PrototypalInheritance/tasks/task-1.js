@@ -27,7 +27,7 @@
 
 function solve() {
   'use strict';
-  
+
   var domElement = (function() {
     var domElement = {
       init: function(type) {
@@ -108,6 +108,15 @@ function solve() {
         }
 
         this.attributes[name] = value;
+
+        return this;
+      },
+      removeAttribute: function(name) {
+        if (!this.attributes[name]) {
+          throw new Error('Attribute "' + name + '" does not exist!');
+        }
+
+        delete this._attributes[name];
 
         return this;
       }
