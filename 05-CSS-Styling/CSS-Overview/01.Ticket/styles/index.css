@@ -1,0 +1,55 @@
+﻿body {
+    background-color: #595959;
+}
+
+table {
+    width: 520px;
+    height: 530px;
+    text-align: left;
+    vertical-align: top;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 2px #4c4c53;
+}
+
+thead th {
+    vertical-align: top;
+    font-size: 36px;
+    color: #b2b6b9;
+}
+
+th {
+    font-weight: normal;
+}
+
+tbody {
+    font-size: 27px;
+}
+
+tbody th {
+    font-style: italic;
+    color: #e9e4e1;
+}
+
+#name, 
+#email, 
+#link-to-public {
+    color: #e7d797;
+}
+
+#response-time, 
+#last-action {
+    color: #b2b6b9;
+}
+
+#no-support, 
+#not-answered {
+    font-family: Arial, sans-serif;
+}
+
+#no-support {
+    color: #ff001b;
+}
+
+#not-answered {
+    color: #dc6b1c;
+}
