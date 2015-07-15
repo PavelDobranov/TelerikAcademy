@@ -78,7 +78,7 @@
 2. [Scopes and closures](07-JavaScript-Object-Oriented-Programming/02-ScopesAndClosures)
 3. [Classical inheritance](07-JavaScript-Object-Oriented-Programming/03-ClassicalInheritance)
 4. [Prototypal inheritance](07-JavaScript-Object-Oriented-Programming/04-PrototypalInheritance)
-5. [Modules and patterns](07-JavaScript-Object-Oriented-Programming/05-Modules-And-Patterns)
+5. [Modules and patterns](07-JavaScript-Object-Oriented-Programming/05-ModulesAndPatterns)
 
 ---
 
