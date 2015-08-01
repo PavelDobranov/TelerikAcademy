@@ -1,4 +1,4 @@
-[![C# Part One](cs-part-one.png)]()
+### C# Part One
 
 1. [Introduction to programming](01-IntroductionToProgramming)
 2. [Primitive data types and variables](02-PrimitiveDataTypesAndVariables)
