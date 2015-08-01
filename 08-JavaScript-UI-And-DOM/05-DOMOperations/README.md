@@ -1,8 +1,8 @@
-#DOM Operations
-_For instructions on how to run the tests, check the following link: 
-https://github.com/TelerikAcademy/JavaScript-UI-and-DOM/blob/master/README.md#user-content-preparing-the-local-machine-for-unit-testing-with-mocha-and-chai
+# DOM Operations
+_For instructions on how to run the tests, check the following link:
+https://github.com/TelerikAcademy/JavaScript-UI-and-DOM/blob/master/README.md#user-content-preparing-the-local-machine-for-unit-testing-with-mocha-and-chai_
 
-##Task 1
+## Task 1
 Create a function that takes an id or DOM element and an array of contents
 
 * If an id is provided, select the element
@@ -15,4 +15,4 @@ Create a function that takes an id or DOM element and an array of contents
   * Any of the function params is missing
   * Any of the function params is not as described
   * Any of the contents is neither `string` nor `number`
-    * In that case, the content of the element **must not be** changed   
+    * In that case, the content of the element **must not be** changed

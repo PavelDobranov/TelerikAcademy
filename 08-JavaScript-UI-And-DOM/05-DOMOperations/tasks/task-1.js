@@ -40,7 +40,9 @@ module.exports = function () {
   }
 
   function removeDomElementContent(element) {
-    element.innerHTML = '';
+    while (element.firstChild) {
+      element.removeChild(element.firstChild);
+    }
   }
 
   return function (element, contents) {
@@ -50,7 +52,7 @@ module.exports = function () {
       contentElement;
 
     if (!isString(element) && !isValidHtmlElement(element)) {
-      throw new Error('Provide id or existing DOM element as first parameter!');
+      throw new Error('Provide id (string) or existing DOM element (object) as first parameter!');
     }
 
     if (!isArray(contents)) {
