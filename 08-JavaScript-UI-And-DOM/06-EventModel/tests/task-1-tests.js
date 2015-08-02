@@ -15,10 +15,10 @@ describe('Task #1 Tests', function () {
         global.$ = jq(window);
         Object.keys(window)
           .filter(function (prop) {
-            return prop.toLowerCase().indexOf('html') >= 0;
-          }).forEach(function (prop) {
-            global[prop] = window[prop];
-          });
+          return prop.toLowerCase().indexOf('html') >= 0;
+        }).forEach(function (prop) {
+          global[prop] = window[prop];
+        });
         done();
       }
     });
@@ -65,9 +65,9 @@ describe('Task #1 Tests', function () {
     });
 
     it('expect to hide the next content on button click, and then show it again, when there are other elements', function () {
-      function createDummyNode() {
-        var tags = ['a', 'button', 'p', 'div', 'ul', 'li', 'ol', 'input', 'table', 'tr', 'br', 'hr', 'span'];
-        var node = document.createElement(tags[(Math.random * tags.length) | 0]);
+      function createDummyNode(){
+        var tags = ['a', 'button', 'p', 'div', 'ul', 'li', 'ol', 'input', 'table','tr','br','hr', 'span'];
+        var node = document.createElement(tags[(Math.random*tags.length) | 0]);
         node.innerHTML = 'Dummy Element: ' + Math.random();
         return node;
       }
@@ -82,13 +82,13 @@ describe('Task #1 Tests', function () {
       container.id = 'root';
       var dymmyObjectChance = 70;
       for (i = 0; i < count; i += 1) {
-        if (Math.random * 100 < dymmyObjectChance) {
+        if(Math.random * 100 < dymmyObjectChance){
           container.appendChild(createDummyNode());
         }
         tag = possibleTags[(Math.random() * possibleTags.length) | 0];
         buttonNode = document.createElement(tag);
         buttonNode.className = 'button';
-        if (i === ((count / 2) | 0)) {
+        if (i === ((count / 2) | 0 )) {
           buttonNode.id = 'the-button';
         }
         container.appendChild(buttonNode);
@@ -97,12 +97,12 @@ describe('Task #1 Tests', function () {
         contentNode = document.createElement(tag);
         contentNode.className = 'content';
 
-        if (Math.random * 100 < dymmyObjectChance) {
+        if(Math.random * 100 < dymmyObjectChance){
           container.appendChild(createDummyNode());
         }
         container.appendChild(contentNode);
 
-        if (Math.random * 100 < dymmyObjectChance) {
+        if(Math.random * 100 < dymmyObjectChance){
           container.appendChild(createDummyNode());
         }
       }
@@ -119,19 +119,16 @@ describe('Task #1 Tests', function () {
 
       var event = document.createEvent('MouseEvents');
       event.initMouseEvent('click', true, true);
+      theButton.dispatchEvent(event);
 
       expect(theButton).to.exist;
       expect(theContent).to.exist;
+      expect(theButton.innerHTML).to.equal('show');
+      expect(theContent.style.display).to.equal('none');
 
-      theButton.dispatchEvent(event, function () {
-        expect(theButton.innerHTML).to.equal('show');
-        expect(theContent.style.display).to.equal('none');
-      });
-
-      theButton.dispatchEvent(event, function () {
-        expect(theButton.innerHTML).to.equal('hide');
-        expect(theContent.style.display).to.equal('');
-      });
+      theButton.dispatchEvent(event);
+      expect(theButton.innerHTML).to.equal('hide');
+      expect(theContent.style.display).to.equal('');
     });
 
     it('expect to hide the next content on button click, and then show it again', function () {
@@ -148,7 +145,7 @@ describe('Task #1 Tests', function () {
         tag = possibleTags[(Math.random() * possibleTags.length) | 0];
         buttonNode = document.createElement(tag);
         buttonNode.className = 'button';
-        if (i === ((count / 2) | 0)) {
+        if (i === ((count / 2) | 0 )) {
           buttonNode.id = 'the-button';
         }
         container.appendChild(buttonNode);
@@ -171,22 +168,19 @@ describe('Task #1 Tests', function () {
 
       var event = document.createEvent('MouseEvents');
       event.initMouseEvent('click', true, true);
+      theButton.dispatchEvent(event);
 
       expect(theButton).to.exist;
       expect(theContent).to.exist;
+      expect(theButton.innerHTML).to.equal('show');
+      expect(theContent.style.display).to.equal('none');
 
-      theButton.dispatchEvent(event, function () {
-        expect(this.innerHTML).to.equal('show');
-        expect(this.style.display).to.equal('none');
-      });
-
-      theButton.dispatchEvent(event, function () {
-        expect(this.innerHTML).to.equal('hide');
-        expect(this.style.display).to.equal('');
-      });
+      theButton.dispatchEvent(event);
+      expect(theButton.innerHTML).to.equal('hide');
+      expect(theContent.style.display).to.equal('');
     });
   });
-  describe('Invalid', function () {
+describe('Invalid', function () {
     it('Expect to throw, when no params are provided', function () {
       function test() {
         result();

@@ -26,10 +26,14 @@ function solve() {
     return element instanceof HTMLElement;
   }
 
+  function hasClass(element, cls) {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+  }
+
   function handleElementClick(event) {
     var clickedElement = event.target;
 
-    if (clickedElement.classList.contains('button')) {
+    if (hasClass(clickedElement, 'button')) {
       handleButtonClick(clickedElement);
     }
   }
@@ -41,7 +45,7 @@ function solve() {
       nextElementIsButton,
       content;
 
-    while (nextElementSibling) {
+    while (true) {
       currentElement = nextElementSibling;
       nextElementSibling = currentElement.nextElementSibling;
 
@@ -49,8 +53,8 @@ function solve() {
         break;
       }
 
-      currentElementIsContent = currentElement.classList.contains('content');
-      nextElementIsButton = nextElementSibling.classList.contains('button');
+      currentElementIsContent = hasClass(currentElement, 'content');
+      nextElementIsButton = hasClass(nextElementSibling, 'button');
 
       if (currentElementIsContent && nextElementIsButton) {
         content = currentElement;
