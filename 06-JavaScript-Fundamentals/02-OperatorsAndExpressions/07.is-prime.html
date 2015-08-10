@@ -2,27 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Prime Number</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Is prime</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div id="wrapper">
-      <h1>Operators And Expressions</h1>
-      <p>
-        <span class="bold">Problem 07</span>- Write an expression that checks if given positive integer number n (n ≤ 100) is prime.</p>
+    <div class="main-container">
+      <div class="head-container">
+        <h1>Operators and Expressions</h1>
+        <h3>Problem 7 - Is ptime</h3>
+        <ul>
+          <li>Write an expression that checks if given positive integer number n (n ≤ 100) is prime.</li>
+        </ul>
+      </div>
       <form>
-        <div id="input-container">
-          <label for="num" class="short">Number:</label>
-          <input type="text" id="num" class="input" />
+        <div class="input-container">
+          <label for="number">Number:</label>
+          <input type="text" id="number" name="Number">
         </div>
-        <div id="js-console" class="js-console"></div>
-        <div id="btn-container">
-          <input type="button" class="btn" value="Solve" onclick="solve();" />
-          <input type="reset" class="btn" value="Reset" onclick="resetConsole();" />
+        <div class="js-console"></div>
+        <div class="btn-container">
+          <input type="button" class="btn btn-solve" value="Solve">
+          <input type="button" class="btn btn-clear" value="Clear">
         </div>
       </form>
     </div>
-    <script src="scripts/07.is-prime.js"></script>
-    <script src="scripts/jsConsole/js-console.js"></script>
+    <script src="js/lib/js-console.js"></script>
+    <script src="js/07.is-prime.js"></script>
   </body>
 </html>

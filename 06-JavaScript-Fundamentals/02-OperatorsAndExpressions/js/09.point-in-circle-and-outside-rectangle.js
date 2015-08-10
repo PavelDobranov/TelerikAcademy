@@ -1,74 +1,72 @@
-function solve() {
-    resetConsole();
+/*
+Problem 9. Point in Circle and outside Rectangle
+Write an expression that checks for given point P(x, y)
+if it is within the circle K( (1,1), 3)
+and out of the rectangle R(top=1, left=-1, width=6, height=2).
+*/
 
-    var inputElements = document.getElementsByClassName('input');
-    var pointCoords = [];
-    var circleCoords = [0, 0];
-    var circleRadius = 5;
-    var rectangleTop = 1;
-    var rectangleLeft = -1;
-    var rectangleWidth = 6;
-    var rectangleHeight = 2;
-    var isWithinCircle;
-    var isOutOfRectangle;
-    var validInput = true;
+(function() {
+  'use strict';
 
-    for (var input = 0; input < inputElements.length; input++) {
-        var currInput = inputElements[input].value;
+  var jsConsole = javaScriptConsole.createInstance('.js-console'),
+    solveButton = document.querySelector('.btn-solve'),
+    clearButton = document.querySelector('.btn-clear');
 
-        if (isValidFloatInput(currInput)) {
-            pointCoords[input] = parseFloat(currInput);
-        }
-        else {
-            validInput = false;
-            printInvalidInput(currInput);
-            break;
-        }
+  solveButton.addEventListener('click', solve);
+  clearButton.addEventListener('click', clearForm);
+
+  function solve() {
+    try {
+      var pointX = jsConsole.readFloat('#point-x'),
+        pointY = jsConsole.readFloat('#point-y'),
+        circle = {
+          x: 1,
+          y: 1,
+          radius: 3
+        },
+        rectangle = {
+          top: 1,
+          left: -1,
+          width: 6,
+          height: 2
+        },
+        point = {
+          x: pointX,
+          y: pointY
+        },
+        inCircle = isInCircle(point, circle),
+        outOfRectangle = isOutOfRectangle(point, rectangle),
+        result = inCircle && outOfRectangle;
+
+      jsConsole.writeLine('Is in circle and outside rectangle ? : ' + result);
+    } catch (e) {
+      jsConsole.writeLine(e.message);
+    }
+  }
+
+  function isInCircle(point, circle) {
+    var xDelta = point.x - circle.x,
+      yDelta = point.y - circle.y;
+
+    return (xDelta * xDelta) + (yDelta * yDelta) <= circle.radius * circle.radius;
+  }
+
+  function isOutOfRectangle(point, rectangle) {
+    var rectangleBottom = rectangle.top - rectangle.height,
+      rectangleRight = rectangle.left + rectangle.width;
+
+    return point.x < rectangle.left || point.x > rectangleRight || point.y > rectangle.top || point.y < rectangleBottom;
+  }
+
+  function clearForm() {
+    var inputElements = document.querySelectorAll('.input-container > input'),
+      element,
+      len;
+
+    for (element = 0, len = inputElements.length; element < len; element++) {
+      inputElements[element].value = '';
     }
 
-    if (validInput) {
-        var result = isWithinCircleOutOfRectangle();
-        printResult(result);
-    }
-
-    function isWithinCircleOutOfRectangle() {
-        var xDelta = pointCoords[0] - circleCoords[0];
-        var yDelta = pointCoords[1] - circleCoords[1];
-
-        isWithinCircle = (xDelta * xDelta) + (yDelta * yDelta) < circleRadius * circleRadius;
-
-        var rectangleRight = rectangleLeft + rectangleWidth;
-        var rectangleBottom = rectangleTop - rectangleHeight;
-
-        isOutOfRectangle = pointCoords[0] < rectangleLeft ||
-            pointCoords[0] > rectangleRight ||
-            pointCoords[1] > rectangleTop ||
-            pointCoords[1] < rectangleBottom;
-
-        return isWithinCircle && isOutOfRectangle;
-    }
-
-    function printResult(result) {
-        jsConsole.writeLine('Is the point within the circle ? : ' + isWithinCircle);
-        jsConsole.writeLine('Is the point out of the rectangle ? : ' + isOutOfRectangle);
-        jsConsole.writeLine('Final result : ' + result);
-    }
-}
-
-function isValidFloatInput(input) {
-    return !(isNaN(input) || input === '');
-}
-
-function printInvalidInput(input) {
-    if (input === '') {
-        jsConsole.writeLine('Please fill all fields');
-    }
-    else {
-        jsConsole.writeLine('Invalid Input : ' + input);
-        jsConsole.writeLine('Must be a number');
-    }
-}
-
-function resetConsole() {
     jsConsole.clear();
-}
+  }
+}());

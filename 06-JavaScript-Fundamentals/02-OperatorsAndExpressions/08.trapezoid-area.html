@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Trapezoid Area</title>
-  <link rel="stylesheet" href="styles/styles.css" />
-</head>
-<body>
-  <div id="wrapper">
-    <h1>Operators And Expressions</h1>
-    <p><span class="bold">Problem 08</span> - Write an expression that calculates trapezoid's area by given sides a and b and height h.</p>
-    <form>
-      <div id="input-container">
-        <img src="images/trapezoid.png">
-        <label for="side-a" class="short">Side a:</label>
-        <input type="text" id="side-a" class="input" />
-        <label>[mm]</label>
-        <br/>
-        <label for="side-b" class="short">Side b:</label>
-        <input type="text" id="side-b" class="input" />
-        <label>[mm]</label>
-        <br/>
-        <label for="height" class="short">Height h:</label>
-        <input type="text" id="height" class="input" />
-        <label>[mm]</label>
+  <head>
+    <meta charset="UTF-8">
+    <title>Trapezoid area</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="head-container">
+        <h1>Operators and Expressions</h1>
+        <h3>Problem 8 - Trapezoid area</h3>
+        <ul>
+          <li>Write an expression that calculates trapezoid's area by given sides a and b and height h.</li>
+        </ul>
+        <img src="img/trapezoid.png">
       </div>
-      <div id="js-console" class="js-console"></div>
-      <div id="btn-container">
-        <input type="button" class="btn" value="Solve" onclick="solve();" />
-        <input type="reset" class="btn" value="Reset" onclick="resetConsole();" />
-      </div>
-    </form>
-  </div>
-  <script src="scripts/jsConsole/js-console.js"></script>
-  <script src="scripts/08.trapezoid-area.js"></script>
-</body>
+      <form>
+        <div class="input-container">
+          <label for="side-a">Side a:</label>
+          <input type="text" id="side-a" name="Side a">
+        </div>
+         <div class="input-container">
+          <label for="side-b">Side b:</label>
+          <input type="text" id="side-b" name="Side b">
+        </div>
+         <div class="input-container">
+          <label for="height-h">Height h:</label>
+          <input type="text" id="height-h" name="Height h">
+        </div>
+        <div class="js-console"></div>
+        <div class="btn-container">
+          <input type="button" class="btn btn-solve" value="Solve">
+          <input type="button" class="btn btn-clear" value="Clear">
+        </div>
+      </form>
+    </div>
+    <script src="js/lib/js-console.js"></script>
+    <script src="js/08.trapezoid-area.js"></script>
+  </body>
 </html>

@@ -4,7 +4,7 @@ html, body, div, h1, h3, p, form, label, input {
 }
 
 body {
-  font-family: "Consolas" sans-serif;
+  font-family: "Consolas", sans-serif;
   color: #3c3f41;
   background-color: #eee;
 }
@@ -22,6 +22,7 @@ body {
   margin-bottom: 30px;
   color: #fff;
   background-color: #4c9ed9;
+  text-align: center;
 }
 
 .head-container,
@@ -114,4 +115,8 @@ h1, h3 {
 .btn:hover {
   color: #8099cc;
   font-weight: bold;
+}
+
+.image-container {
+  text-align: center;
 }

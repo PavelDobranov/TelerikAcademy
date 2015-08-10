@@ -1,5 +1,7 @@
-// Problem 1. Odd or Even
-// Write an expression that checks if given integer is odd or even.
+/*
+Problem 1. Odd or Even
+Write an expression that checks if given integer is odd or even.
+*/
 
 (function() {
   'use strict';
@@ -23,11 +25,7 @@
   }
 
   function isOddOrEven(number) {
-    if (number % 2 === 0) {
-      return 'even';
-    }
-
-    return 'odd';
+    return number % 2 === 0 ? 'even' : 'odd';
   }
 
   function clearForm() {
@@ -35,7 +33,7 @@
       element,
       len;
 
-    for (element = 0, len = inputElements.length; element < len; element += 1) {
+    for (element = 0, len = inputElements.length; element < len; element++) {
       inputElements[element].value = '';
     }
 

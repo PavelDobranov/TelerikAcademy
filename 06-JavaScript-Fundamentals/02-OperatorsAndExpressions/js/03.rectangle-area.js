@@ -1,5 +1,7 @@
-// Problem 3. Rectangle area
-// Write an expression that calculates rectangle’s area by given width and height.
+/*
+Problem 3. Rectangle area
+Write an expression that calculates rectangle’s area by given width and height.
+*/
 
 (function() {
   'use strict';
@@ -19,14 +21,14 @@
       if (width < 0 || height < 0) {
         jsConsole.writeLine('Invalid input!');
       } else {
-        jsConsole.writeLine('Area : ' + calculateArea(width, height));
+        jsConsole.writeLine('Area : ' + calculateRectangleArea(width, height));
       }
     } catch (e) {
       jsConsole.writeLine(e.message);
     }
   }
 
-  function calculateArea(width, height) {
+  function calculateRectangleArea(width, height) {
     return (width * height);
   }
 
@@ -35,7 +37,7 @@
       element,
       len;
 
-    for (element = 0, len = inputElements.length; element < len; element += 1) {
+    for (element = 0, len = inputElements.length; element < len; element++) {
       inputElements[element].value = '';
     }
 

@@ -1,5 +1,7 @@
-// Problem 4. Third digit
-// Write an expression that checks for given integer if its third digit (right-to-left) is 7.
+/*
+Problem 4. Third digit
+Write an expression that checks for given integer if its third digit (right-to-left) is 7.
+*/
 
 (function() {
   'use strict';
@@ -32,52 +34,10 @@
       element,
       len;
 
-    for (element = 0, len = inputElements.length; element < len; element += 1) {
+    for (element = 0, len = inputElements.length; element < len; element++) {
       inputElements[element].value = '';
     }
 
     jsConsole.clear();
   }
 }());
-
-function solve() {
-  resetConsole();
-
-  var input = document.getElementById('num').value;
-  var checkValue = 7;
-
-  if (isValidIntInput(input)) {
-    var number = parseInt(input);
-    var result = isThirdDigitSeven(number, checkValue);
-    printResult(number, checkValue, result);
-  } else {
-    printInvalidInput(input);
-  }
-}
-
-function isThirdDigitSeven(number, checkValue) {
-  var thirdDigit = Math.floor((number % 1000) / 100);
-
-  return thirdDigit === checkValue;
-}
-
-function printResult(number, checkValue, result) {
-  jsConsole.writeLine('Third digit of ' + number + ' is ' + checkValue + ' ? : ' + result);
-}
-
-function isValidIntInput(input) {
-  return !(isNaN(input) || input % 1 !== 0 || input === '');
-}
-
-function printInvalidInput(input) {
-  if (input === '') {
-    jsConsole.writeLine('Please fill the field');
-  } else {
-    jsConsole.writeLine('Invalid Input : ' + input);
-    jsConsole.writeLine('Must be an integer');
-  }
-}
-
-function resetConsole() {
-  jsConsole.clear();
-}

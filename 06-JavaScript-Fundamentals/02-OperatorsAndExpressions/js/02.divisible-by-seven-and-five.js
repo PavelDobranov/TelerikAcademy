@@ -1,6 +1,8 @@
-// Problem 2. Divisible by 7 and 5
-// Write a boolean expression that checks for given integer if it can be divided (without remainder)
-// by 7 and 5 in the same time.
+/*
+Problem 2. Divisible by 7 and 5
+Write a boolean expression that checks for given integer if it can be divided (without remainder)
+by 7 and 5 in the same time.
+*/
 
 (function() {
   'use strict';
@@ -34,7 +36,7 @@
       element,
       len;
 
-    for (element = 0, len = inputElements.length; element < len; element += 1) {
+    for (element = 0, len = inputElements.length; element < len; element++) {
       inputElements[element].value = '';
     }
 

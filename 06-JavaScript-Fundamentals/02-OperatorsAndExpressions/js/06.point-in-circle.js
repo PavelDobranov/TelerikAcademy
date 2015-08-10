@@ -1,58 +1,57 @@
-function solve() {
-    resetConsole();
+/*
+Problem 6. Point in Circle
+Write an expression that checks if given point P(x, y) is within a circle K({0,0}, 5).
+{0,0} is the centre and 5 is the radius.
+*/
 
-    var inputElements = document.getElementsByClassName('input');
-    var pointCoords = [];
-    var circleCoords = [0, 0];
-    var circleRadius = 5;
-    var validInput = true;
+(function() {
+  'use strict';
 
-    for (var input = 0; input < inputElements.length; input++) {
-        var currInput = inputElements[input].value;
+  var jsConsole = javaScriptConsole.createInstance('.js-console'),
+    solveButton = document.querySelector('.btn-solve'),
+    clearButton = document.querySelector('.btn-clear');
 
-        if (isValidFloatInput(currInput)) {
-            pointCoords[input] = parseFloat(currInput);
-        }
-        else {
-            validInput = false;
-            printInvalidInput(currInput);
-            break;
-        }
+  solveButton.addEventListener('click', solve);
+  clearButton.addEventListener('click', clearForm);
+
+  function solve() {
+    try {
+      var pointX = jsConsole.readFloat('#point-x'),
+        pointY = jsConsole.readFloat('#point-y'),
+        circle = {
+          x: 0,
+          y: 0,
+          radius: 5
+        },
+        point = {
+          x: pointX,
+          y: pointY
+        };
+
+      var result = isInCircle(point, circle);
+
+      jsConsole.writeLine('Is point P(' + point.x + ', ' + point.y + ') within a circle K({ ' + circle.x + ', ' + circle.y + '}, ' + circle.radius + ') ? : ' + result);
+    } catch (e) {
+      jsConsole.writeLine(e.message);
+    }
+  }
+
+  function isInCircle(point, circle) {
+    var xDelta = point.x - circle.x,
+      yDelta = point.y - circle.y;
+
+    return (xDelta * xDelta) + (yDelta * yDelta) <= circle.radius * circle.radius;
+  }
+
+  function clearForm() {
+    var inputElements = document.querySelectorAll('.input-container > input'),
+      element,
+      len;
+
+    for (element = 0, len = inputElements.length; element < len; element++) {
+      inputElements[element].value = '';
     }
 
-    if (validInput) {
-        var result = isWithinCircle(pointCoords, circleCoords, circleRadius);
-        printResult(pointCoords, circleCoords, circleRadius, result);
-    }
-}
-
-function isWithinCircle(pointCoords, circleCoords, circleRadius) {
-    var xDelta = pointCoords[0] - circleCoords[0];
-    var yDelta = pointCoords[1] - circleCoords[1];
-
-    return (xDelta * xDelta) + (yDelta * yDelta) <= circleRadius * circleRadius;
-}
-
-function printResult(pointCoords, circleCoords, circleRadius, result) {
-    jsConsole.writeLine('Point (' + pointCoords[0] + ', ' + pointCoords[1] +
-        ') is within a circle ((' + circleCoords[0] + ', ' + circleCoords[1] +
-        '), ' + circleRadius + ') ? : ' + result);
-}
-
-function isValidFloatInput(input) {
-    return !(isNaN(input) || input === '');
-}
-
-function printInvalidInput(input) {
-    if (input === '') {
-        jsConsole.writeLine('Please fill all fields');
-    }
-    else {
-        jsConsole.writeLine('Invalid Input : ' + input);
-        jsConsole.writeLine('Must be a number');
-    }
-}
-
-function resetConsole() {
     jsConsole.clear();
-}
+  }
+}());

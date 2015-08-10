@@ -1,59 +1,44 @@
-function solve() {
-    resetConsole();
+/*
+Problem 8. Trapezoid area
+Write an expression that calculates trapezoid's area by given sides a and b and height h.
+*/
 
-    var inputElements = document.getElementsByClassName('input');
-    var dimensions = [];
-    var validInput = true;
+(function() {
+  'use strict';
 
-    for (var input = 0; input < inputElements.length; input++) {
-        var currInput = inputElements[input].value;
+  var jsConsole = javaScriptConsole.createInstance('.js-console'),
+    solveButton = document.querySelector('.btn-solve'),
+    clearButton = document.querySelector('.btn-clear');
 
-        if (isValidFloatInput(currInput)) {
-            dimensions[input] = parseFloat(currInput);
-        }
-        else {
-            validInput = false;
-            printInvalidInput(currInput);
-            break;
-        }
+  solveButton.addEventListener('click', solve);
+  clearButton.addEventListener('click', clearForm);
+
+  function solve() {
+    try {
+      var sideA = jsConsole.readFloat('#side-a'),
+        sideB = jsConsole.readFloat('#side-b'),
+        height = jsConsole.readFloat('#height-h'),
+        area = calculateTrapezoidArea(sideA, sideB, height);
+
+      jsConsole.writeLine('Trapezoid area: ' + area.toFixed(3));
+    } catch (e) {
+      jsConsole.writeLine(e.message);
     }
+  }
 
-    if (validInput) {
-        var sideA = dimensions[0];
-        var sideB = dimensions[1];
-        var height = dimensions[2];
-        var area = calculateArea(sideA, sideB, height);
-
-        printResult(area.toFixed(2));
-    }
-}
-
-function calculateArea(sideA, sideB, height) {
+  function calculateTrapezoidArea(sideA, sideB, height) {
     return (height * (sideA + sideB)) / 2;
-}
+  }
 
-function printResult(result) {
-    jsConsole.writeLine('Area : ' + result + ' mm<sup>2</sup>');
-}
+  function clearForm() {
+    var inputElements = document.querySelectorAll('.input-container > input'),
+      element,
+      len;
 
-function isValidFloatInput(input) {
-    if (isNaN(input) || input === '') {
-        return false;
+    for (element = 0, len = inputElements.length; element < len; element++) {
+      inputElements[element].value = '';
     }
 
-    return input > 0;
-}
-
-function printInvalidInput(input) {
-    if (input === '') {
-        jsConsole.writeLine('Please fill all fields');
-    }
-    else {
-        jsConsole.writeLine('Invalid Input : ' + input);
-        jsConsole.writeLine('Must be a positive number');
-    }
-}
-
-function resetConsole() {
     jsConsole.clear();
-}
+  }
+}());
