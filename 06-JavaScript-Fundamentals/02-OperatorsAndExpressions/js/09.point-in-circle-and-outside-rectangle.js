@@ -59,7 +59,7 @@ and out of the rectangle R(top=1, left=-1, width=6, height=2).
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input'),
+    var inputElements = document.querySelectorAll('.input-container input'),
       element,
       len;
 

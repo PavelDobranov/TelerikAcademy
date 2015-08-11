@@ -30,7 +30,7 @@ Write an expression that checks for given integer if its third digit (right-to-l
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input'),
+    var inputElements = document.querySelectorAll('.input-container input'),
       element,
       len;
 

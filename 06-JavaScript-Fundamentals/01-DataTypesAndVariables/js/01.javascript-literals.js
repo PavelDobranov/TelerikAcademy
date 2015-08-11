@@ -1,5 +1,7 @@
-// Problem 1. JavaScript literals
-// Assign all the possible JavaScript literals to different variables.
+/*
+ Problem 1. JavaScript literals
+ Assign all the possible JavaScript literals to different variables.
+*/
 
 (function() {
   'use strict';

@@ -1,6 +1,8 @@
-// Problem 2. Quoted text
-// Create a string variable with quoted text in it.
-// For example: `'How you doin'?', Joey said'.
+/*
+Problem 2. Quoted text
+Create a string variable with quoted text in it.
+For example: `'How you doin'?', Joey said'.
+*/
 
 (function() {
   'use strict';
@@ -13,7 +15,7 @@
   clearButton.addEventListener('click', clearForm);
 
   function solve() {
-    var quotedText = "'How you doin'?', Pesho said.";
+    var quotedText = '"How you doin\'?", Joe said.';
 
     jsConsole.writeLine(quotedText);
   }

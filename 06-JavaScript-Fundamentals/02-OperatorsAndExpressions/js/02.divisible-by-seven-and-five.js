@@ -32,7 +32,7 @@ by 7 and 5 in the same time.
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input'),
+    var inputElements = document.querySelectorAll('.input-container input'),
       element,
       len;
 

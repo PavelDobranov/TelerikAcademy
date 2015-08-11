@@ -29,7 +29,7 @@ Write an expression that checks if given integer is odd or even.
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input'),
+    var inputElements = document.querySelectorAll('.input-container input'),
       element,
       len;
 

@@ -33,7 +33,7 @@ Write an expression that calculates rectangle’s area by given width and height
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input'),
+    var inputElements = document.querySelectorAll('.input-container input'),
       element,
       len;
 

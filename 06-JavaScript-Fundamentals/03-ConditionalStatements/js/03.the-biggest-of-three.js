@@ -1,6 +1,8 @@
-// Problem 3. The biggest of Three
-// Write a script that finds the biggest of three numbers.
-// Use nested if statements.
+/*
+Problem 3. The biggest of Three
+Write a script that finds the biggest of three numbers.
+Use nested if statements.
+*/
 
 (function() {
   'use strict';

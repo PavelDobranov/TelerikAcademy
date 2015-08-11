@@ -1,6 +1,8 @@
-// Problem 7. The biggest of five numbers
-// Write a script that finds the greatest of given 5 variables.
-// Use nested if statements.
+/*
+Problem 7. The biggest of five numbers
+Write a script that finds the greatest of given 5 variables.
+Use nested if statements.
+*/
 
 (function() {
   'use strict';

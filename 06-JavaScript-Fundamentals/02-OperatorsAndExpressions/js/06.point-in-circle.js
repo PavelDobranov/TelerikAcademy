@@ -44,7 +44,7 @@ Write an expression that checks if given point P(x, y) is within a circle K({0,0
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input'),
+    var inputElements = document.querySelectorAll('.input-container input'),
       element,
       len;
 

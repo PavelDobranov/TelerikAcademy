@@ -1,6 +1,8 @@
-// Problem 4. Sort 3 numbers
-// Sort 3 real values in descending order.
-// Use nested if statements.
+/*
+Problem 4. Sort 3 numbers
+Sort 3 real values in descending order.
+Use nested if statements.
+*/
 
 (function() {
   'use strict';

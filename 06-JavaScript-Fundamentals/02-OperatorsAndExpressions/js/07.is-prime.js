@@ -45,7 +45,7 @@ Write an expression that checks if given positive integer number n (n ≤ 100) i
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input'),
+    var inputElements = document.querySelectorAll('.input-container input'),
       element,
       len;
 
