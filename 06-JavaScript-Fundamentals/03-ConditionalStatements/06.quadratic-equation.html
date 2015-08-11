@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Quadratic equation</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="head-container">
+        <h1>Conditional Statements</h1>
+        <h3>Problem 6 - Quadratic equation</h3>
+        <ul>
+          <li>Write a script that reads the coefficients a, b and c of a quadratic equation ax2 + bx + c = 0 and solves it (prints its real roots).</li>
+          <li>Calculates and prints its real roots.</li>
+        </ul>
+      </div>
+      <form>
+        <div class="input-container">
+          <label for="a-coeff">a:</label>
+          <input type="text" id="a-coeff" name="a">
+        </div>
+        <div class="input-container">
+          <label for="b-coeff">b:</label>
+          <input type="text" id="b-coeff" name="b">
+        </div>
+        <div class="input-container">
+          <label for="c-coeff">c:</label>
+          <input type="text" id="c-coeff" name="c">
+        </div>
+        <div class="js-console"></div>
+        <div class="btn-container">
+          <input type="button" class="btn btn-solve" value="Solve">
+          <input type="button" class="btn btn-clear" value="Clear">
+        </div>
+      </form>
+    </div>
+    <script src="js/lib/js-console.js"></script>
+    <script src="js/06.quadratic-equation.js"></script>
+  </body>
+</html>
