@@ -1,6 +1,8 @@
-// Problem 3. Deep copy
-// Write a function that makes a deep copy of an object.
-// The function should work for both primitive and reference types.
+/*
+Problem 3. Deep copy
+Write a function that makes a deep copy of an object.
+The function should work for both primitive and reference types.
+*/
 
 (function() {
   'use strict';
@@ -52,13 +54,15 @@
   }
 
   function clone(obj) {
+    var prop;
+
     if (obj === null || typeof obj !== 'object') {
       return obj;
     }
 
     var cloned = obj.constructor();
 
-    for (var prop in obj) {
+    for (prop in obj) {
       cloned[prop] = clone(obj[prop]);
     }
 
@@ -70,9 +74,11 @@
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input');
+    var inputElements = document.querySelectorAll('.input-container input'),
+      element,
+      len;
 
-    for (var element = 0; element < inputElements.length; element += 1) {
+    for (element = 0, len = inputElements.length; element < len; element++) {
       inputElements[element].value = '';
     }
 

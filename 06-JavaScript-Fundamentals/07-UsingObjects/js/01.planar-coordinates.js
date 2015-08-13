@@ -1,9 +1,11 @@
-// Problem 1. Planar coordinates
-// - Write functions for working with shapes in standard Planar coordinate system.
-//    - Points are represented by coordinates P(X, Y)
-//    - Lines are represented by two points, marking their beginning and ending L(P1(X1,Y1), P2(X2,Y2))
-// - Calculate the distance between two points.
-// - Check if three segment lines can form a triangle.
+/*
+Problem 1. Planar coordinates
+- Write functions for working with shapes in standard Planar coordinate system.
+   - Points are represented by coordinates P(X, Y)
+   - Lines are represented by two points, marking their beginning and ending L(P1(X1,Y1), P2(X2,Y2))
+- Calculate the distance between two points.
+- Check if three segment lines can form a triangle.
+*/
 
 (function() {
   'use strict';
@@ -51,10 +53,11 @@
       secondPointX,
       secondPointY,
       firstPoint,
-      secondPoint;
+      secondPoint,
+      i;
 
     try {
-      for (var i = 0; i < linesInput.length; i += 4) {
+      for (i = 0; i < linesInput.length; i += 4) {
         firstPointX = jsConsole.readFloat('#' + linesInput[i].id);
         firstPointY = jsConsole.readFloat('#' + linesInput[i + 1].id);
         secondPointX = jsConsole.readFloat('#' + linesInput[i + 2].id);
@@ -96,9 +99,11 @@
   };
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input');
+    var inputElements = document.querySelectorAll('.input-container input'),
+      element,
+      len;
 
-    for (var element = 0; element < inputElements.length; element += 1) {
+    for (element = 0, len = inputElements.length; element < len; element++) {
       inputElements[element].value = '';
     }
 

@@ -1,6 +1,8 @@
-// Problem 6. Larger than neighbours
-// Write a function that checks if the element at given position in given array of integers
-// is bigger than its two neighbours (when such exist).
+/*
+Problem 6. Larger than neighbours
+Write a function that checks if the element at given position in given array of integers
+is bigger than its two neighbours (when such exist).
+*/
 
 (function() {
   'use strict';
@@ -45,17 +47,19 @@
   }
 
   function printResult(property, groupedArray) {
-    var group;
+    var group,
+      key,
+      person;
 
     jsConsole.writeLine('Grouped by : ' + property);
     jsConsole.writeLine();
 
-    for (var key in groupedArray) {
+    for (key in groupedArray) {
       jsConsole.writeLine(key + ' :');
 
       group = groupedArray[key];
 
-      for (var person in group) {
+      for (person in group) {
         jsConsole.writeLine('- ' + JSON.stringify(group[person]));
       }
     }
@@ -63,9 +67,10 @@
 
   function group(array, property) {
     var result = {},
+      item,
       key;
 
-    for (var item in array) {
+    for (item in array) {
       if (!result.hasOwnProperty(array[item][property])) {
         key = array[item][property];
 
@@ -83,9 +88,11 @@
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input');
+    var inputElements = document.querySelectorAll('.input-container input'),
+      element,
+      len;
 
-    for (var element = 0; element < inputElements.length; element += 1) {
+    for (element = 0, len = inputElements.length; element < len; element++) {
       inputElements[element].value = '';
     }
 

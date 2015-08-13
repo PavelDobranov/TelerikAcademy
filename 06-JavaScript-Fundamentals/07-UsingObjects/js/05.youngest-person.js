@@ -1,6 +1,8 @@
-// Problem 5. Youngest person
-// Write a function that finds the youngest person in a given array of people and prints his/hers full name
-// Each person has properties firstname, lastname and age.
+/*
+Problem 5. Youngest person
+Write a function that finds the youngest person in a given array of people and prints his/hers full name
+Each person has properties firstname, lastname and age.
+*/
 
 (function() {
   'use strict';
@@ -36,9 +38,11 @@
   }
 
   function findYoungest(people) {
-    var youngest = people[0];
+    var youngest = people[0],
+      index,
+      len;
 
-    for (var index = 1; index < people.length; index += 1) {
+    for (index = 1, len = people.length; index < len; index++) {
       if (people[index].age < youngest.age) {
         youngest = people[index];
       }
@@ -48,9 +52,11 @@
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input');
+    var inputElements = document.querySelectorAll('.input-container input'),
+      element,
+      len;
 
-    for (var element = 0; element < inputElements.length; element += 1) {
+    for (element = 0, len = inputElements.length; element < len; element++) {
       inputElements[element].value = '';
     }
 
