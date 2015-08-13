@@ -1,7 +1,9 @@
-// Problem 7. First larger than neighbours
-// Write a function that returns the index of the first element in array that is larger than its neighbours or -1,
-// if there’s no such element.
-// Use the function from the previous exercise.
+/*
+Problem 7. First larger than neighbours
+Write a function that returns the index of the first element in array that is larger than its neighbours or -1,
+if there’s no such element.
+Use the function from the previous exercise.
+*/
 
 (function() {
   'use strict';
@@ -15,7 +17,7 @@
 
   function solve() {
     try {
-      var array = jsConsole.readIntArray('#array'),
+      var array = jsConsole.readArray('#array'),
         result = firstLargerThanNeighbours(array);
 
       if (result >= 0) {
@@ -50,9 +52,9 @@
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input');
+    var inputElements = document.querySelectorAll('.input-container input');
 
-    for (var element = 0; element < inputElements.length; element += 1) {
+    for (var element = 0; element < inputElements.length; element++) {
       inputElements[element].value = '';
     }
 

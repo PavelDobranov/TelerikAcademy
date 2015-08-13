@@ -1,6 +1,8 @@
-// Problem 6. Larger than neighbours
-// Write a function that checks if the element at given position in given array of integers
-// is bigger than its two neighbours (when such exist).
+/*
+Problem 6. Larger than neighbours
+Write a function that checks if the element at given position in given array of integers
+is bigger than its two neighbours (when such exist).
+*/
 
 (function() {
   'use strict';
@@ -14,7 +16,7 @@
 
   function solve() {
     try {
-      var array = jsConsole.readIntArray('#array'),
+      var array = jsConsole.readArray('#array'),
         position = jsConsole.readInteger('#position'),
         result = isLargerThanNeighbours(array, position);
 
@@ -35,9 +37,9 @@
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input');
+    var inputElements = document.querySelectorAll('.input-container input');
 
-    for (var element = 0; element < inputElements.length; element += 1) {
+    for (var element = 0; element < inputElements.length; element++) {
       inputElements[element].value = '';
     }
 

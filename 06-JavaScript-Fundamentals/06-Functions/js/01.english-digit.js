@@ -1,5 +1,7 @@
-// Problem 1. English digit
-// Write a function that returns the last digit of given integer as an English word.
+/*
+Problem 1. English digit
+Write a function that returns the last digit of given integer as an English word.
+*/
 
 (function() {
   'use strict';
@@ -40,9 +42,9 @@
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input');
+    var inputElements = document.querySelectorAll('.input-container input');
 
-    for (var element = 0; element < inputElements.length; element += 1) {
+    for (var element = 0; element < inputElements.length; element++) {
       inputElements[element].value = '';
     }
 

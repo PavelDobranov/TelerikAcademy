@@ -1,5 +1,7 @@
-// Problem 4. Number of elements
-// Write a function to count the number of div elements on the web page
+/*
+Problem 4. Number of elements
+Write a function to count the number of div elements on the web page
+*/
 
 (function() {
   'use strict';
@@ -32,10 +34,10 @@
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input'),
+    var inputElements = document.querySelectorAll('.input-container input'),
       divElements = document.querySelectorAll('div');
 
-    for (var element = 0; element < inputElements.length; element += 1) {
+    for (var element = 0; element < inputElements.length; element++) {
       inputElements[element].value = '';
     }
 

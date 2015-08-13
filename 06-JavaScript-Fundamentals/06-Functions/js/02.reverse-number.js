@@ -1,5 +1,7 @@
-// Problem 2. Reverse number
-// Write a function that reverses the digits of given decimal number.
+/*
+Problem 2. Reverse number
+Write a function that reverses the digits of given decimal number.
+*/
 
 (function() {
   'use strict';
@@ -38,9 +40,9 @@
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input');
+    var inputElements = document.querySelectorAll('.input-container input');
 
-    for (var element = 0; element < inputElements.length; element += 1) {
+    for (var element = 0; element < inputElements.length; element++) {
       inputElements[element].value = '';
     }
 

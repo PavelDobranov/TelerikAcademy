@@ -1,6 +1,8 @@
-// Problem 5. Appearance count
-// Write a function that counts how many times given number appears in given array.
-// Write a test function to check if the function is working correctly.
+/*
+Problem 5. Appearance count
+Write a function that counts how many times given number appears in given array.
+Write a test function to check if the function is working correctly.
+*/
 
 (function() {
   'use strict';
@@ -14,7 +16,7 @@
 
   function solve() {
     try {
-      var array = jsConsole.readIntArray('#array'),
+      var array = jsConsole.readArray('#array'),
         number = jsConsole.readInteger('#number'),
         result = appearanceCount(array, number);
 
@@ -31,9 +33,9 @@
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input');
+    var inputElements = document.querySelectorAll('.input-container input');
 
-    for (var element = 0; element < inputElements.length; element += 1) {
+    for (var element = 0; element < inputElements.length; element++) {
       inputElements[element].value = '';
     }
 

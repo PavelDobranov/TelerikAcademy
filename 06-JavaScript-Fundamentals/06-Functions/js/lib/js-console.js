@@ -1,4 +1,4 @@
-var javaScriptConsole = (function() {
+﻿var javaScriptConsole = (function() {
   'use strict';
 
   var JsConsole = (function() {
@@ -9,7 +9,7 @@ var javaScriptConsole = (function() {
     }
 
     JsConsole.prototype.write = function(input) {
-      var text = input || '',
+      var text = input,
         textLine = document.createElement('span');
 
       textLine.innerHTML = text;
@@ -23,13 +23,25 @@ var javaScriptConsole = (function() {
     };
 
     JsConsole.prototype.readText = function(selector) {
-      var element = document.querySelector(selector);
+      var element;
+
+      if (selector instanceof HTMLElement) {
+        element = selector;
+      } else {
+        element = document.querySelector(selector);
+      }
 
       return element.value;
     };
 
     JsConsole.prototype.readInteger = function(selector) {
-      var element = document.querySelector(selector);
+      var element;
+
+      if (selector instanceof HTMLElement) {
+        element = selector;
+      } else {
+        element = document.querySelector(selector);
+      }
 
       if (!isValidInteger(element.value)) {
         throw new TypeError('Please enter valid integer value : [ ' + element.name + ' ]');
@@ -39,7 +51,13 @@ var javaScriptConsole = (function() {
     };
 
     JsConsole.prototype.readFloat = function(selector) {
-      var element = document.querySelector(selector);
+      var element;
+
+      if (selector instanceof HTMLElement) {
+        element = selector;
+      } else {
+        element = document.querySelector(selector);
+      }
 
       if (!isValidFloat(element.value)) {
         throw new TypeError('Please enter valid float value : [ ' + element.name + ' ]');
@@ -48,12 +66,18 @@ var javaScriptConsole = (function() {
       return parseFloat(element.value);
     };
 
-    JsConsole.prototype.readIntArray = function(selector) {
-      var element = document.querySelector(selector);
-      
+    JsConsole.prototype.readArray = function(selector) {
+      var element;
+
+      if (selector instanceof HTMLElement) {
+        element = selector;
+      } else {
+        element = document.querySelector(selector);
+      }
+
       try {
         return JSON.parse('[' + element.value + ']');
-      } catch(e) {
+      } catch (e) {
         throw new Error('Invalid input : [ ' + element.name + ' ]');
       }
     };

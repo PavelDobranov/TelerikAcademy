@@ -1,7 +1,9 @@
-// Problem 3. Occurrences of word
-// Write a function that finds all the occurrences of word in a text.
-// The search can be case sensitive or case insensitive.
-// Use function overloading.
+/*
+Problem 3. Occurrences of word
+Write a function that finds all the occurrences of word in a text.
+The search can be case sensitive or case insensitive.
+Use function overloading.
+*/
 
 (function() {
   'use strict';
@@ -40,9 +42,9 @@
   }
 
   function clearForm() {
-    var inputElements = document.querySelectorAll('.input-container > input');
+    var inputElements = document.querySelectorAll('.input-container input');
 
-    for (var element = 0; element < inputElements.length; element += 1) {
+    for (var element = 0; element < inputElements.length; element++) {
       inputElements[element].value = '';
     }
 
