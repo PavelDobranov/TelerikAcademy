@@ -1,4 +1,4 @@
-[![JavaScript Fundamentals](js-fundamentals.png)]()
+## JavaScript Fundamentals
 
 1. [Data types and variables](01-DataTypesAndVariables)
 2. [Operators and expressions](02-OperatorsAndExpressions)
