@@ -60,7 +60,7 @@
 9. [Strings](06-JavaScript-Fundamentals/09-Strings)
 10. [Regular expressions](06-JavaScript-Fundamentals/10-RegularExpressions)
 
-# Module II
+## Module II
 
 ### [JavaScript Object-Oriented Programming](07-JavaScript-Object-Oriented-Programming)
 
@@ -70,8 +70,15 @@
 4. [Prototypal inheritance](07-JavaScript-Object-Oriented-Programming/04-PrototypalInheritance)
 5. [Modules and patterns](07-JavaScript-Object-Oriented-Programming/05-ModulesAndPatterns)
 
-### [JavaScript UI and DOM](08-JavaScript-Object-Oriented-Programming)
+### [JavaScript UI and DOM](08-JavaScript-UI-And-DOM)
 
-### [High-Quality Code](10-High-Quality-Code)
-
-1. [Code formatting](10-High-Quality-Code/01-CodeFormatting)
+1. [Document object model](08-JavaScript-UI-And-DOM/01-DocumentObjectModel)
+2. [HTML5 canvas](08-JavaScript-UI-And-DOM/02-HTML5Canvas)
+3. [Scalable vector graphics](08-JavaScript-UI-And-DOM/03-ScalableVectorGraphics)
+4. [Frameworks for graphics](08-JavaScript-UI-And-DOM/04-FrameworksForGraphics)
+5. [DOM operations](08-JavaScript-UI-And-DOM/05-DOMOperations)
+6. [Event model](08-JavaScript-UI-And-DOM/06-EventModel)
+7. [jQuery overview](08-JavaScript-UI-And-DOM/07-jQueryOverview)
+8. [jQuery plugins](08-JavaScript-UI-And-DOM/08-jQueryPlugins)
+9. [HTML templatess](08-JavaScript-UI-And-DOM/09-HTMLTemplates)
+10. [Teamwork project](https://github.com/PavelDobranov/TA-Teamwork-JS-UI-And-DOM)
