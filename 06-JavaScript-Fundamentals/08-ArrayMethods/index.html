@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Array methods</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="head-container">
+        <h1>Array Methods</h1>
+        <h3>Problem 1. Make person</h3>
+        <ul>
+          <li>Write a function for creating persons.</li>
+          <li>Each person must have firstname, lastname, age and gender (true is female, false is male)</li>
+          <li>Generate an array with ten person with different names, ages and genders</li>
+        </ul>
+        <h3>Problem 2. People of age</h3>
+        <ul>
+          <li>Write a function that checks if an array of person contains only people of age (with age 18 or greater)</li>
+          <li>Use only array methods and no regular loops (for, while)</li>
+        </ul>
+        <h3>Problem 3. Underage people</h3>
+        <ul>
+          <li>Write a function that prints all underaged persons of an array of person</li>
+          <li>Use Array#filter and Array#forEach</li>
+          <li>Use only array methods and no regular loops (for, while)</li>
+        </ul>
+        <h3>Problem 4. Average age of females</h3>
+        <ul>
+          <li>Write a function that calculates the average age of all females, extracted from an array of persons</li>
+          <li>Use Array#filter</li>
+          <li>Use only array methods and no regular loops (for, while)</li>
+        </ul>
+        <h3>Problem 5. Youngest person</h3>
+        <ul>
+          <li>Write a function that finds the youngest male person in a given array of people and prints his full name</li>
+          <li>Use only array methods and no regular loops (for, while)</li>
+          <li>Use Array#find</li>
+        </ul>
+        <h3>Problem 6. Group people</h3>
+        <ul>
+          <li>Write a function that groups an array of persons by first letter of first name and returns the groups as a JavaScript Object</li>
+          <li>Use Array#reduce</li>
+          <li>Use only array methods and no regular loops (for, while)</li>
+        </ul>
+      </div>
+      <form>
+        <div class="input-container">
+          <div id="people" class="data-container">
+            <strong>People:</strong>
+          </div>
+        </div>
+        <div id="js-console" class="js-console"></div>
+        <div class="btn-container">
+          <input type="button" id="btn-people-of-age" class="btn btn-solve" value="People of age">
+          <input type="button" id="btn-underage-people" class="btn btn-solve" value="Underage people">
+          <input type="button" id="btn-average-age-of-females" class="btn btn-solve" value="Average age of females">
+          <input type="button" id="btn-youngest-person" class="btn btn-solve" value="Youngest person">
+          <input type="button" id="btn-group-people" class="btn btn-solve" value="Group people">
+        </div>
+      </form>
+    </div>
+    <script src="js/lib/js-console.js"></script>
+    <script src="js/array-methods.js"></script>
+  </body>
+</html>
