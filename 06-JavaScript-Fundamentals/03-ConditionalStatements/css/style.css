@@ -4,13 +4,13 @@ html, body, div, h1, h3, p, form, label, input {
 }
 
 body {
-  font-family: "Consolas" sans-serif;
+  font-family: "Consolas", sans-serif;
   color: #3c3f41;
   background-color: #eee;
 }
 
 .main-container {
-  width: 650px;
+  width: 800px;
   margin: 50px auto;
 }
 

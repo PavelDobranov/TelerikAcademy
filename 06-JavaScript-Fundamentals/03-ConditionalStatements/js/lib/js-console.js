@@ -9,7 +9,7 @@
     }
 
     JsConsole.prototype.write = function(input) {
-      var text = input || '',
+      var text = input,
         textLine = document.createElement('span');
 
       textLine.innerHTML = text;
@@ -66,7 +66,7 @@
       return parseFloat(element.value);
     };
 
-    JsConsole.prototype.readIntArray = function(selector) {
+    JsConsole.prototype.readArray = function(selector) {
       var element;
 
       if (selector instanceof HTMLElement) {
