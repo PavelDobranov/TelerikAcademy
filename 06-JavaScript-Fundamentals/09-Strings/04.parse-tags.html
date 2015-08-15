@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Parse tags</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="head-container">
+        <h1>Strings</h1>
+        <h3>Problem 4 - Parse tags</h3>
+        <ul>
+          <li>
+            You are given a text. Write a function that changes the text in all regions:
+            <ul>
+              <li>&lt;upcase&gt;text&lt;/upcase&gt; to uppercase</li>
+              <li>&lt;lowcase&gt;text&lt;/lowcase&gt; to lowercase</li>
+              <li>&lt;mixcase&gt;text&lt;/mixcase&gt; to mix casing(random)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <form>
+        <div class="input-container">
+          <label for="text" class="long">Text:</label>
+          <textarea id="text" rows="4" cols="50">We are &lt;mixcase&gt;living&lt;/mixcase&gt; in a &lt;upcase&gt;yellow submarine&lt;/upcase&gt;. We &lt;mixcase&gt;don't&lt;/mixcase&gt; have &lt;lowcase&gt;anything&lt;/lowcase&gt; else.</textarea>
+        </div>
+        <div class="js-console"></div>
+        <div class="btn-container">
+          <input type="button" class="btn btn-solve" value="Solve">
+          <input type="button" class="btn btn-clear" value="Clear">
+        </div>
+      </form>
+    </div>
+    <script src="js/lib/js-console.js"></script>
+    <script src="js/04.parse-tags.js"></script>
+</html>

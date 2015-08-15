@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Generate list</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="head-container">
+        <h1>Strings</h1>
+        <h3>Problem 12 - Generate list</h3>
+        <ul>
+          <li>Write a function that creates a HTML &lt;ul&gt; using a template for every HTML &lt;li&gt;.</li>
+          <li>The source of the list should be an array of elements.</li>
+          <li>Replace all placeholders marked with –{...}– with the value of the corresponding property of the object.</li>
+        </ul>
+      </div>
+      <form>
+        <div class="input-container">
+          <span class="example">Examples:</span>
+          <span class="example">&lt;div data-type="template" id="list-item"&gt;</span>
+          <span class="example">&lt;strong&gt;-{name}-&lt;/strong&gt; &lt;span&gt;-{age}-&lt;/span&gt;</span>
+          <span class="example">&lt;/div></span>
+          <span class="example"></span>
+          <br>
+          <span class="example">var people = [{name: 'Peter', age: 14},…];</span>
+          <span class="example">var tmpl = document.getElementById('list-item').innerHtml;</span>
+          <span class="example">var peopleList = generateList(people, template);</span>
+          <span class="example">//peopleList = '&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Peter&lt;/strong&gt;</span>
+          <span class="example">&lt;span&gt;14&lt;/span&gt;&lt;/li&gt;&lt;li&gt;…&lt;/li&gt;…&lt;/ul&gt;'</span>
+        </div>
+        <div data-type="template" id="list-item">
+          <strong>-{name}-</strong> <span>-{age}-</span>
+        </div>
+        <div class="js-console"></div>
+        <div class="btn-container">
+          <input type="button" class="btn btn-solve" value="Solve">
+          <input type="button" class="btn btn-clear" value="Clear">
+        </div>
+      </form>
+    </div>
+    <script src="js/lib/js-console.js"></script>
+    <script src="js/12.generate-list.js"></script>
+</html>

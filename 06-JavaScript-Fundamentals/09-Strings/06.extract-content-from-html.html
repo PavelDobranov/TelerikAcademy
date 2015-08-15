@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Extract text from HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="head-container">
+        <h1>Strings</h1>
+        <h3>Problem 6 - Extract text from HTML</h3>
+        <ul>
+          <li>Write a function that extracts the content of a html page given as text.</li>
+          <li>The function should return anything that is in a tag, without the tags.</li>
+        </ul>
+      </div>
+      <form>
+        <div class="input-container">
+          <label for="text" class="long">Text:</label>
+          <textarea id="text" rows="4" cols="50">&lt;html&gt;&lt;head&gt;&lt;title&gt;Sample site&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;div&gt;text&lt;div&gt;more text&lt;/div&gt;and more...&lt;/div&gt;in body&lt;/body&gt;&lt;/html&gt;</textarea>
+        </div>
+        <div class="js-console"></div>
+        <div class="btn-container">
+          <input type="button" class="btn btn-solve" value="Solve">
+          <input type="button" class="btn btn-clear" value="Clear">
+        </div>
+      </form>
+    </div>
+    <script src="js/lib/js-console.js"></script>
+    <script src="js/06.extract-content-from-html.js"></script>
+</html>
