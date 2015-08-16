@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Format with placeholders</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="head-container">
+        <h1>Regular expressions</h1>
+        <h3>Problem 1 - Format with placeholders</h3>
+        <ul>
+          <li>Write a function that formats a string. The function should have placeholders, as shown in the example</li>
+          <li>Add the function to the String.prototype</li>
+        </ul>
+      </div>
+      <form>
+        <div class="input-container">
+          <span class="example">Example 1</span>
+          <span class="example">Input:</span>
+          <span class="example">var options = {name: 'John'};</span>
+          <span class="example">'Hello, there! Are you #{name}?'.format(options);</span>
+          <span class="example">Output:</span>
+          <span class="example">'Hello, there! Are you John'</span>
+          <br>
+          <span class="example">Example 2</span>
+          <span class="example">Input:</span>
+          <span class="example">var options = {name: 'John', age: 13};</span>
+          <span class="example">'My name is #{name} and I am #{age}-years-old'.format(options);</span>
+          <span class="example">Output:</span>
+          <span class="example">'My name is John and I am 13-years-old'</span>
+        </div>
+        <div class="js-console"></div>
+        <div class="btn-container">
+          <input type="button" class="btn btn-solve" value="Solve">
+          <input type="button" class="btn btn-clear" value="Clear">
+        </div>
+      </form>
+    </div>
+    <script src="js/lib/js-console.js"></script>
+    <script src="js/01.format-placeholders.js"></script>
+</html>
