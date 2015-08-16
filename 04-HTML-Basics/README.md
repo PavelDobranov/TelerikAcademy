@@ -1,4 +1,4 @@
-[![HTML Basics](html-basics.png)]()
+### HTML Basics
 
 1. [HTML fundamentals](01-HTML-Fundamentals)
 2. [HTML tables](02-HTML-Tables)

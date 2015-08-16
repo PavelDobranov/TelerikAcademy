@@ -1,4 +1,4 @@
-[![C# OOP](cs-oop.png)]()
+### C# Object-Oriented Programming
 
 1. [Defining classes - part one](01-DefiningClassesPartOne)
 2. [Defining classes - part two](02-DefiningClassesPartTwo)

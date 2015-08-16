@@ -1,4 +1,4 @@
-[![C# Part Two](cs-part-two.png)]()
+### C# Part Two
 
 1. [Arrays](01-Arrays)
 2. [Multidimensional arrays](02-MultidimensionalArrays)
