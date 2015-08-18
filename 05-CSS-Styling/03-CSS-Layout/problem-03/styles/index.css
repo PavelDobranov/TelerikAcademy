@@ -1,0 +1,92 @@
+div, header, form, img,
+label, input, article, h1, p {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#wrapper {
+	width: 660px;
+	height: 297px;
+	margin: 0 auto;
+	border: 1px solid #806850;
+	border-radius: 7px;
+	background-color: #3b3b3b;
+}
+
+form {
+	height: 67px;
+	position: relative;	
+	background: #3b3b3b;
+	background: -webkit-radial-gradient(50% 100%, 80% 10%, rgba(38,38,38,1) 0%, rgba(0,0,0,0) 70%);
+	background: -moz-linear-gradient(top, #3b3b3b 0%, #3b3b3b 44%, #373737 68%, #333333 77%, #353535 80%, #2d2d2d 94%, #2a2a2a 97%, #262626 98%, #262626 100%);
+	background: -o-linear-gradient(top, #3b3b3b 0%,#3b3b3b 44%,#373737 68%,#333333 77%,#353535 80%,#2d2d2d 94%,#2a2a2a 97%,#262626 98%,#262626 100%);
+	background: -ms-linear-gradient(top, #3b3b3b 0%,#3b3b3b 44%,#373737 68%,#333333 77%,#353535 80%,#2d2d2d 94%,#2a2a2a 97%,#262626 98%,#262626 100%);
+}
+
+form img {
+	position: absolute;
+	top: 7px;
+	left: 12px;
+}
+
+form label {
+	position: absolute;
+	top:20px;  
+	left: 72px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#username,
+#email {
+	width: 137px;
+	height: 20px;
+	padding: 0 0 0 10px;
+	position: absolute;	
+	top: 20px;
+	border: 1px solid #819DB3;
+}
+
+#username {	
+	left: 250px;
+}
+
+#email {	
+	left: 424px;	
+}
+
+#submit {
+	width: 56px;
+	height: 28px;
+	position: absolute;	
+	top: 17px;
+	left: 597px;
+	color: #fff;
+	background: url(../images/submit-btn.png);
+	border: none;
+}
+
+article h1 {
+	margin-left: 12px;
+	color: #FBD61A;
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 68px;
+}
+
+article p {
+	margin-left: 12px;
+	margin-right: 45px;
+	color: #a4a4a4;
+	font: 13px/17px Verdana, Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+}
+
+article p span {
+	color: #fff;
+}
