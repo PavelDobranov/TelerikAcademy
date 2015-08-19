@@ -1,0 +1,23 @@
+body nav {
+  display: block; }
+  body nav div.container {
+    margin: 10px; }
+    body nav div.container img {
+      width: 215px;
+      height: 130px; }
+body section input[type="radio"] {
+  display: none; }
+  body section input[type="radio"]:checked + .large-img {
+    opacity: 2;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+body section .large-img {
+  width: 580px;
+  height: 350px;
+  opacity: 0;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  margin: 20px 0 0 10px; }

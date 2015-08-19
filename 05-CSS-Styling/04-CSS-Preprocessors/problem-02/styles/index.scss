@@ -1,0 +1,46 @@
+$widthSmall: 215px;
+$heightSmall: 130px;
+$widthLarge: 580px;
+$heightLarge: 350px;
+
+@mixin animation($speed) {
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+
+body {	
+	nav {
+		display: block;
+
+		div.container {
+			margin:10px;
+
+			img {
+				width: $widthSmall;
+				height: $heightSmall;
+			}
+		}
+	}
+
+	section {
+		input[type="radio"] {
+			display:none;
+			&:checked + .large-img {
+			opacity:2;
+			@include animation(0.5s);
+			}
+		}
+
+		.large-img {
+			width: $widthLarge;
+			height: $heightLarge;
+			opacity: 0;
+			display: inline-block;
+			position: absolute;
+			left: 10px;
+			margin: 20px 0 0 10px;
+		}
+	}
+}
