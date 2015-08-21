@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.T4Template", "02.T4Template\02.T4Template.csproj", "{03C14F9F-6A56-42D9-9788-74AB4F6C9329}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.ToolsResearch", "01.ToolsResearch", "{C8453349-FBBB-4312-B7F3-40D85E5CF786}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Git", "01-Git", "{AAE14140-785F-4F32-8412-54D3BF765E86}"
+	ProjectSection(SolutionItems) = preProject
+		01.ToolsResearch\01-Git\GitBash-01.png = 01.ToolsResearch\01-Git\GitBash-01.png
+		01.ToolsResearch\01-Git\GitBash-02.png = 01.ToolsResearch\01-Git\GitBash-02.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Log4Net", "02-Log4Net", "{51180BEF-F763-4D71-B0A1-CBB4FCEC8CB9}"
+	ProjectSection(SolutionItems) = preProject
+		01.ToolsResearch\02-Log4Net\Log4Net-01.png = 01.ToolsResearch\02-Log4Net\Log4Net-01.png
+		01.ToolsResearch\02-Log4Net\Log4Net-02.png = 01.ToolsResearch\02-Log4Net\Log4Net-02.png
+		01.ToolsResearch\02-Log4Net\Log4Net-03.png = 01.ToolsResearch\02-Log4Net\Log4Net-03.png
+		01.ToolsResearch\02-Log4Net\Log4Net-04.png = 01.ToolsResearch\02-Log4Net\Log4Net-04.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-StyleCop", "03-StyleCop", "{56BF03CF-6BCA-4225-B5BA-754AA3E1D425}"
+	ProjectSection(SolutionItems) = preProject
+		01.ToolsResearch\03-StyleCop\StyleCop-01.png = 01.ToolsResearch\03-StyleCop\StyleCop-01.png
+		01.ToolsResearch\03-StyleCop\StyleCop-02.png = 01.ToolsResearch\03-StyleCop\StyleCop-02.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-ILSpy", "04-ILSpy", "{0933A774-DDEA-4C15-8244-80351607EEFA}"
+	ProjectSection(SolutionItems) = preProject
+		01.ToolsResearch\04-ILSpy\ILSpy.png = 01.ToolsResearch\04-ILSpy\ILSpy.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05- Sandcastle", "05- Sandcastle", "{757E9EA6-1CA6-48BB-85DE-AD2247BD5BAA}"
+	ProjectSection(SolutionItems) = preProject
+		01.ToolsResearch\05- Sandcastle\Sandcastle-01.png = 01.ToolsResearch\05- Sandcastle\Sandcastle-01.png
+		01.ToolsResearch\05- Sandcastle\Sandcastle-02.png = 01.ToolsResearch\05- Sandcastle\Sandcastle-02.png
+		01.ToolsResearch\05- Sandcastle\Sandcastle-03.png = 01.ToolsResearch\05- Sandcastle\Sandcastle-03.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06-Confuser", "06-Confuser", "{E79FE32A-C640-4D2B-8005-51D052CFB026}"
+	ProjectSection(SolutionItems) = preProject
+		01.ToolsResearch\06-Confuser\after-obfuscation.png = 01.ToolsResearch\06-Confuser\after-obfuscation.png
+		01.ToolsResearch\06-Confuser\before-obfuscation.png = 01.ToolsResearch\06-Confuser\before-obfuscation.png
+		01.ToolsResearch\06-Confuser\Confuser-01.png = 01.ToolsResearch\06-Confuser\Confuser-01.png
+		01.ToolsResearch\06-Confuser\Confuser-02.png = 01.ToolsResearch\06-Confuser\Confuser-02.png
+		01.ToolsResearch\06-Confuser\Confuser-03.png = 01.ToolsResearch\06-Confuser\Confuser-03.png
+		01.ToolsResearch\06-Confuser\Confuser-04.png = 01.ToolsResearch\06-Confuser\Confuser-04.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.GitHubAccount", "03.GitHubAccount", "{B1DC7074-9A08-420F-B0B9-B4607ED3BA48}"
+	ProjectSection(SolutionItems) = preProject
+		03.GitHubAccount\GitHub.png = 03.GitHubAccount\GitHub.png
+		03.GitHubAccount\url.txt = 03.GitHubAccount\url.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03C14F9F-6A56-42D9-9788-74AB4F6C9329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03C14F9F-6A56-42D9-9788-74AB4F6C9329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03C14F9F-6A56-42D9-9788-74AB4F6C9329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03C14F9F-6A56-42D9-9788-74AB4F6C9329}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AAE14140-785F-4F32-8412-54D3BF765E86} = {C8453349-FBBB-4312-B7F3-40D85E5CF786}
+		{51180BEF-F763-4D71-B0A1-CBB4FCEC8CB9} = {C8453349-FBBB-4312-B7F3-40D85E5CF786}
+		{56BF03CF-6BCA-4225-B5BA-754AA3E1D425} = {C8453349-FBBB-4312-B7F3-40D85E5CF786}
+		{0933A774-DDEA-4C15-8244-80351607EEFA} = {C8453349-FBBB-4312-B7F3-40D85E5CF786}
+		{757E9EA6-1CA6-48BB-85DE-AD2247BD5BAA} = {C8453349-FBBB-4312-B7F3-40D85E5CF786}
+		{E79FE32A-C640-4D2B-8005-51D052CFB026} = {C8453349-FBBB-4312-B7F3-40D85E5CF786}
+	EndGlobalSection
+EndGlobal
