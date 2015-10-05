@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="students.xslt" ?>
+<students>
+  <student xmlns:students="urn:students">
+    <name>Ivan Ivanov</name>
+    <sex>Male</sex>
+    <birthDate>13.03.1991</birthDate>
+    <phone>+359886165031</phone>
+    <email>ivan@gmail.com</email>
+    <course>JavaScript Applications</course>
+    <specialty>Front-End Development</specialty>
+    <facultyNumber>1214710</facultyNumber>
+    <passedExams>
+      <exam>
+        <name>HTML</name>
+        <tutor>Doncho Minkov</tutor>
+        <score>40</score>
+      </exam>
+      <exam>
+        <name>CSS Styling</name>
+        <tutor>Doncho Minkov</tutor>
+        <score>60</score>
+      </exam>
+      <exam>
+        <name>JavaScript Fundamentals</name>
+        <tutor>Ivaylo Kenov</tutor>
+        <score>150</score>
+      </exam>
+    </passedExams>
+  </student>
+  <student>
+    <name>Petar Petrov</name>
+    <sex>Male</sex>
+    <birthDate>17.06.1989</birthDate>
+    <phone>+359878573209</phone>
+    <email>petar@gmail.com</email>
+    <course>NodeJS</course>
+    <specialty>Back-End Development</specialty>
+    <facultyNumber>1133467</facultyNumber>
+    <passedExams>
+      <exam>
+        <name>ASP.NET MVC</name>
+        <tutor>Ivaylo Kenov</tutor>
+        <score>80</score>
+      </exam>
+      <exam>
+        <name>Databases</name>
+        <tutor>Nikolay Kostov</tutor>
+        <score>100</score>
+      </exam>
+    </passedExams>
+  </student>
+</students>
