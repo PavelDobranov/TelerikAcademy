@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<albums>
+	<album>
+		<name>Fringilla Ornare</name>
+		<artist>Gorillaz</artist>
+	</album>
+	<album>
+		<name>Parturient Montes</name>
+		<artist>Gorillaz</artist>
+	</album>
+	<album>
+		<name>Lorem Posuere</name>
+		<artist>Orbital</artist>
+	</album>
+	<album>
+		<name>Adipiscing</name>
+		<artist>Electric Universe</artist>
+	</album>
+	<album>
+		<name>Commodo</name>
+		<artist>Electric Universe</artist>
+	</album>
+	<album>
+		<name>Sodales</name>
+		<artist>Electric Universe</artist>
+	</album>
+	<album>
+		<name>Vestibulum</name>
+		<artist>Roni Size</artist>
+	</album>
+	<album>
+		<name>Manga</name>
+		<artist>Roni Size</artist>
+	</album>
+	<album>
+		<name>Curae</name>
+		<artist>Daft Punk</artist>
+	</album>
+	<album>
+		<name>Aliquam Gravida</name>
+		<artist>Madball</artist>
+	</album>
+</albums>
