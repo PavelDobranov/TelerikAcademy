@@ -1,0 +1,32 @@
+﻿@model SummatorMVC.Models.SummatorViewModel
+
+<div class="jumbotron text-center">
+    <h1>ASP.NET MVC Summator</h1>
+</div>
+
+@using (@Html.BeginForm("Summator", "Home", FormMethod.Post, new { @class = "summator" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary();
+
+    <div class="form-group">
+        <label for="tb-first-number" class="col-md-2 control-label">First Number</label>
+        <div class="col-md-10">
+            @Html.TextBoxFor(n => n.FirstNumber, new { @id = "tb-first-number", @class = "form-control", requred = "required" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="tb-second-number" class="col-md-2 control-label">Second Number</label>
+        <div class="col-md-10">
+            @Html.TextBoxFor(n => n.SecondNumber, new { @id = "tb-second-number", @class = "form-control", requred = "required" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-success">Sum</button>
+        </div>
+        <div class="col-md-10">
+            @Html.TextBoxFor(n => n.Sum, new { @class = "form-control", disabled = "true" })
+        </div>
+    </div>
+}
